@@ -1,0 +1,240 @@
+{
+  "metadata": {
+    "title": "Residential Property Price Index",
+    "description": "House price index data by region and property type",
+    "base_year": 2015,
+    "base_value": 100,
+    "source": "National Property Statistics Office",
+    "last_updated": "2026-02-01"
+  },
+  "regions": [
+    {
+      "id": "london",
+      "name": "London",
+      "country": "England",
+      "data": [
+        {"date": "2020-01", "detached": 118.2, "semi_detached": 115.6, "terraced": 117.1, "flat": 112.3, "all": 115.8, "avg_price": 496800},
+        {"date": "2020-06", "detached": 119.5, "semi_detached": 116.8, "terraced": 118.3, "flat": 113.1, "all": 116.9, "avg_price": 501200},
+        {"date": "2021-01", "detached": 124.1, "semi_detached": 121.3, "terraced": 122.7, "flat": 115.8, "all": 120.9, "avg_price": 520400},
+        {"date": "2021-06", "detached": 129.8, "semi_detached": 126.5, "terraced": 127.9, "flat": 118.2, "all": 125.6, "avg_price": 543800},
+        {"date": "2022-01", "detached": 135.2, "semi_detached": 131.8, "terraced": 133.1, "flat": 121.5, "all": 130.4, "avg_price": 568100},
+        {"date": "2022-06", "detached": 138.9, "semi_detached": 135.1, "terraced": 136.4, "flat": 123.8, "all": 133.5, "avg_price": 582500},
+        {"date": "2023-01", "detached": 136.5, "semi_detached": 133.2, "terraced": 134.8, "flat": 122.1, "all": 131.6, "avg_price": 571200},
+        {"date": "2023-06", "detached": 134.8, "semi_detached": 131.5, "terraced": 133.1, "flat": 120.8, "all": 130.0, "avg_price": 564800},
+        {"date": "2024-01", "detached": 137.2, "semi_detached": 133.9, "terraced": 135.4, "flat": 122.5, "all": 132.2, "avg_price": 575600},
+        {"date": "2024-06", "detached": 140.1, "semi_detached": 136.7, "terraced": 138.2, "flat": 124.9, "all": 134.9, "avg_price": 589200},
+        {"date": "2025-01", "detached": 143.5, "semi_detached": 139.8, "terraced": 141.1, "flat": 127.3, "all": 137.9, "avg_price": 604500},
+        {"date": "2025-06", "detached": 146.2, "semi_detached": 142.5, "terraced": 143.8, "flat": 129.1, "all": 140.4, "avg_price": 618300}
+      ]
+    },
+    {
+      "id": "south_east",
+      "name": "South East",
+      "country": "England",
+      "data": [
+        {"date": "2020-01", "detached": 116.5, "semi_detached": 114.8, "terraced": 115.9, "flat": 111.2, "all": 114.6, "avg_price": 337500},
+        {"date": "2020-06", "detached": 117.8, "semi_detached": 116.1, "terraced": 117.1, "flat": 112.3, "all": 115.8, "avg_price": 342100},
+        {"date": "2021-01", "detached": 123.4, "semi_detached": 121.5, "terraced": 122.3, "flat": 115.1, "all": 120.5, "avg_price": 361800},
+        {"date": "2021-06", "detached": 130.1, "semi_detached": 127.8, "terraced": 128.5, "flat": 118.9, "all": 126.3, "avg_price": 385200},
+        {"date": "2022-01", "detached": 136.8, "semi_detached": 133.9, "terraced": 134.2, "flat": 122.5, "all": 131.8, "avg_price": 405600},
+        {"date": "2022-06", "detached": 139.5, "semi_detached": 136.2, "terraced": 136.8, "flat": 124.1, "all": 134.1, "avg_price": 415800},
+        {"date": "2023-01", "detached": 137.1, "semi_detached": 134.0, "terraced": 134.5, "flat": 122.3, "all": 131.9, "avg_price": 406200},
+        {"date": "2023-06", "detached": 135.8, "semi_detached": 132.5, "terraced": 133.1, "flat": 121.2, "all": 130.6, "avg_price": 401500},
+        {"date": "2024-01", "detached": 138.2, "semi_detached": 135.1, "terraced": 135.8, "flat": 123.5, "all": 133.1, "avg_price": 412800},
+        {"date": "2024-06", "detached": 141.5, "semi_detached": 138.2, "terraced": 138.9, "flat": 125.8, "all": 136.1, "avg_price": 425600},
+        {"date": "2025-01", "detached": 144.8, "semi_detached": 141.3, "terraced": 141.9, "flat": 128.1, "all": 139.0, "avg_price": 438200},
+        {"date": "2025-06", "detached": 147.2, "semi_detached": 143.8, "terraced": 144.1, "flat": 130.2, "all": 141.3, "avg_price": 449800}
+      ]
+    },
+    {
+      "id": "east_england",
+      "name": "East of England",
+      "country": "England",
+      "data": [
+        {"date": "2020-01", "detached": 115.8, "semi_detached": 114.1, "terraced": 115.2, "flat": 110.5, "all": 113.9, "avg_price": 298500},
+        {"date": "2020-06", "detached": 117.1, "semi_detached": 115.4, "terraced": 116.5, "flat": 111.6, "all": 115.1, "avg_price": 303200},
+        {"date": "2021-01", "detached": 123.5, "semi_detached": 121.2, "terraced": 122.1, "flat": 114.8, "all": 120.4, "avg_price": 322500},
+        {"date": "2021-06", "detached": 130.8, "semi_detached": 128.1, "terraced": 128.9, "flat": 118.5, "all": 126.5, "avg_price": 345800},
+        {"date": "2022-01", "detached": 137.2, "semi_detached": 134.5, "terraced": 135.1, "flat": 122.1, "all": 132.2, "avg_price": 368200},
+        {"date": "2022-06", "detached": 139.8, "semi_detached": 136.9, "terraced": 137.2, "flat": 123.8, "all": 134.4, "avg_price": 376500},
+        {"date": "2023-01", "detached": 137.5, "semi_detached": 134.8, "terraced": 135.2, "flat": 121.9, "all": 132.3, "avg_price": 367800},
+        {"date": "2023-06", "detached": 136.1, "semi_detached": 133.2, "terraced": 133.8, "flat": 120.5, "all": 130.9, "avg_price": 362100},
+        {"date": "2024-01", "detached": 138.9, "semi_detached": 135.8, "terraced": 136.5, "flat": 123.1, "all": 133.5, "avg_price": 374500},
+        {"date": "2024-06", "detached": 142.1, "semi_detached": 138.9, "terraced": 139.5, "flat": 125.5, "all": 136.5, "avg_price": 387200},
+        {"date": "2025-01", "detached": 145.2, "semi_detached": 142.1, "terraced": 142.5, "flat": 127.8, "all": 139.4, "avg_price": 399800},
+        {"date": "2025-06", "detached": 147.8, "semi_detached": 144.5, "terraced": 144.8, "flat": 129.9, "all": 141.7, "avg_price": 411500}
+      ]
+    },
+    {
+      "id": "west_midlands",
+      "name": "West Midlands",
+      "country": "England",
+      "data": [
+        {"date": "2020-01", "detached": 113.5, "semi_detached": 112.8, "terraced": 113.2, "flat": 108.9, "all": 112.1, "avg_price": 212500},
+        {"date": "2020-06", "detached": 114.8, "semi_detached": 114.1, "terraced": 114.5, "flat": 110.1, "all": 113.3, "avg_price": 216800},
+        {"date": "2021-01", "detached": 121.2, "semi_detached": 119.8, "terraced": 120.5, "flat": 113.5, "all": 118.7, "avg_price": 235600},
+        {"date": "2021-06", "detached": 128.5, "semi_detached": 126.8, "terraced": 127.2, "flat": 117.8, "all": 125.0, "avg_price": 258200},
+        {"date": "2022-01", "detached": 135.1, "semi_detached": 133.2, "terraced": 133.8, "flat": 121.5, "all": 130.9, "avg_price": 278500},
+        {"date": "2022-06", "detached": 137.8, "semi_detached": 135.5, "terraced": 136.1, "flat": 123.2, "all": 133.1, "avg_price": 286200},
+        {"date": "2023-01", "detached": 135.5, "semi_detached": 133.1, "terraced": 133.9, "flat": 121.5, "all": 131.0, "avg_price": 278800},
+        {"date": "2023-06", "detached": 134.2, "semi_detached": 131.8, "terraced": 132.5, "flat": 120.2, "all": 129.6, "avg_price": 274500},
+        {"date": "2024-01", "detached": 137.1, "semi_detached": 134.5, "terraced": 135.2, "flat": 122.8, "all": 132.4, "avg_price": 285200},
+        {"date": "2024-06", "detached": 140.5, "semi_detached": 137.8, "terraced": 138.5, "flat": 125.1, "all": 135.4, "avg_price": 296800},
+        {"date": "2025-01", "detached": 143.8, "semi_detached": 141.1, "terraced": 141.5, "flat": 127.5, "all": 138.4, "avg_price": 308500},
+        {"date": "2025-06", "detached": 146.5, "semi_detached": 143.8, "terraced": 144.1, "flat": 129.8, "all": 141.0, "avg_price": 319200}
+      ]
+    },
+    {
+      "id": "east_midlands",
+      "name": "East Midlands",
+      "country": "England",
+      "data": [
+        {"date": "2020-01", "detached": 112.8, "semi_detached": 111.5, "terraced": 112.5, "flat": 108.2, "all": 111.2, "avg_price": 198500},
+        {"date": "2020-06", "detached": 114.1, "semi_detached": 112.8, "terraced": 113.8, "flat": 109.4, "all": 112.5, "avg_price": 202800},
+        {"date": "2021-01", "detached": 120.5, "semi_detached": 118.9, "terraced": 119.8, "flat": 113.1, "all": 118.0, "avg_price": 221500},
+        {"date": "2021-06", "detached": 128.2, "semi_detached": 126.1, "terraced": 126.8, "flat": 117.5, "all": 124.6, "avg_price": 245200},
+        {"date": "2022-01", "detached": 134.8, "semi_detached": 132.5, "terraced": 133.1, "flat": 121.2, "all": 130.4, "avg_price": 265800},
+        {"date": "2022-06", "detached": 137.5, "semi_detached": 135.1, "terraced": 135.5, "flat": 122.8, "all": 132.7, "avg_price": 274500},
+        {"date": "2023-01", "detached": 135.2, "semi_detached": 132.8, "terraced": 133.2, "flat": 121.1, "all": 130.5, "avg_price": 266200},
+        {"date": "2023-06", "detached": 133.8, "semi_detached": 131.5, "terraced": 131.9, "flat": 119.8, "all": 129.2, "avg_price": 261800},
+        {"date": "2024-01", "detached": 136.5, "semi_detached": 134.1, "terraced": 134.5, "flat": 122.1, "all": 131.8, "avg_price": 272500},
+        {"date": "2024-06", "detached": 139.8, "semi_detached": 137.2, "terraced": 137.8, "flat": 124.5, "all": 134.8, "avg_price": 284200},
+        {"date": "2025-01", "detached": 143.1, "semi_detached": 140.5, "terraced": 140.8, "flat": 126.8, "all": 137.8, "avg_price": 295500},
+        {"date": "2025-06", "detached": 145.8, "semi_detached": 143.2, "terraced": 143.5, "flat": 129.1, "all": 140.4, "avg_price": 306800}
+      ]
+    },
+    {
+      "id": "north_west",
+      "name": "North West",
+      "country": "England",
+      "data": [
+        {"date": "2020-01", "detached": 112.1, "semi_detached": 111.2, "terraced": 111.8, "flat": 107.5, "all": 110.6, "avg_price": 178200},
+        {"date": "2020-06", "detached": 113.5, "semi_detached": 112.5, "terraced": 113.1, "flat": 108.8, "all": 111.9, "avg_price": 182500},
+        {"date": "2021-01", "detached": 119.8, "semi_detached": 118.5, "terraced": 119.1, "flat": 112.5, "all": 117.4, "avg_price": 202100},
+        {"date": "2021-06", "detached": 127.5, "semi_detached": 125.8, "terraced": 126.2, "flat": 116.8, "all": 124.0, "avg_price": 225800},
+        {"date": "2022-01", "detached": 134.2, "semi_detached": 132.1, "terraced": 132.5, "flat": 120.5, "all": 129.8, "avg_price": 248500},
+        {"date": "2022-06", "detached": 137.1, "semi_detached": 134.8, "terraced": 135.2, "flat": 122.1, "all": 132.3, "avg_price": 258200},
+        {"date": "2023-01", "detached": 135.2, "semi_detached": 132.5, "terraced": 133.1, "flat": 120.8, "all": 130.4, "avg_price": 250500},
+        {"date": "2023-06", "detached": 134.1, "semi_detached": 131.2, "terraced": 131.8, "flat": 119.5, "all": 129.1, "avg_price": 246200},
+        {"date": "2024-01", "detached": 136.8, "semi_detached": 134.1, "terraced": 134.5, "flat": 121.8, "all": 131.8, "avg_price": 256800},
+        {"date": "2024-06", "detached": 140.2, "semi_detached": 137.5, "terraced": 137.8, "flat": 124.2, "all": 134.9, "avg_price": 268500},
+        {"date": "2025-01", "detached": 143.5, "semi_detached": 140.8, "terraced": 141.1, "flat": 126.5, "all": 137.9, "avg_price": 280200},
+        {"date": "2025-06", "detached": 146.1, "semi_detached": 143.5, "terraced": 143.8, "flat": 128.8, "all": 140.5, "avg_price": 291800}
+      ]
+    },
+    {
+      "id": "north_east",
+      "name": "North East",
+      "country": "England",
+      "data": [
+        {"date": "2020-01", "detached": 110.5, "semi_detached": 109.8, "terraced": 110.2, "flat": 106.5, "all": 109.2, "avg_price": 132500},
+        {"date": "2020-06", "detached": 111.8, "semi_detached": 111.1, "terraced": 111.5, "flat": 107.8, "all": 110.5, "avg_price": 135800},
+        {"date": "2021-01", "detached": 118.2, "semi_detached": 116.8, "terraced": 117.5, "flat": 111.2, "all": 115.9, "avg_price": 152500},
+        {"date": "2021-06", "detached": 125.5, "semi_detached": 123.8, "terraced": 124.5, "flat": 115.5, "all": 122.3, "avg_price": 172800},
+        {"date": "2022-01", "detached": 132.1, "semi_detached": 130.2, "terraced": 130.8, "flat": 119.2, "all": 128.0, "avg_price": 192500},
+        {"date": "2022-06", "detached": 134.8, "semi_detached": 132.5, "terraced": 133.1, "flat": 121.1, "all": 130.3, "avg_price": 200800},
+        {"date": "2023-01", "detached": 133.1, "semi_detached": 130.5, "terraced": 131.2, "flat": 119.8, "all": 128.6, "avg_price": 194200},
+        {"date": "2023-06", "detached": 132.2, "semi_detached": 129.5, "terraced": 130.1, "flat": 118.5, "all": 127.5, "avg_price": 190800},
+        {"date": "2024-01", "detached": 134.8, "semi_detached": 132.1, "terraced": 132.8, "flat": 120.8, "all": 130.1, "avg_price": 198500},
+        {"date": "2024-06", "detached": 138.1, "semi_detached": 135.5, "terraced": 136.1, "flat": 123.2, "all": 133.2, "avg_price": 208200},
+        {"date": "2025-01", "detached": 141.2, "semi_detached": 138.8, "terraced": 139.2, "flat": 125.5, "all": 136.1, "avg_price": 218500},
+        {"date": "2025-06", "detached": 143.8, "semi_detached": 141.5, "terraced": 141.8, "flat": 127.8, "all": 138.7, "avg_price": 228200}
+      ]
+    },
+    {
+      "id": "south_west",
+      "name": "South West",
+      "country": "England",
+      "data": [
+        {"date": "2020-01", "detached": 115.2, "semi_detached": 113.8, "terraced": 114.5, "flat": 110.1, "all": 113.4, "avg_price": 278500},
+        {"date": "2020-06", "detached": 116.5, "semi_detached": 115.1, "terraced": 115.8, "flat": 111.2, "all": 114.6, "avg_price": 283200},
+        {"date": "2021-01", "detached": 123.8, "semi_detached": 121.5, "terraced": 122.1, "flat": 114.8, "all": 120.5, "avg_price": 308500},
+        {"date": "2021-06", "detached": 132.1, "semi_detached": 129.5, "terraced": 130.2, "flat": 119.5, "all": 127.8, "avg_price": 338200},
+        {"date": "2022-01", "detached": 138.5, "semi_detached": 135.8, "terraced": 136.2, "flat": 123.5, "all": 133.5, "avg_price": 362500},
+        {"date": "2022-06", "detached": 141.2, "semi_detached": 138.1, "terraced": 138.5, "flat": 125.1, "all": 135.7, "avg_price": 372800},
+        {"date": "2023-01", "detached": 138.8, "semi_detached": 135.5, "terraced": 136.1, "flat": 123.2, "all": 133.4, "avg_price": 363500},
+        {"date": "2023-06", "detached": 137.2, "semi_detached": 134.1, "terraced": 134.8, "flat": 122.1, "all": 132.0, "avg_price": 358200},
+        {"date": "2024-01", "detached": 139.8, "semi_detached": 136.8, "terraced": 137.2, "flat": 124.5, "all": 134.5, "avg_price": 368500},
+        {"date": "2024-06", "detached": 143.1, "semi_detached": 140.1, "terraced": 140.5, "flat": 126.8, "all": 137.6, "avg_price": 381200},
+        {"date": "2025-01", "detached": 146.2, "semi_detached": 143.2, "terraced": 143.5, "flat": 129.1, "all": 140.5, "avg_price": 393800},
+        {"date": "2025-06", "detached": 148.8, "semi_detached": 145.8, "terraced": 146.1, "flat": 131.2, "all": 142.9, "avg_price": 405500}
+      ]
+    },
+    {
+      "id": "yorkshire",
+      "name": "Yorkshire and The Humber",
+      "country": "England",
+      "data": [
+        {"date": "2020-01", "detached": 111.8, "semi_detached": 110.5, "terraced": 111.2, "flat": 107.1, "all": 110.1, "avg_price": 172500},
+        {"date": "2020-06", "detached": 113.1, "semi_detached": 111.8, "terraced": 112.5, "flat": 108.2, "all": 111.4, "avg_price": 176800},
+        {"date": "2021-01", "detached": 119.5, "semi_detached": 117.8, "terraced": 118.5, "flat": 112.1, "all": 116.9, "avg_price": 196500},
+        {"date": "2021-06", "detached": 127.2, "semi_detached": 125.1, "terraced": 125.8, "flat": 116.5, "all": 123.6, "avg_price": 220800},
+        {"date": "2022-01", "detached": 133.8, "semi_detached": 131.5, "terraced": 132.1, "flat": 120.2, "all": 129.4, "avg_price": 242500},
+        {"date": "2022-06", "detached": 136.5, "semi_detached": 134.1, "terraced": 134.5, "flat": 121.8, "all": 131.7, "avg_price": 251800},
+        {"date": "2023-01", "detached": 134.5, "semi_detached": 131.8, "terraced": 132.5, "flat": 120.2, "all": 129.7, "avg_price": 244500},
+        {"date": "2023-06", "detached": 133.2, "semi_detached": 130.5, "terraced": 131.2, "flat": 119.1, "all": 128.5, "avg_price": 240200},
+        {"date": "2024-01", "detached": 135.8, "semi_detached": 133.2, "terraced": 133.8, "flat": 121.5, "all": 131.0, "avg_price": 250800},
+        {"date": "2024-06", "detached": 139.2, "semi_detached": 136.5, "terraced": 137.1, "flat": 123.8, "all": 134.1, "avg_price": 262500},
+        {"date": "2025-01", "detached": 142.5, "semi_detached": 139.8, "terraced": 140.2, "flat": 126.1, "all": 137.1, "avg_price": 274200},
+        {"date": "2025-06", "detached": 145.1, "semi_detached": 142.5, "terraced": 142.8, "flat": 128.5, "all": 139.7, "avg_price": 285500}
+      ]
+    },
+    {
+      "id": "wales",
+      "name": "Wales",
+      "country": "Wales",
+      "data": [
+        {"date": "2020-01", "detached": 111.2, "semi_detached": 110.1, "terraced": 110.8, "flat": 106.8, "all": 109.7, "avg_price": 168500},
+        {"date": "2020-06", "detached": 112.5, "semi_detached": 111.5, "terraced": 112.1, "flat": 108.1, "all": 111.0, "avg_price": 172800},
+        {"date": "2021-01", "detached": 120.8, "semi_detached": 119.1, "terraced": 119.8, "flat": 112.8, "all": 118.1, "avg_price": 196500},
+        {"date": "2021-06", "detached": 130.5, "semi_detached": 128.2, "terraced": 129.1, "flat": 118.5, "all": 126.5, "avg_price": 225800},
+        {"date": "2022-01", "detached": 137.8, "semi_detached": 135.2, "terraced": 135.8, "flat": 122.8, "all": 132.9, "avg_price": 252500},
+        {"date": "2022-06", "detached": 140.5, "semi_detached": 137.8, "terraced": 138.2, "flat": 124.5, "all": 135.2, "avg_price": 262800},
+        {"date": "2023-01", "detached": 138.1, "semi_detached": 135.5, "terraced": 136.1, "flat": 122.8, "all": 133.1, "avg_price": 254500},
+        {"date": "2023-06", "detached": 136.8, "semi_detached": 134.2, "terraced": 134.8, "flat": 121.5, "all": 131.8, "avg_price": 250200},
+        {"date": "2024-01", "detached": 139.5, "semi_detached": 136.8, "terraced": 137.5, "flat": 123.8, "all": 134.4, "avg_price": 261800},
+        {"date": "2024-06", "detached": 142.8, "semi_detached": 140.1, "terraced": 140.5, "flat": 126.2, "all": 137.4, "avg_price": 274500},
+        {"date": "2025-01", "detached": 145.8, "semi_detached": 143.2, "terraced": 143.5, "flat": 128.5, "all": 140.2, "avg_price": 286200},
+        {"date": "2025-06", "detached": 148.2, "semi_detached": 145.8, "terraced": 146.1, "flat": 130.8, "all": 142.7, "avg_price": 297800}
+      ]
+    },
+    {
+      "id": "scotland",
+      "name": "Scotland",
+      "country": "Scotland",
+      "data": [
+        {"date": "2020-01", "detached": 110.8, "semi_detached": 109.5, "terraced": 110.1, "flat": 107.2, "all": 109.4, "avg_price": 155800},
+        {"date": "2020-06", "detached": 112.1, "semi_detached": 110.8, "terraced": 111.5, "flat": 108.5, "all": 110.7, "avg_price": 159500},
+        {"date": "2021-01", "detached": 118.5, "semi_detached": 116.8, "terraced": 117.5, "flat": 112.1, "all": 116.2, "avg_price": 178200},
+        {"date": "2021-06", "detached": 126.2, "semi_detached": 124.1, "terraced": 124.8, "flat": 116.2, "all": 122.8, "avg_price": 202500},
+        {"date": "2022-01", "detached": 132.8, "semi_detached": 130.5, "terraced": 131.2, "flat": 119.8, "all": 128.5, "avg_price": 225800},
+        {"date": "2022-06", "detached": 135.5, "semi_detached": 133.2, "terraced": 133.8, "flat": 121.5, "all": 131.0, "avg_price": 235200},
+        {"date": "2023-01", "detached": 133.8, "semi_detached": 131.2, "terraced": 131.8, "flat": 120.1, "all": 129.2, "avg_price": 228500},
+        {"date": "2023-06", "detached": 132.5, "semi_detached": 130.1, "terraced": 130.5, "flat": 119.2, "all": 128.0, "avg_price": 224800},
+        {"date": "2024-01", "detached": 135.2, "semi_detached": 132.8, "terraced": 133.2, "flat": 121.5, "all": 130.6, "avg_price": 235500},
+        {"date": "2024-06", "detached": 138.5, "semi_detached": 136.1, "terraced": 136.5, "flat": 123.8, "all": 133.7, "avg_price": 248200},
+        {"date": "2025-01", "detached": 141.5, "semi_detached": 139.1, "terraced": 139.5, "flat": 126.2, "all": 136.5, "avg_price": 260500},
+        {"date": "2025-06", "detached": 144.1, "semi_detached": 141.8, "terraced": 142.1, "flat": 128.5, "all": 139.1, "avg_price": 272200}
+      ]
+    },
+    {
+      "id": "northern_ireland",
+      "name": "Northern Ireland",
+      "country": "Northern Ireland",
+      "data": [
+        {"date": "2020-01", "detached": 109.5, "semi_detached": 108.2, "terraced": 109.1, "flat": 105.8, "all": 108.1, "avg_price": 142500},
+        {"date": "2020-06", "detached": 110.8, "semi_detached": 109.5, "terraced": 110.2, "flat": 107.1, "all": 109.4, "avg_price": 146200},
+        {"date": "2021-01", "detached": 117.5, "semi_detached": 115.8, "terraced": 116.5, "flat": 111.2, "all": 115.2, "avg_price": 165800},
+        {"date": "2021-06", "detached": 125.8, "semi_detached": 123.5, "terraced": 124.2, "flat": 115.8, "all": 122.3, "avg_price": 190500},
+        {"date": "2022-01", "detached": 133.1, "semi_detached": 130.8, "terraced": 131.5, "flat": 119.5, "all": 128.7, "avg_price": 215800},
+        {"date": "2022-06", "detached": 136.2, "semi_detached": 133.8, "terraced": 134.5, "flat": 121.5, "all": 131.5, "avg_price": 226500},
+        {"date": "2023-01", "detached": 134.5, "semi_detached": 132.1, "terraced": 132.8, "flat": 120.2, "all": 129.9, "avg_price": 219800},
+        {"date": "2023-06", "detached": 133.8, "semi_detached": 131.2, "terraced": 131.8, "flat": 119.5, "all": 129.0, "avg_price": 216500},
+        {"date": "2024-01", "detached": 136.5, "semi_detached": 134.1, "terraced": 134.5, "flat": 121.8, "all": 131.7, "avg_price": 228200},
+        {"date": "2024-06", "detached": 139.8, "semi_detached": 137.2, "terraced": 137.8, "flat": 124.2, "all": 134.7, "avg_price": 240500},
+        {"date": "2025-01", "detached": 142.8, "semi_detached": 140.5, "terraced": 140.8, "flat": 126.5, "all": 137.6, "avg_price": 252800},
+        {"date": "2025-06", "detached": 145.5, "semi_detached": 143.2, "terraced": 143.5, "flat": 128.8, "all": 140.2, "avg_price": 264500}
+      ]
+    }
+  ]
+}

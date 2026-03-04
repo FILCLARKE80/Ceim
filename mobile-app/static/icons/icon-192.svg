@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <rect width="192" height="192" rx="40" fill="#1a73e8"/>
+  <g transform="translate(96,96)">
+    <!-- House shape -->
+    <path d="M0-52 L48 0 L36 0 L36 36 L12 36 L12 12 L-12 12 L-12 36 L-36 36 L-36 0 L-48 0 Z" fill="white" opacity="0.95"/>
+    <!-- Chart bars -->
+    <rect x="-28" y="10" width="12" height="26" rx="2" fill="#1a73e8" opacity="0.6"/>
+    <rect x="-6" y="0" width="12" height="36" rx="2" fill="#1a73e8" opacity="0.8"/>
+    <rect x="16" y="-8" width="12" height="44" rx="2" fill="#1a73e8" opacity="1"/>
+  </g>
+</svg>

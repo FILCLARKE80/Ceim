@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a73e8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Search and explore residential property price index data across regions">
+    <title>Property Price Index</title>
+    <link rel="manifest" href="/manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Material+Symbols+Rounded:opsz,wght,FILL@20..48,100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <!-- Splash / Loading -->
+    <div id="splash" class="splash">
+        <div class="splash-content">
+            <div class="splash-icon">
+                <span class="material-symbols-rounded">real_estate_agent</span>
+            </div>
+            <h1>Property Price Index</h1>
+            <p>Residential Market Explorer</p>
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <!-- App Shell -->
+    <div id="app" class="app hidden">
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="header-top">
+                <div class="header-brand">
+                    <span class="material-symbols-rounded header-icon">real_estate_agent</span>
+                    <div>
+                        <h1 class="header-title">Property Price Index</h1>
+                        <p class="header-subtitle" id="headerSubtitle">Residential Market Explorer</p>
+                    </div>
+                </div>
+                <button class="icon-btn" id="infoBtn" aria-label="Information">
+                    <span class="material-symbols-rounded">info</span>
+                </button>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-bar" id="searchBar">
+                    <span class="material-symbols-rounded search-icon">search</span>
+                    <input type="text" id="searchInput" placeholder="Search regions..." autocomplete="off" />
+                    <button class="icon-btn search-clear hidden" id="searchClear" aria-label="Clear search">
+                        <span class="material-symbols-rounded">close</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Filter Chips -->
+            <div class="filter-bar">
+                <div class="chip-scroll">
+                    <button class="chip active" data-type="all">All Types</button>
+                    <button class="chip" data-type="detached">Detached</button>
+                    <button class="chip" data-type="semi_detached">Semi-Detached</button>
+                    <button class="chip" data-type="terraced">Terraced</button>
+                    <button class="chip" data-type="flat">Flat</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content" id="content">
+            <!-- Summary Cards -->
+            <section class="summary-section" id="summarySection">
+                <div class="summary-cards">
+                    <div class="summary-card">
+                        <div class="summary-label">Highest Index</div>
+                        <div class="summary-value" id="summaryHighest">--</div>
+                        <div class="summary-region" id="summaryHighestRegion">--</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-label">Avg Index</div>
+                        <div class="summary-value" id="summaryAvg">--</div>
+                        <div class="summary-region" id="summaryAvgLabel">Across all regions</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-label">Top Growth</div>
+                        <div class="summary-value positive" id="summaryGrowth">--</div>
+                        <div class="summary-region" id="summaryGrowthRegion">--</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results List -->
+            <section class="results-section">
+                <div class="results-header">
+                    <h2 id="resultsTitle">All Regions</h2>
+                    <span class="results-count" id="resultsCount">0 results</span>
+                </div>
+                <div class="results-list" id="resultsList">
+                    <!-- Dynamically populated -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Region Detail Sheet -->
+        <div class="sheet-overlay hidden" id="sheetOverlay"></div>
+        <div class="bottom-sheet hidden" id="bottomSheet">
+            <div class="sheet-handle-area" id="sheetHandle">
+                <div class="sheet-handle"></div>
+            </div>
+            <div class="sheet-content" id="sheetContent">
+                <div class="sheet-header">
+                    <div>
+                        <h2 class="sheet-title" id="sheetTitle">Region</h2>
+                        <p class="sheet-subtitle" id="sheetSubtitle">Country</p>
+                    </div>
+                    <button class="icon-btn" id="sheetClose" aria-label="Close">
+                        <span class="material-symbols-rounded">close</span>
+                    </button>
+                </div>
+
+                <!-- Detail Stats -->
+                <div class="detail-stats" id="detailStats">
+                    <div class="stat-card">
+                        <span class="material-symbols-rounded stat-icon">monitoring</span>
+                        <div class="stat-value" id="statIndex">--</div>
+                        <div class="stat-label">Current Index</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="material-symbols-rounded stat-icon">payments</span>
+                        <div class="stat-value" id="statPrice">--</div>
+                        <div class="stat-label">Avg Price</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="material-symbols-rounded stat-icon">trending_up</span>
+                        <div class="stat-value" id="statChange">--</div>
+                        <div class="stat-label">Total Change</div>
+                    </div>
+                </div>
+
+                <!-- Chart -->
+                <div class="chart-section">
+                    <div class="chart-header">
+                        <h3>Price Index Trend</h3>
+                        <div class="chart-legend" id="chartLegend"></div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="trendChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Property Type Breakdown -->
+                <div class="breakdown-section">
+                    <h3>By Property Type</h3>
+                    <div class="breakdown-list" id="breakdownList"></div>
+                </div>
+
+                <!-- Data Table -->
+                <div class="table-section">
+                    <h3>Historical Data</h3>
+                    <div class="table-scroll">
+                        <table class="data-table" id="dataTable">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Index</th>
+                                    <th>Avg Price</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dataTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Modal -->
+        <div class="modal-overlay hidden" id="infoModal">
+            <div class="modal">
+                <div class="modal-header">
+                    <h2>About</h2>
+                    <button class="icon-btn" id="infoClose" aria-label="Close">
+                        <span class="material-symbols-rounded">close</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Residential Property Price Index</strong></p>
+                    <p>This app provides an interactive way to explore residential property price indices across different regions and property types.</p>
+                    <br>
+                    <p><strong>Base Year:</strong> 2015 (Index = 100)</p>
+                    <p><strong>Property Types:</strong> Detached, Semi-Detached, Terraced, Flat</p>
+                    <p><strong>Data Range:</strong> 2020 - 2025</p>
+                    <br>
+                    <p class="text-muted">An index value above 100 means prices have increased relative to the base year. For example, an index of 140 means prices are 40% higher than in 2015.</p>
+                    <br>
+                    <div class="install-section" id="installSection" style="display:none">
+                        <button class="btn-primary" id="installBtn">
+                            <span class="material-symbols-rounded">install_mobile</span>
+                            Install App
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Nav -->
+        <nav class="bottom-nav">
+            <button class="nav-item active" data-view="search">
+                <span class="material-symbols-rounded">search</span>
+                <span>Search</span>
+            </button>
+            <button class="nav-item" data-view="compare">
+                <span class="material-symbols-rounded">compare_arrows</span>
+                <span>Compare</span>
+            </button>
+            <button class="nav-item" data-view="trends">
+                <span class="material-symbols-rounded">trending_up</span>
+                <span>Trends</span>
+            </button>
+        </nav>
+
+        <!-- Compare View -->
+        <div class="view hidden" id="compareView">
+            <div class="view-header">
+                <h2>Compare Regions</h2>
+                <p>Select regions to compare price indices</p>
+            </div>
+            <div class="compare-select" id="compareSelect"></div>
+            <div class="compare-chart-container hidden" id="compareChartContainer">
+                <canvas id="compareChart"></canvas>
+            </div>
+            <div class="compare-table hidden" id="compareTable"></div>
+        </div>
+
+        <!-- Trends View -->
+        <div class="view hidden" id="trendsView">
+            <div class="view-header">
+                <h2>National Trends</h2>
+                <p>Overview of property price movements</p>
+            </div>
+            <div class="trends-chart-container">
+                <canvas id="trendsChart"></canvas>
+            </div>
+            <div class="trends-insights" id="trendsInsights"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
