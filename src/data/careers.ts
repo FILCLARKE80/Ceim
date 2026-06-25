@@ -367,7 +367,7 @@ export const CAREERS: Career[] = [
       { title: 'Tax Consultant', description: 'Advises on tax planning and compliance.', salaryRange: '€45k–€90k' },
       { title: 'Financial Controller / CFO', description: 'Leads an organisation’s finances.', salaryRange: '€80k–€180k+' },
     ],
-    relatedCareers: ['lawyer', 'data-scientist'],
+    relatedCareers: ['accounting-technician', 'lawyer', 'data-scientist'],
   },
   {
     id: 'pharmacist',
@@ -465,6 +465,72 @@ export const CAREERS: Career[] = [
       { title: 'Veterinary Surgeon / Specialist', description: 'Advanced surgical or specialist practice.', salaryRange: '€60k–€110k' },
     ],
     relatedCareers: ['doctor', 'pharmacist'],
+  },
+  {
+    id: 'marine-biologist',
+    title: 'Marine Biologist',
+    category: 'Science & Environment',
+    icon: '🐠',
+    shortDescription: 'Study life in the oceans, rivers and coasts.',
+    description:
+      'Marine biologists study sea life and ecosystems — from plankton to whales — and the impact of climate change, pollution and fishing. The usual route is a degree in marine science, zoology or biology, often followed by a research masters or PhD. Fieldwork, diving and lab analysis are all part of the job.',
+    juniorCycle: ['Science', 'Geography', 'A love of nature and the sea'],
+    seniorCycleSubjects: [
+      { subjectId: 'biology', importance: 'essential', reason: 'The core science behind marine life.' },
+      { subjectId: 'chemistry', importance: 'recommended', reason: 'Needed for water chemistry and many courses.' },
+      { subjectId: 'geography', importance: 'helpful', reason: 'Covers oceans, ecosystems and the environment.' },
+      { subjectId: 'maths', importance: 'recommended' },
+    ],
+    leavingCertNotes:
+      'Most courses require at least one laboratory science (Biology and/or Chemistry). Higher-points degrees often want two sciences. A third language is needed for NUI courses.',
+    collegeCourses: [
+      { code: 'GY313', name: 'Marine Science', institution: 'University of Galway', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
+      { code: 'CK402', name: 'Biological, Earth & Environmental Sciences', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+      { code: 'AU770', name: 'Freshwater & Marine Biology', institution: 'ATU Galway', level: 8, caoPoints: 328, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MSc Marine Biology / Marine Science', type: 'Masters', description: 'Specialise in ecology, fisheries, aquaculture or conservation.' },
+      { name: 'PhD in Marine Science', type: 'PhD', description: 'Research route into academia and senior scientific roles.' },
+    ],
+    roles: [
+      { title: 'Marine Biologist / Researcher', description: 'Studies marine species and ecosystems in the field and lab.', salaryRange: '€32k–€55k' },
+      { title: 'Marine / Environmental Consultant', description: 'Advises on coastal projects, surveys and impact assessments.', salaryRange: '€38k–€70k' },
+      { title: 'Fisheries / Aquaculture Scientist', description: 'Manages fish stocks or sustainable seafood production.', salaryRange: '€38k–€65k' },
+    ],
+    relatedCareers: ['vet', 'data-scientist'],
+  },
+  {
+    id: 'accounting-technician',
+    title: 'Accounting Technician',
+    category: 'Business & Finance',
+    icon: '🧾',
+    shortDescription: 'Handle day-to-day accounts, payroll and bookkeeping.',
+    description:
+      'Accounting technicians keep the financial engine running — bookkeeping, payroll, invoices, VAT returns and management accounts. It is a faster, more affordable route into finance than a full accountancy degree: most qualify through a 2-year Accounting Technician programme (with Accounting Technicians Ireland) or an earn-as-you-learn apprenticeship, and can later progress to chartered accountant with exemptions.',
+    juniorCycle: ['Business Studies', 'Maths', 'Attention to detail'],
+    seniorCycleSubjects: [
+      { subjectId: 'accounting', importance: 'recommended', reason: 'Direct head start on the technician exams.' },
+      { subjectId: 'business', importance: 'recommended' },
+      { subjectId: 'maths', importance: 'recommended' },
+      { subjectId: 'economics', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'Entry is accessible — often via the Leaving Cert, a PLC/further-education course, or an apprenticeship, with much lower points than a university degree. Some take it straight after sixth year as an alternative to the CAO.',
+    collegeCourses: [
+      { code: 'APP', name: 'Accounting Technician Apprenticeship', institution: 'Accounting Technicians Ireland (nationwide)', level: 6, caoPoints: null, pointsYear: '2024', duration: '2 years', extraRequirements: 'Apprenticeship — earn while you learn' },
+      { code: 'PLC', name: 'Accounting Technician (Level 6)', institution: 'ETB / Further Education colleges', level: 6, caoPoints: null, pointsYear: '2024', duration: '2 years', extraRequirements: 'PLC / QQI route' },
+      { code: 'DT365', name: 'Accounting & Finance', institution: 'TU Dublin', level: 8, caoPoints: 350, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'Progress to Chartered Accountant (ACA/ACCA)', type: 'Professional', description: 'Qualified technicians get exemptions and can train towards full accountancy.' },
+      { name: 'Degree top-up', type: 'Diploma', description: 'Convert the technician qualification into a Level 7/8 accounting degree.' },
+    ],
+    roles: [
+      { title: 'Accounts Assistant', description: 'Processes invoices, reconciliations and ledgers.', salaryRange: '€30k–€42k' },
+      { title: 'Payroll Administrator', description: 'Runs payroll, taxes and employee payments.', salaryRange: '€32k–€48k' },
+      { title: 'Bookkeeper / Credit Controller', description: 'Keeps the books and manages money owed to the business.', salaryRange: '€32k–€50k' },
+    ],
+    relatedCareers: ['accountant', 'lawyer'],
   },
 ]
 
