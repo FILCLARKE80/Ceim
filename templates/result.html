@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}DataApp – Download Ready{% endblock %}
+
+{% block content %}
+<div class="card result-card">
+  <div class="success-icon">&#10003;</div>
+  <h1>Your presentation is ready</h1>
+  <p class="subtitle"><strong>{{ title }}</strong> &mdash; {{ sheet_count }} sheet(s) included</p>
+
+  <a href="{{ url_for('download', filename=filename) }}" class="btn-primary">
+    Download .pptx
+  </a>
+  <a href="{{ url_for('index') }}" class="btn-secondary">Generate another</a>
+</div>
+{% endblock %}

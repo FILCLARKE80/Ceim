@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}DataApp – Generate Presentation{% endblock %}
+
+{% block content %}
+<div class="card">
+  <h1>Generate a Presentation</h1>
+  <p class="subtitle">Upload one or more spreadsheets (.xlsx, .xls, .csv) and we'll build a PowerPoint deck from them.</p>
+
+  <form action="/generate" method="post" enctype="multipart/form-data" id="upload-form">
+    <div class="field">
+      <label for="title">Presentation Title</label>
+      <input type="text" id="title" name="title" placeholder="e.g. Q2 Data Report" maxlength="120" />
+    </div>
+
+    <div class="field">
+      <label for="spreadsheets">Spreadsheet Files</label>
+      <div class="dropzone" id="dropzone">
+        <p>Drag &amp; drop files here or <label for="spreadsheets" class="browse-link">browse</label></p>
+        <input type="file" id="spreadsheets" name="spreadsheets" multiple
+               accept=".xlsx,.xls,.csv" style="display:none" />
+        <ul id="file-list"></ul>
+      </div>
+    </div>
+
+    <button type="submit" class="btn-primary" id="submit-btn">Generate Presentation</button>
+  </form>
+</div>
+
+<script>
+  const input = document.getElementById('spreadsheets');
+  const fileList = document.getElementById('file-list');
+  const dropzone = document.getElementById('dropzone');
+  const form = document.getElementById('upload-form');
+  const submitBtn = document.getElementById('submit-btn');
+
+  function updateList(files) {
+    fileList.innerHTML = '';
+    Array.from(files).forEach(f => {
+      const li = document.createElement('li');
+      li.textContent = f.name;
+      fileList.appendChild(li);
+    });
+  }
+
+  input.addEventListener('change', () => updateList(input.files));
+
+  dropzone.addEventListener('dragover', e => { e.preventDefault(); dropzone.classList.add('drag-over'); });
+  dropzone.addEventListener('dragleave', () => dropzone.classList.remove('drag-over'));
+  dropzone.addEventListener('drop', e => {
+    e.preventDefault();
+    dropzone.classList.remove('drag-over');
+    const dt = new DataTransfer();
+    Array.from(e.dataTransfer.files).forEach(f => dt.items.add(f));
+    input.files = dt.files;
+    updateList(input.files);
+  });
+
+  form.addEventListener('submit', () => {
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Generating…';
+  });
+</script>
+{% endblock %}
