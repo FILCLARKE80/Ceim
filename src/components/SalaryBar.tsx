@@ -16,10 +16,14 @@ export default function SalaryBar({ salaryRange }: { salaryRange: string }) {
   const minPct = pctOfAverage(band.min)
   const maxPct = pctOfAverage(band.max)
 
-  const left = Math.min(minPct, SCALE_MAX)
-  const right = Math.min(maxPct, SCALE_MAX)
-  const width = Math.max(right - left, 2)
-  const avgMarker = (100 / SCALE_MAX) * 100
+  // Map a percentage-of-average value onto its position (0–100%) along the
+  // fixed 0 → SCALE_MAX scale, so the bands and the average marker share one
+  // coordinate system.
+  const toX = (pct: number) => (Math.min(pct, SCALE_MAX) / SCALE_MAX) * 100
+  const left = toX(minPct)
+  const right = toX(maxPct)
+  const width = Math.max(right - left, 1.5)
+  const avgMarker = toX(100)
 
   const aboveAverage = minPct >= 100
 
