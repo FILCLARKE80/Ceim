@@ -5,6 +5,7 @@ import { getSubject } from '../data/subjects'
 import type { Importance } from '../data/types'
 import PathwayFlow from '../components/PathwayFlow'
 import NetworkGraph from '../components/NetworkGraph'
+import SalaryBar from '../components/SalaryBar'
 
 const IMPORTANCE_BADGE: Record<Importance, string> = {
   essential: 'bg-red-100 text-red-700',
@@ -167,17 +168,17 @@ export default function CareerPage() {
           </ul>
         </div>
         <div>
-          <h2 className="mb-3 text-xl font-bold text-slate-900">Possible roles</h2>
+          <h2 className="mb-1 text-xl font-bold text-slate-900">Possible roles</h2>
+          <p className="mb-3 text-sm text-slate-500">
+            Pay shown as a <strong>% of the Irish average wage</strong> (≈ €50k). Green = above
+            average, amber = below.
+          </p>
           <ul className="space-y-3">
             {career.roles.map((r) => (
               <li key={r.title} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                <div className="flex items-center justify-between gap-2">
-                  <h3 className="font-semibold text-slate-900">{r.title}</h3>
-                  {r.salaryRange && (
-                    <span className="badge bg-emerald-100 text-emerald-700">{r.salaryRange}</span>
-                  )}
-                </div>
+                <h3 className="font-semibold text-slate-900">{r.title}</h3>
                 <p className="mt-1 text-sm text-slate-600">{r.description}</p>
+                {r.salaryRange && <SalaryBar salaryRange={r.salaryRange} />}
               </li>
             ))}
           </ul>

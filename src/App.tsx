@@ -42,6 +42,10 @@ export default function App() {
             </a>{' '}
             and each college’s website before making decisions.
           </p>
+          <p className="mt-2">
+            Salaries are indicative and shown as a percentage of the Irish average wage (≈ €50,000/yr,
+            based on CSO average annual earnings). Figures are a rough guide, not a guarantee.
+          </p>
           <p className="mt-2">Built to help Irish secondary-school students explore their options.</p>
         </div>
       </footer>
