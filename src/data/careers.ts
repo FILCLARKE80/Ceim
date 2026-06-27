@@ -532,6 +532,627 @@ export const CAREERS: Career[] = [
     ],
     relatedCareers: ['accountant', 'lawyer'],
   },
+  {
+    id: 'dentist',
+    title: 'Dentist',
+    category: 'Health & Medicine',
+    icon: '🦷',
+    shortDescription: 'Diagnose and treat teeth, gums and oral health.',
+    description:
+      'Dentists prevent, diagnose and treat problems with teeth and gums. The route is a 5-year Dental Science degree leading to registration with the Dental Council. Entry is very competitive and strong chemistry is essential.',
+    juniorCycle: ['Science', 'Maths', 'Good manual dexterity'],
+    seniorCycleSubjects: [
+      { subjectId: 'chemistry', importance: 'essential', reason: 'Required for entry to dental science.' },
+      { subjectId: 'biology', importance: 'recommended' },
+      { subjectId: 'physics', importance: 'helpful' },
+      { subjectId: 'maths', importance: 'recommended' },
+    ],
+    leavingCertNotes:
+      'Requires Chemistry plus another science and high overall points. Some schools may interview. Places are very limited.',
+    collegeCourses: [
+      { code: 'TR072', name: 'Dental Science', institution: 'Trinity College Dublin', level: 8, caoPoints: 602, pointsYear: '2024', duration: '5 years' },
+      { code: 'CK702', name: 'Dental Science', institution: 'University College Cork', level: 8, caoPoints: 590, pointsYear: '2024', duration: '5 years' },
+    ],
+    postgrad: [
+      { name: 'Specialist Training (Ortho, Oral Surgery…)', type: 'Professional', description: 'Further training to specialise after qualifying and gaining experience.' },
+      { name: 'Doctorate / Research', type: 'PhD', description: 'Academic and research dentistry.' },
+    ],
+    roles: [
+      { title: 'General Dentist', description: 'Treats patients in a dental practice.', salaryRange: '€60k–€120k' },
+      { title: 'Orthodontist', description: 'Specialist in braces and tooth alignment.', salaryRange: '€90k–€180k' },
+      { title: 'Oral & Maxillofacial Surgeon', description: 'Surgery of the mouth, jaw and face.', salaryRange: '€120k–€250k' },
+    ],
+    relatedCareers: ['doctor', 'pharmacist'],
+  },
+  {
+    id: 'mechanical-engineer',
+    title: 'Mechanical Engineer',
+    category: 'Engineering',
+    icon: '⚙️',
+    shortDescription: 'Design machines, engines and manufacturing systems.',
+    description:
+      'Mechanical engineers design and build moving things — engines, machines, robotics, medical devices and production lines. The route is a Level 8 engineering degree, often with a common first year, leading to Chartered Engineer status.',
+    juniorCycle: ['Maths', 'Science', 'Technical Graphics / making things'],
+    seniorCycleSubjects: [
+      { subjectId: 'maths', importance: 'essential', reason: 'Higher Level usually required; 25 bonus points.' },
+      { subjectId: 'physics', importance: 'recommended', reason: 'Core to mechanics and thermodynamics.' },
+      { subjectId: 'designGraphics', importance: 'recommended' },
+      { subjectId: 'appliedMaths', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'Typically requires Higher Level Maths (often H4). Physics and DCG are strongly advantageous.',
+    collegeCourses: [
+      { code: 'DN150', name: 'Engineering (Mechanical)', institution: 'University College Dublin', level: 8, caoPoints: 533, pointsYear: '2024', duration: '4–5 years' },
+      { code: 'LM116', name: 'Mechanical Engineering', institution: 'University of Limerick', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
+      { code: 'CK600', name: 'Engineering', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'ME Mechanical / Biomedical Engineering', type: 'Masters', description: 'Specialise in design, energy, robotics or medical devices.' },
+      { name: 'Chartered Engineer (CEng)', type: 'Professional', description: 'Accreditation from Engineers Ireland after experience.' },
+    ],
+    roles: [
+      { title: 'Design Engineer', description: 'Designs products and mechanical systems.', salaryRange: '€42k–€75k' },
+      { title: 'Manufacturing / Process Engineer', description: 'Improves production lines and quality.', salaryRange: '€45k–€80k' },
+      { title: 'Biomedical Device Engineer', description: 'Designs medical devices (big sector in Ireland).', salaryRange: '€48k–€90k' },
+    ],
+    relatedCareers: ['civil-engineer', 'electrical-engineer'],
+  },
+  {
+    id: 'electrical-engineer',
+    title: 'Electrical & Electronic Engineer',
+    category: 'Engineering',
+    icon: '🔌',
+    shortDescription: 'Design electronics, power systems and circuits.',
+    description:
+      'Electrical and electronic engineers design everything from microchips and renewable-energy grids to communications and control systems. The route is a Level 8 engineering degree leading to Chartered Engineer status.',
+    juniorCycle: ['Maths', 'Science', 'Electronics / coding'],
+    seniorCycleSubjects: [
+      { subjectId: 'maths', importance: 'essential', reason: 'Higher Level usually required; 25 bonus points.' },
+      { subjectId: 'physics', importance: 'recommended', reason: 'Core to electricity and electronics.' },
+      { subjectId: 'appliedMaths', importance: 'helpful' },
+      { subjectId: 'computerScience', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'Higher Level Maths is normally required. Physics is highly recommended.',
+    collegeCourses: [
+      { code: 'TR032', name: 'Engineering (Electronic / Electrical)', institution: 'Trinity College Dublin', level: 8, caoPoints: 510, pointsYear: '2024', duration: '5 years' },
+      { code: 'DN150', name: 'Engineering (Electrical/Electronic)', institution: 'University College Dublin', level: 8, caoPoints: 533, pointsYear: '2024', duration: '4–5 years' },
+      { code: 'LM117', name: 'Electronic & Computer Engineering', institution: 'University of Limerick', level: 8, caoPoints: 400, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'ME Electronic / Electrical Engineering', type: 'Masters', description: 'Specialise in chip design, power, photonics or telecoms.' },
+      { name: 'Chartered Engineer (CEng)', type: 'Professional', description: 'Accreditation from Engineers Ireland after experience.' },
+    ],
+    roles: [
+      { title: 'Electronic Engineer', description: 'Designs circuits, chips and devices.', salaryRange: '€45k–€85k' },
+      { title: 'Power / Energy Engineer', description: 'Works on electricity grids and renewables.', salaryRange: '€48k–€85k' },
+      { title: 'Embedded Systems Engineer', description: 'Programs hardware and control systems.', salaryRange: '€50k–€95k' },
+    ],
+    relatedCareers: ['mechanical-engineer', 'software-engineer'],
+  },
+  {
+    id: 'quantity-surveyor',
+    title: 'Quantity Surveyor',
+    category: 'Engineering',
+    icon: '📋',
+    shortDescription: 'Manage costs and contracts on construction projects.',
+    description:
+      'Quantity surveyors are the cost managers of construction — estimating, budgeting, procurement and contracts so projects stay on budget. The route is a Level 8 degree accredited by the SCSI, leading to Chartered Surveyor status.',
+    juniorCycle: ['Maths', 'Business Studies', 'Technical Graphics'],
+    seniorCycleSubjects: [
+      { subjectId: 'maths', importance: 'recommended', reason: 'Costing and measurement are maths-heavy.' },
+      { subjectId: 'designGraphics', importance: 'recommended' },
+      { subjectId: 'business', importance: 'helpful' },
+      { subjectId: 'economics', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'No mandatory subjects beyond matriculation, but Maths, DCG and Business are a strong foundation.',
+    collegeCourses: [
+      { code: 'TU813', name: 'Quantity Surveying & Construction Economics', institution: 'TU Dublin', level: 8, caoPoints: 400, pointsYear: '2024', duration: '4 years' },
+      { code: 'GA785', name: 'Quantity Surveying', institution: 'ATU', level: 8, caoPoints: 309, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'Chartered Quantity Surveyor (SCSI/RICS)', type: 'Professional', description: 'Professional accreditation via the APC after experience.' },
+      { name: 'MSc Construction / Project Management', type: 'Masters', description: 'Move into project and commercial management.' },
+    ],
+    roles: [
+      { title: 'Quantity Surveyor', description: 'Manages costs and contracts on projects.', salaryRange: '€42k–€75k' },
+      { title: 'Commercial Manager', description: 'Leads the commercial side of major projects.', salaryRange: '€70k–€110k' },
+      { title: 'Estimator', description: 'Prices tenders and bids for construction work.', salaryRange: '€45k–€80k' },
+    ],
+    relatedCareers: ['civil-engineer', 'architect'],
+  },
+  {
+    id: 'cybersecurity-analyst',
+    title: 'Cybersecurity Analyst',
+    category: 'Technology',
+    icon: '🔐',
+    shortDescription: 'Protect systems and data from cyber attacks.',
+    description:
+      'Cybersecurity professionals defend organisations from hackers — monitoring threats, testing defences and responding to incidents. Most enter through a computer science or dedicated cybersecurity degree, often with professional certifications.',
+    juniorCycle: ['Maths', 'Coding / curiosity about how things break', 'Logic'],
+    seniorCycleSubjects: [
+      { subjectId: 'maths', importance: 'recommended', reason: 'Higher Level helps for the computing degree.' },
+      { subjectId: 'computerScience', importance: 'recommended' },
+      { subjectId: 'physics', importance: 'helpful' },
+      { subjectId: 'business', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'Usually a H5/O6 in Maths is required. No other specific subjects, though computer science helps.',
+    collegeCourses: [
+      { code: 'TU856', name: 'Computer Science (Cybersecurity)', institution: 'TU Dublin', level: 8, caoPoints: 430, pointsYear: '2024', duration: '4 years' },
+      { code: 'MU027', name: 'Computer Science (Cyber stream)', institution: 'Maynooth University', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
+      { code: 'GA882', name: 'Cybersecurity', institution: 'ATU', level: 8, caoPoints: 350, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MSc Cybersecurity', type: 'Masters', description: 'Specialise in forensics, network security or governance.' },
+      { name: 'Industry certifications (CompTIA, CISSP)', type: 'Professional', description: 'Recognised certs that boost employability.' },
+    ],
+    roles: [
+      { title: 'Security Analyst (SOC)', description: 'Monitors and responds to threats.', salaryRange: '€45k–€80k' },
+      { title: 'Penetration Tester', description: 'Ethically hacks systems to find weaknesses.', salaryRange: '€55k–€100k' },
+      { title: 'Security Architect', description: 'Designs secure systems and policy.', salaryRange: '€80k–€130k' },
+    ],
+    relatedCareers: ['software-engineer', 'data-scientist'],
+  },
+  {
+    id: 'actuary',
+    title: 'Actuary',
+    category: 'Business & Finance',
+    icon: '🎲',
+    shortDescription: 'Use maths to measure and price risk.',
+    description:
+      'Actuaries use mathematics, statistics and finance to measure risk for insurance, pensions and investments. It is one of the most maths-intensive and well-paid careers, entered via an actuarial or maths degree plus professional exams.',
+    juniorCycle: ['Maths (excelling)', 'Logic', 'Problem solving'],
+    seniorCycleSubjects: [
+      { subjectId: 'maths', importance: 'essential', reason: 'A high Higher Level Maths grade is essential.' },
+      { subjectId: 'appliedMaths', importance: 'recommended' },
+      { subjectId: 'economics', importance: 'helpful' },
+      { subjectId: 'accounting', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'A H1/H2 in Higher Level Maths is typically expected. Actuarial degrees are among the highest-points courses.',
+    collegeCourses: [
+      { code: 'DN230', name: 'Actuarial & Financial Studies', institution: 'University College Dublin', level: 8, caoPoints: 601, pointsYear: '2024', duration: '4 years' },
+      { code: 'DC353', name: 'Actuarial Mathematics', institution: 'Dublin City University', level: 8, caoPoints: 566, pointsYear: '2024', duration: '4 years' },
+      { code: 'CK407', name: 'Financial Mathematics & Actuarial Science', institution: 'University College Cork', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'Professional Actuarial Exams (IFoA)', type: 'Professional', description: 'A series of exams sat while working to become a Fellow.' },
+      { name: 'MSc Actuarial Science', type: 'Masters', description: 'Conversion/specialist route with exam exemptions.' },
+    ],
+    roles: [
+      { title: 'Trainee Actuary', description: 'Works and studies towards qualification.', salaryRange: '€45k–€65k' },
+      { title: 'Qualified Actuary', description: 'Prices risk for insurers and pension funds.', salaryRange: '€80k–€140k' },
+      { title: 'Chief Risk Officer', description: 'Leads risk strategy for a company.', salaryRange: '€130k–€250k+' },
+    ],
+    relatedCareers: ['accountant', 'data-scientist', 'economist'],
+  },
+  {
+    id: 'economist',
+    title: 'Economist',
+    category: 'Business & Finance',
+    icon: '📉',
+    shortDescription: 'Analyse the economy, markets and policy.',
+    description:
+      'Economists study how money, markets and policy shape society — advising governments, banks, and companies. The route is an economics degree, often followed by a masters for analyst and policy roles.',
+    juniorCycle: ['Business Studies', 'Maths', 'Current affairs'],
+    seniorCycleSubjects: [
+      { subjectId: 'economics', importance: 'recommended', reason: 'A direct introduction to the field.' },
+      { subjectId: 'maths', importance: 'recommended', reason: 'Modern economics is quantitative.' },
+      { subjectId: 'business', importance: 'helpful' },
+      { subjectId: 'geography', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'Higher Level Maths is a real advantage. A third language is required for NUI economics degrees.',
+    collegeCourses: [
+      { code: 'TR081', name: 'Business, Economic & Social Studies (BESS)', institution: 'Trinity College Dublin', level: 8, caoPoints: 510, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN700', name: 'Economics', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '3 years' },
+      { code: 'CK201', name: 'Economics', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MSc Economics', type: 'Masters', description: 'Required for most professional economist roles.' },
+      { name: 'PhD Economics', type: 'PhD', description: 'Route into research, academia and central banking.' },
+    ],
+    roles: [
+      { title: 'Economic Analyst', description: 'Models and forecasts economic trends.', salaryRange: '€45k–€80k' },
+      { title: 'Policy Economist', description: 'Advises government and bodies on policy.', salaryRange: '€55k–€95k' },
+      { title: 'Financial / Markets Economist', description: 'Advises banks and investors.', salaryRange: '€70k–€140k' },
+    ],
+    relatedCareers: ['accountant', 'actuary', 'data-scientist'],
+  },
+  {
+    id: 'marketing-manager',
+    title: 'Marketing Manager',
+    category: 'Business & Finance',
+    icon: '📣',
+    shortDescription: 'Plan and run campaigns to grow brands.',
+    description:
+      'Marketing professionals research customers and design campaigns to grow brands and sales — across digital, social, advertising and PR. The route is usually a marketing or business degree, with digital marketing booming in Ireland.',
+    juniorCycle: ['Business Studies', 'Art / creativity', 'Communication'],
+    seniorCycleSubjects: [
+      { subjectId: 'business', importance: 'recommended', reason: 'Introduces marketing and enterprise.' },
+      { subjectId: 'english', importance: 'recommended', reason: 'Communication is central to marketing.' },
+      { subjectId: 'art', importance: 'helpful' },
+      { subjectId: 'economics', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'No mandatory subjects beyond matriculation. Business and a creative subject are useful.',
+    collegeCourses: [
+      { code: 'DC230', name: 'Marketing, Innovation & Technology', institution: 'Dublin City University', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
+      { code: 'TU717', name: 'Marketing', institution: 'TU Dublin', level: 8, caoPoints: 380, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN650', name: 'Commerce (Marketing)', institution: 'University College Dublin', level: 8, caoPoints: 520, pointsYear: '2024', duration: '3 years' },
+    ],
+    postgrad: [
+      { name: 'MSc Marketing / Digital Marketing', type: 'Masters', description: 'Specialise and accelerate into management.' },
+      { name: 'Professional Diploma (Digital Marketing)', type: 'Diploma', description: 'Short, practical qualifications widely valued.' },
+    ],
+    roles: [
+      { title: 'Digital Marketing Executive', description: 'Runs social, search and content campaigns.', salaryRange: '€32k–€50k' },
+      { title: 'Brand / Marketing Manager', description: 'Leads strategy for a brand or product.', salaryRange: '€50k–€90k' },
+      { title: 'Marketing Director', description: 'Heads marketing across an organisation.', salaryRange: '€90k–€160k' },
+    ],
+    relatedCareers: ['accountant', 'journalist'],
+  },
+  {
+    id: 'journalist',
+    title: 'Journalist',
+    category: 'Law & Society',
+    icon: '📰',
+    shortDescription: 'Research, write and report the news.',
+    description:
+      'Journalists find, verify and tell stories across newspapers, broadcast and online media. The usual route is a journalism or communications degree, building a portfolio and shorthand along the way.',
+    juniorCycle: ['Strong English', 'CSPE / current affairs', 'Writing for the school'],
+    seniorCycleSubjects: [
+      { subjectId: 'english', importance: 'recommended', reason: 'Writing is the core skill.' },
+      { subjectId: 'history', importance: 'helpful', reason: 'Builds research and context.' },
+      { subjectId: 'politics', importance: 'helpful' },
+      { subjectId: 'french', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'No mandatory subjects beyond matriculation; a strong English grade and wide reading matter most.',
+    collegeCourses: [
+      { code: 'DC131', name: 'Journalism', institution: 'Dublin City University', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
+      { code: 'TU712', name: 'Journalism', institution: 'TU Dublin', level: 8, caoPoints: 408, pointsYear: '2024', duration: '4 years' },
+      { code: 'GY110', name: 'Arts (Journalism pathway)', institution: 'University of Galway', level: 8, caoPoints: 350, pointsYear: '2024', duration: '3 years' },
+    ],
+    postgrad: [
+      { name: 'MA Journalism', type: 'Masters', description: 'A common entry route, including for graduates of other subjects.' },
+      { name: 'Specialist Diploma (Broadcast/Online)', type: 'Diploma', description: 'Focus on radio, TV or digital media.' },
+    ],
+    roles: [
+      { title: 'Reporter / Journalist', description: 'Researches and writes news stories.', salaryRange: '€30k–€55k' },
+      { title: 'Sub-editor / Producer', description: 'Edits copy or produces broadcast content.', salaryRange: '€38k–€65k' },
+      { title: 'Editor', description: 'Leads a newsroom or publication.', salaryRange: '€60k–€110k' },
+    ],
+    relatedCareers: ['lawyer', 'marketing-manager'],
+  },
+  {
+    id: 'graphic-designer',
+    title: 'Graphic Designer',
+    category: 'Arts & Design',
+    icon: '🎨',
+    shortDescription: 'Create visual designs for brands and media.',
+    description:
+      'Graphic designers create the visual identity of brands, products and media — logos, layouts, packaging and digital interfaces. The route is a design degree, almost always requiring a portfolio for entry.',
+    juniorCycle: ['Art', 'Graphics / digital tools', 'Building a sketchbook'],
+    seniorCycleSubjects: [
+      { subjectId: 'art', importance: 'essential', reason: 'Builds the portfolio that design courses require.' },
+      { subjectId: 'designGraphics', importance: 'recommended' },
+      { subjectId: 'english', importance: 'helpful' },
+      { subjectId: 'business', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'Most design degrees require a portfolio of creative work for entry, sometimes alongside a points requirement. Start building it early.',
+    collegeCourses: [
+      { code: 'AD201', name: 'Visual Communication Design', institution: 'NCAD', level: 8, caoPoints: null, pointsYear: '2024', duration: '4 years', extraRequirements: 'Portfolio-based entry' },
+      { code: 'DL836', name: 'Design for Visual Communications', institution: 'IADT', level: 8, caoPoints: null, pointsYear: '2024', duration: '4 years', extraRequirements: 'Portfolio + points' },
+      { code: 'TU975', name: 'Graphic Design', institution: 'TU Dublin', level: 8, caoPoints: null, pointsYear: '2024', duration: '4 years', extraRequirements: 'Portfolio + points' },
+    ],
+    postgrad: [
+      { name: 'MA Design / UX', type: 'Masters', description: 'Specialise in branding, motion or user-experience design.' },
+      { name: 'UX/UI Conversion Course', type: 'Diploma', description: 'Move into high-demand digital product design.' },
+    ],
+    roles: [
+      { title: 'Graphic Designer', description: 'Designs for print and digital media.', salaryRange: '€32k–€55k' },
+      { title: 'UX / Product Designer', description: 'Designs apps and digital experiences.', salaryRange: '€45k–€85k' },
+      { title: 'Art / Creative Director', description: 'Leads the creative vision of a studio or brand.', salaryRange: '€60k–€110k' },
+    ],
+    relatedCareers: ['architect', 'marketing-manager'],
+  },
+  {
+    id: 'occupational-therapist',
+    title: 'Occupational Therapist',
+    category: 'Health & Medicine',
+    icon: '🧩',
+    shortDescription: 'Help people do the everyday activities that matter.',
+    description:
+      'Occupational therapists help people of all ages take part in daily life — after injury, illness or disability — through practical rehabilitation and adaptation. The route is a 4-year degree registered with CORU.',
+    juniorCycle: ['Science', 'Caring / volunteering', 'Practical problem solving'],
+    seniorCycleSubjects: [
+      { subjectId: 'biology', importance: 'recommended', reason: 'Anatomy and physiology underpin the degree.' },
+      { subjectId: 'chemistry', importance: 'helpful' },
+      { subjectId: 'homeEc', importance: 'helpful' },
+      { subjectId: 'maths', importance: 'recommended' },
+    ],
+    leavingCertNotes:
+      'Most courses require a laboratory science subject plus the usual matriculation requirements.',
+    collegeCourses: [
+      { code: 'TR055', name: 'Occupational Therapy', institution: 'Trinity College Dublin', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
+      { code: 'CK706', name: 'Occupational Therapy', institution: 'University College Cork', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
+      { code: 'GY512', name: 'Occupational Therapy', institution: 'University of Galway', level: 8, caoPoints: 510, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MSc Occupational Therapy (specialist)', type: 'Masters', description: 'Specialise in areas like paediatrics, mental health or neuro-rehab.' },
+    ],
+    roles: [
+      { title: 'Occupational Therapist', description: 'Assesses and supports daily-living skills.', salaryRange: '€40k–€65k' },
+      { title: 'Senior OT', description: 'Leads a clinical area or team.', salaryRange: '€55k–€80k' },
+      { title: 'OT Manager', description: 'Manages an OT department.', salaryRange: '€70k–€90k' },
+    ],
+    relatedCareers: ['physiotherapist', 'speech-language-therapist', 'nurse'],
+  },
+  {
+    id: 'speech-language-therapist',
+    title: 'Speech & Language Therapist',
+    category: 'Health & Medicine',
+    icon: '🗣️',
+    shortDescription: 'Help people with speech, language and swallowing.',
+    description:
+      'Speech and language therapists assess and treat communication and swallowing difficulties in children and adults. The route is a 4-year degree registered with CORU.',
+    juniorCycle: ['Science', 'Strong English / languages', 'Interest in communication'],
+    seniorCycleSubjects: [
+      { subjectId: 'biology', importance: 'recommended', reason: 'Anatomy and physiology of speech.' },
+      { subjectId: 'english', importance: 'helpful', reason: 'Language is central to the work.' },
+      { subjectId: 'french', importance: 'helpful' },
+      { subjectId: 'maths', importance: 'recommended' },
+    ],
+    leavingCertNotes:
+      'Most courses require a laboratory science (often Biology). A third language is needed for NUI courses.',
+    collegeCourses: [
+      { code: 'TR057', name: 'Clinical Speech & Language Studies', institution: 'Trinity College Dublin', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
+      { code: 'CK704', name: 'Speech & Language Therapy', institution: 'University College Cork', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
+      { code: 'GY513', name: 'Speech & Language Therapy', institution: 'University of Galway', level: 8, caoPoints: 488, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MSc Speech & Language Therapy', type: 'Masters', description: 'Specialise or enter via a graduate-entry masters.' },
+    ],
+    roles: [
+      { title: 'Speech & Language Therapist', description: 'Treats communication and swallowing needs.', salaryRange: '€40k–€65k' },
+      { title: 'Senior SLT', description: 'Specialist lead in a clinical area.', salaryRange: '€55k–€80k' },
+      { title: 'SLT Manager', description: 'Leads a therapy service.', salaryRange: '€70k–€90k' },
+    ],
+    relatedCareers: ['occupational-therapist', 'physiotherapist', 'psychologist'],
+  },
+  {
+    id: 'radiographer',
+    title: 'Radiographer',
+    category: 'Health & Medicine',
+    icon: '🩻',
+    shortDescription: 'Produce medical images to diagnose illness.',
+    description:
+      'Radiographers use X-ray, CT, MRI and ultrasound to produce the images doctors use to diagnose and treat patients. The route is a 4-year degree registered with CORU. Physics and biology are valuable.',
+    juniorCycle: ['Science', 'Maths', 'Technology'],
+    seniorCycleSubjects: [
+      { subjectId: 'physics', importance: 'recommended', reason: 'Imaging is built on physics.' },
+      { subjectId: 'biology', importance: 'recommended' },
+      { subjectId: 'chemistry', importance: 'helpful' },
+      { subjectId: 'maths', importance: 'recommended' },
+    ],
+    leavingCertNotes:
+      'Requires a laboratory science (Physics is especially relevant) plus the usual matriculation.',
+    collegeCourses: [
+      { code: 'TR058', name: 'Radiation Therapy', institution: 'Trinity College Dublin', level: 8, caoPoints: 510, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN410', name: 'Radiography', institution: 'University College Dublin', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
+      { code: 'CK705', name: 'Medical & Health Sciences (Radiography)', institution: 'University College Cork', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MSc Radiography / Imaging', type: 'Masters', description: 'Specialise in CT, MRI, ultrasound or radiation therapy.' },
+    ],
+    roles: [
+      { title: 'Diagnostic Radiographer', description: 'Performs X-rays, CT and MRI scans.', salaryRange: '€40k–€65k' },
+      { title: 'Radiation Therapist', description: 'Delivers radiotherapy to cancer patients.', salaryRange: '€42k–€70k' },
+      { title: 'Clinical Specialist / Manager', description: 'Leads an imaging service.', salaryRange: '€60k–€90k' },
+    ],
+    relatedCareers: ['nurse', 'doctor', 'physiotherapist'],
+  },
+  {
+    id: 'dietitian',
+    title: 'Dietitian',
+    category: 'Health & Medicine',
+    icon: '🥗',
+    shortDescription: 'Use nutrition science to improve health.',
+    description:
+      'Dietitians apply the science of nutrition to prevent and treat illness — from hospitals to public health and sport. The route is a degree in human nutrition and dietetics, registered with CORU.',
+    juniorCycle: ['Science', 'Home Economics', 'Interest in food and health'],
+    seniorCycleSubjects: [
+      { subjectId: 'chemistry', importance: 'recommended', reason: 'Required or strongly advised for dietetics.' },
+      { subjectId: 'biology', importance: 'recommended' },
+      { subjectId: 'homeEc', importance: 'helpful' },
+      { subjectId: 'maths', importance: 'recommended' },
+    ],
+    leavingCertNotes:
+      'Chemistry (and often Biology) is typically required for dietetics degrees. Check each course closely.',
+    collegeCourses: [
+      { code: 'DC203', name: 'Human Nutrition & Dietetics', institution: 'Dublin Institutions (joint TUD/TCD/DIT)', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
+      { code: 'CK709', name: 'Nutritional Sciences', institution: 'University College Cork', level: 8, caoPoints: 510, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN261', name: 'Human Nutrition', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MSc Dietetics', type: 'Masters', description: 'Graduate-entry route to registration for science graduates.' },
+      { name: 'Sports / Clinical Nutrition', type: 'Masters', description: 'Specialise in performance or clinical care.' },
+    ],
+    roles: [
+      { title: 'Clinical Dietitian', description: 'Treats patients in hospital or community.', salaryRange: '€40k–€65k' },
+      { title: 'Sports Dietitian', description: 'Advises athletes and teams on nutrition.', salaryRange: '€40k–€75k' },
+      { title: 'Public Health Nutritionist', description: 'Shapes population nutrition policy.', salaryRange: '€45k–€80k' },
+    ],
+    relatedCareers: ['nurse', 'physiotherapist', 'doctor'],
+  },
+  {
+    id: 'social-worker',
+    title: 'Social Worker',
+    category: 'Law & Society',
+    icon: '🤝',
+    shortDescription: 'Support and protect vulnerable people and families.',
+    description:
+      'Social workers support people through difficult times — protecting children, helping families, and advocating for vulnerable adults. The route is a professional social work degree (or postgraduate masters), registered with CORU.',
+    juniorCycle: ['CSPE / social awareness', 'Strong English', 'Volunteering'],
+    seniorCycleSubjects: [
+      { subjectId: 'english', importance: 'recommended', reason: 'Reports and communication are central.' },
+      { subjectId: 'politics', importance: 'helpful' },
+      { subjectId: 'biology', importance: 'helpful' },
+      { subjectId: 'history', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'No mandatory subjects beyond matriculation. Many qualify via a primary social-science degree then a masters in social work.',
+    collegeCourses: [
+      { code: 'CK113', name: 'Social Work (BSW)', institution: 'University College Cork', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN720', name: 'Social Science', institution: 'University College Dublin', level: 8, caoPoints: 421, pointsYear: '2024', duration: '3 years' },
+      { code: 'MH103', name: 'Applied Social Studies', institution: 'Maynooth University', level: 8, caoPoints: 400, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'Master of Social Work (MSW)', type: 'Masters', description: 'The professional qualifying route for many social workers.' },
+    ],
+    roles: [
+      { title: 'Child Protection Social Worker', description: 'Safeguards children and supports families.', salaryRange: '€42k–€70k' },
+      { title: 'Medical Social Worker', description: 'Supports patients in hospital settings.', salaryRange: '€42k–€70k' },
+      { title: 'Team Leader / Principal', description: 'Leads a social work team.', salaryRange: '€65k–€90k' },
+    ],
+    relatedCareers: ['psychologist', 'teacher-primary'],
+  },
+  {
+    id: 'research-scientist',
+    title: 'Research Scientist',
+    category: 'Science & Environment',
+    icon: '🔬',
+    shortDescription: 'Investigate how the world works in the lab.',
+    description:
+      'Research scientists run experiments to advance knowledge and develop new products — in pharma, biotech, chemistry and beyond. The route is a science degree, almost always followed by a PhD for independent research roles.',
+    juniorCycle: ['Science', 'Maths', 'Curiosity and experiments'],
+    seniorCycleSubjects: [
+      { subjectId: 'chemistry', importance: 'recommended', reason: 'Core to most lab science.' },
+      { subjectId: 'biology', importance: 'recommended' },
+      { subjectId: 'physics', importance: 'helpful' },
+      { subjectId: 'maths', importance: 'recommended' },
+    ],
+    leavingCertNotes:
+      'A laboratory science is normally required. Two sciences and Higher Level Maths strengthen applications.',
+    collegeCourses: [
+      { code: 'TR071', name: 'Science', institution: 'Trinity College Dublin', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN200', name: 'Science', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
+      { code: 'CK402', name: 'Biological, Earth & Environmental Sciences', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'PhD (Biochemistry, Chemistry, etc.)', type: 'PhD', description: 'Essential for leading independent research.' },
+      { name: 'MSc Research / Industry specialism', type: 'Masters', description: 'Specialise for industry R&D roles.' },
+    ],
+    roles: [
+      { title: 'Laboratory Scientist', description: 'Runs experiments and analysis.', salaryRange: '€35k–€55k' },
+      { title: 'R&D Scientist (Pharma/Biotech)', description: 'Develops new drugs and products.', salaryRange: '€45k–€85k' },
+      { title: 'Principal Investigator', description: 'Leads a research group or lab.', salaryRange: '€70k–€120k' },
+    ],
+    relatedCareers: ['marine-biologist', 'pharmacist', 'environmental-scientist'],
+  },
+  {
+    id: 'environmental-scientist',
+    title: 'Environmental Scientist',
+    category: 'Science & Environment',
+    icon: '🌍',
+    shortDescription: 'Study and protect the natural environment.',
+    description:
+      'Environmental scientists study ecosystems, climate, water and pollution to protect the planet and guide sustainable decisions. The route is a degree in environmental or earth science, with strong demand driven by climate action.',
+    juniorCycle: ['Science', 'Geography', 'Interest in nature and climate'],
+    seniorCycleSubjects: [
+      { subjectId: 'biology', importance: 'recommended' },
+      { subjectId: 'geography', importance: 'recommended', reason: 'Covers ecosystems and the environment.' },
+      { subjectId: 'chemistry', importance: 'recommended' },
+      { subjectId: 'maths', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'A laboratory science is normally required; Geography is a strong complement.',
+    collegeCourses: [
+      { code: 'CK402', name: 'Biological, Earth & Environmental Sciences', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN200', name: 'Science (Environmental stream)', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
+      { code: 'GY302', name: 'Environmental Science', institution: 'University of Galway', level: 8, caoPoints: 409, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MSc Environmental Science / Climate', type: 'Masters', description: 'Specialise in climate, water, or sustainability.' },
+      { name: 'PhD Environmental Research', type: 'PhD', description: 'Research and policy leadership.' },
+    ],
+    roles: [
+      { title: 'Environmental Scientist', description: 'Monitors and protects the environment.', salaryRange: '€35k–€60k' },
+      { title: 'Environmental Consultant', description: 'Advises on impact and compliance.', salaryRange: '€40k–€75k' },
+      { title: 'Sustainability Manager', description: 'Leads sustainability strategy.', salaryRange: '€55k–€95k' },
+    ],
+    relatedCareers: ['marine-biologist', 'research-scientist', 'civil-engineer'],
+  },
+  {
+    id: 'physicist',
+    title: 'Physicist',
+    category: 'Science & Environment',
+    icon: '🔭',
+    shortDescription: 'Study matter, energy and the laws of the universe.',
+    description:
+      'Physicists study everything from subatomic particles to galaxies, and apply that knowledge in technology, medicine and finance. The route is a physics degree, often followed by a PhD for research and many quantitative careers.',
+    juniorCycle: ['Maths (excelling)', 'Science', 'Curiosity about how things work'],
+    seniorCycleSubjects: [
+      { subjectId: 'physics', importance: 'essential', reason: 'The foundation of the degree.' },
+      { subjectId: 'maths', importance: 'essential', reason: 'Physics is deeply mathematical.' },
+      { subjectId: 'appliedMaths', importance: 'recommended' },
+      { subjectId: 'chemistry', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'Higher Level Maths is strongly expected; Physics is required or strongly advised. Theoretical physics courses are very high points.',
+    collegeCourses: [
+      { code: 'TR035', name: 'Physical Sciences', institution: 'Trinity College Dublin', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR034', name: 'Theoretical Physics', institution: 'Trinity College Dublin', level: 8, caoPoints: 589, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN200', name: 'Science (Physics)', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'PhD Physics', type: 'PhD', description: 'Route into research, academia and national labs.' },
+      { name: 'MSc (Medical Physics, Data, Finance)', type: 'Masters', description: 'Physics graduates are prized across quantitative fields.' },
+    ],
+    roles: [
+      { title: 'Research Physicist', description: 'Investigates physical phenomena.', salaryRange: '€40k–€75k' },
+      { title: 'Medical Physicist', description: 'Applies physics in hospitals (imaging, radiotherapy).', salaryRange: '€55k–€95k' },
+      { title: 'Quantitative Analyst', description: 'Applies physics-style maths in finance/tech.', salaryRange: '€70k–€140k' },
+    ],
+    relatedCareers: ['research-scientist', 'data-scientist', 'electrical-engineer'],
+  },
+  {
+    id: 'lecturer',
+    title: 'University Lecturer / Academic',
+    category: 'Education',
+    icon: '🎓',
+    shortDescription: 'Teach and research at third level.',
+    description:
+      'Academics teach university students and carry out original research in their field. The path is a primary degree, then a masters and PhD in the subject, followed by research and teaching posts. It is a long route driven by deep interest in a subject.',
+    juniorCycle: ['Your strongest subject', 'Reading widely', 'Writing'],
+    seniorCycleSubjects: [
+      { subjectId: 'english', importance: 'helpful', reason: 'Writing and analysis matter in every field.' },
+      { subjectId: 'maths', importance: 'helpful' },
+      { subjectId: 'history', importance: 'helpful' },
+      { subjectId: 'biology', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'Your subject of interest guides your choices — aim for a strong degree in the field you want to research.',
+    collegeCourses: [
+      { code: 'TR071', name: 'Science / Arts (your field)', institution: 'Trinity College Dublin', level: 8, caoPoints: 521, pointsYear: '2024', duration: '3–4 years' },
+      { code: 'DN200', name: 'Science / Arts (your field)', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '3–4 years' },
+      { code: 'GY101', name: 'Arts (your field)', institution: 'University of Galway', level: 8, caoPoints: 350, pointsYear: '2024', duration: '3 years' },
+    ],
+    postgrad: [
+      { name: 'PhD (in your discipline)', type: 'PhD', description: 'Essential — an original research doctorate is the entry ticket.' },
+      { name: 'Postdoctoral Research', type: 'Professional', description: 'Research posts building towards a permanent academic position.' },
+    ],
+    roles: [
+      { title: 'Postdoctoral Researcher', description: 'Carries out funded research after the PhD.', salaryRange: '€42k–€55k' },
+      { title: 'Lecturer / Assistant Professor', description: 'Teaches and researches permanently.', salaryRange: '€55k–€90k' },
+      { title: 'Professor', description: 'Senior academic leading a field and department.', salaryRange: '€100k–€150k' },
+    ],
+    relatedCareers: ['research-scientist', 'teacher-secondary', 'psychologist'],
+  },
 ]
 
 export function getCareer(id: string): Career | undefined {
