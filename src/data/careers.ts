@@ -5,6 +5,7 @@ import type { Career } from './types'
 export const CAREERS: Career[] = [
   {
     id: 'doctor',
+    postgradNeed: 'required',
     title: 'Doctor (Medicine)',
     category: 'Health & Medicine',
     icon: '🩺',
@@ -40,6 +41,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'software-engineer',
+    postgradNeed: 'optional',
     title: 'Software Engineer',
     category: 'Technology',
     icon: '💻',
@@ -77,6 +79,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'data-scientist',
+    postgradNeed: 'optional',
     title: 'Data Scientist',
     category: 'Technology',
     icon: '📊',
@@ -110,6 +113,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'nurse',
+    postgradNeed: 'optional',
     title: 'Nurse',
     category: 'Health & Medicine',
     icon: '👩‍⚕️',
@@ -143,6 +147,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'civil-engineer',
+    postgradNeed: 'recommended',
     title: 'Civil Engineer',
     category: 'Engineering',
     icon: '🏗️',
@@ -176,6 +181,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'architect',
+    postgradNeed: 'required',
     title: 'Architect',
     category: 'Engineering',
     icon: '📐',
@@ -209,6 +215,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'lawyer',
+    postgradNeed: 'required',
     title: 'Solicitor / Barrister',
     category: 'Law & Society',
     icon: '⚖️',
@@ -245,6 +252,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'teacher-secondary',
+    postgradNeed: 'recommended',
     title: 'Secondary School Teacher',
     category: 'Education',
     icon: '🎓',
@@ -278,6 +286,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'teacher-primary',
+    postgradNeed: 'recommended',
     title: 'Primary School Teacher',
     category: 'Education',
     icon: '✏️',
@@ -311,6 +320,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'psychologist',
+    postgradNeed: 'required',
     title: 'Psychologist',
     category: 'Health & Medicine',
     icon: '🧠',
@@ -344,6 +354,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'accountant',
+    postgradNeed: 'recommended',
     title: 'Accountant',
     category: 'Business & Finance',
     icon: '📈',
@@ -378,6 +389,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'pharmacist',
+    postgradNeed: 'optional',
     title: 'Pharmacist',
     category: 'Health & Medicine',
     icon: '💊',
@@ -411,6 +423,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'physiotherapist',
+    postgradNeed: 'optional',
     title: 'Physiotherapist',
     category: 'Health & Medicine',
     icon: '🦵',
@@ -443,6 +456,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'vet',
+    postgradNeed: 'optional',
     title: 'Veterinarian',
     category: 'Health & Medicine',
     icon: '🐾',
@@ -475,6 +489,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'marine-biologist',
+    postgradNeed: 'recommended',
     title: 'Marine Biologist',
     category: 'Science & Environment',
     icon: '🐠',
@@ -508,6 +523,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'accounting-technician',
+    postgradNeed: 'optional',
     title: 'Accounting Technician',
     category: 'Business & Finance',
     icon: '🧾',
@@ -541,6 +557,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'dentist',
+    postgradNeed: 'optional',
     title: 'Dentist',
     category: 'Health & Medicine',
     icon: '🦷',
@@ -573,6 +590,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'mechanical-engineer',
+    postgradNeed: 'recommended',
     title: 'Mechanical Engineer',
     category: 'Engineering',
     icon: '⚙️',
@@ -606,6 +624,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'electrical-engineer',
+    postgradNeed: 'recommended',
     title: 'Electrical & Electronic Engineer',
     category: 'Engineering',
     icon: '🔌',
@@ -639,6 +658,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'quantity-surveyor',
+    postgradNeed: 'recommended',
     title: 'Quantity Surveyor',
     category: 'Engineering',
     icon: '📋',
@@ -671,6 +691,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'cybersecurity-analyst',
+    postgradNeed: 'optional',
     title: 'Cybersecurity Analyst',
     category: 'Technology',
     icon: '🔐',
@@ -704,6 +725,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'actuary',
+    postgradNeed: 'required',
     title: 'Actuary',
     category: 'Business & Finance',
     icon: '🎲',
@@ -737,6 +759,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'economist',
+    postgradNeed: 'recommended',
     title: 'Economist',
     category: 'Business & Finance',
     icon: '📉',
@@ -770,6 +793,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'marketing-manager',
+    postgradNeed: 'optional',
     title: 'Marketing Manager',
     category: 'Business & Finance',
     icon: '📣',
@@ -803,6 +827,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'journalist',
+    postgradNeed: 'optional',
     title: 'Journalist',
     category: 'Law & Society',
     icon: '📰',
@@ -836,6 +861,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'graphic-designer',
+    postgradNeed: 'optional',
     title: 'Graphic Designer',
     category: 'Arts & Design',
     icon: '🎨',
@@ -869,6 +895,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'occupational-therapist',
+    postgradNeed: 'optional',
     title: 'Occupational Therapist',
     category: 'Health & Medicine',
     icon: '🧩',
@@ -901,6 +928,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'speech-language-therapist',
+    postgradNeed: 'optional',
     title: 'Speech & Language Therapist',
     category: 'Health & Medicine',
     icon: '🗣️',
@@ -933,6 +961,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'radiographer',
+    postgradNeed: 'optional',
     title: 'Radiographer',
     category: 'Health & Medicine',
     icon: '🩻',
@@ -965,6 +994,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'dietitian',
+    postgradNeed: 'optional',
     title: 'Dietitian',
     category: 'Health & Medicine',
     icon: '🥗',
@@ -998,6 +1028,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'social-worker',
+    postgradNeed: 'recommended',
     title: 'Social Worker',
     category: 'Law & Society',
     icon: '🤝',
@@ -1030,6 +1061,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'research-scientist',
+    postgradNeed: 'recommended',
     title: 'Research Scientist',
     category: 'Science & Environment',
     icon: '🔬',
@@ -1064,6 +1096,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'environmental-scientist',
+    postgradNeed: 'recommended',
     title: 'Environmental Scientist',
     category: 'Science & Environment',
     icon: '🌍',
@@ -1097,6 +1130,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'physicist',
+    postgradNeed: 'recommended',
     title: 'Physicist',
     category: 'Science & Environment',
     icon: '🔭',
@@ -1131,6 +1165,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'lecturer',
+    postgradNeed: 'required',
     title: 'University Lecturer / Academic',
     category: 'Education',
     icon: '🎓',
@@ -1164,6 +1199,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'optometrist',
+    postgradNeed: 'optional',
     title: 'Optometrist',
     category: 'Health & Medicine',
     icon: '👓',
@@ -1194,6 +1230,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'biomedical-engineer',
+    postgradNeed: 'recommended',
     title: 'Biomedical Engineer',
     category: 'Engineering',
     icon: '🦿',
@@ -1227,6 +1264,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'chemical-engineer',
+    postgradNeed: 'recommended',
     title: 'Chemical Engineer',
     category: 'Engineering',
     icon: '🧪',
@@ -1259,6 +1297,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'landscape-architect',
+    postgradNeed: 'recommended',
     title: 'Landscape Architect',
     category: 'Engineering',
     icon: '🌳',
@@ -1291,6 +1330,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'microbiologist',
+    postgradNeed: 'recommended',
     title: 'Microbiologist',
     category: 'Science & Environment',
     icon: '🦠',
@@ -1323,6 +1363,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'geologist',
+    postgradNeed: 'recommended',
     title: 'Geologist',
     category: 'Science & Environment',
     icon: '🪨',
@@ -1356,6 +1397,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'meteorologist',
+    postgradNeed: 'recommended',
     title: 'Meteorologist',
     category: 'Science & Environment',
     icon: '🌦️',
@@ -1389,6 +1431,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'management-consultant',
+    postgradNeed: 'recommended',
     title: 'Management Consultant',
     category: 'Business & Finance',
     icon: '💼',
@@ -1421,6 +1464,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'investment-banker',
+    postgradNeed: 'recommended',
     title: 'Investment Banker',
     category: 'Business & Finance',
     icon: '🏦',
@@ -1454,6 +1498,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'hr-manager',
+    postgradNeed: 'optional',
     title: 'Human Resources Manager',
     category: 'Business & Finance',
     icon: '🧑‍💼',
@@ -1487,6 +1532,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'urban-planner',
+    postgradNeed: 'recommended',
     title: 'Urban / Town Planner',
     category: 'Law & Society',
     icon: '🏙️',
@@ -1519,6 +1565,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'diplomat',
+    postgradNeed: 'recommended',
     title: 'Diplomat / Foreign Policy Officer',
     category: 'Law & Society',
     icon: '🕊️',
@@ -1551,6 +1598,7 @@ export const CAREERS: Career[] = [
   },
   {
     id: 'criminologist',
+    postgradNeed: 'recommended',
     title: 'Criminologist',
     category: 'Law & Society',
     icon: '🕵️',

@@ -14,7 +14,9 @@ body,
 }
 
 body {
-  @apply bg-slate-50 text-slate-800 antialiased;
+  @apply bg-mist text-ink antialiased;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.01em;
 }
 
 /* React Flow tweaks */

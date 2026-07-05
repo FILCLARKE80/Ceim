@@ -22,14 +22,15 @@ export default function HomePage() {
 
   return (
     <div>
-      <section className="mb-8 rounded-2xl bg-gradient-to-br from-brand-600 to-brand-800 px-6 py-10 text-white shadow-sm">
-        <h1 className="max-w-2xl text-3xl font-extrabold leading-tight sm:text-4xl">
-          From first year to your career — mapped out.
+      <section className="mb-10 rounded-3xl bg-ink px-6 py-14 text-center text-white sm:py-20">
+        <h1 className="mx-auto max-w-3xl text-4xl font-semibold leading-[1.07] tracking-tight sm:text-6xl">
+          From first year to your career.
+          <br />
+          <span className="text-brand-400">Mapped out.</span>
         </h1>
-        <p className="mt-3 max-w-2xl text-brand-50">
-          Pick a career and see the full journey: Junior Cycle subjects, Leaving Cert choices, the CAO
-          courses and points to aim for, postgrad options, and the jobs at the end — all as interactive
-          flow charts and network graphs.
+        <p className="mx-auto mt-5 max-w-2xl text-lg text-[#a1a1a6] sm:text-xl">
+          Pick a career and see the full journey — Junior Cycle subjects, Leaving Cert choices, the CAO
+          courses and points to aim for, postgrad options, and the jobs at the end.
         </p>
       </section>
 
@@ -42,7 +43,7 @@ export default function HomePage() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search a career, e.g. doctor, software, teacher…"
-            className="w-full rounded-xl border border-slate-200 bg-white py-2.5 pl-10 pr-4 text-sm shadow-sm focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
+            className="w-full rounded-full border border-slate-200 bg-white py-2.5 pl-10 pr-4 text-sm shadow-sm focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
           />
         </div>
       </div>

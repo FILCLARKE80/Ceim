@@ -52,6 +52,12 @@ export interface Role {
   salaryRange?: string
 }
 
+// How essential postgraduate study / professional training is for this career:
+//  required     — you cannot practise without it (e.g. architect, psychologist, solicitor)
+//  recommended  — commonly needed to qualify fully or progress (chartership, PME, PhD for research)
+//  optional     — your degree is enough to start; postgrad is only for specialising
+export type PostgradNeed = 'required' | 'recommended' | 'optional'
+
 export interface Career {
   id: string
   title: string
@@ -59,6 +65,7 @@ export interface Career {
   icon: string
   shortDescription: string
   description: string
+  postgradNeed?: PostgradNeed
   /** Focus areas / subject choices in 1st–3rd year (Junior Cycle). */
   juniorCycle: string[]
   /** Recommended Leaving Cert subjects (Senior Cycle). */

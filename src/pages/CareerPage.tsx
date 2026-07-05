@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getCareer } from '../data/careers'
 import { getSubject } from '../data/subjects'
-import type { Importance } from '../data/types'
+import type { Importance, PostgradNeed } from '../data/types'
 import PathwayFlow from '../components/PathwayFlow'
 import NetworkGraph from '../components/NetworkGraph'
 import SalaryBar from '../components/SalaryBar'
@@ -11,6 +11,34 @@ const IMPORTANCE_BADGE: Record<Importance, string> = {
   essential: 'bg-red-100 text-red-700',
   recommended: 'bg-amber-100 text-amber-700',
   helpful: 'bg-emerald-100 text-emerald-700',
+}
+
+const POSTGRAD_COPY: Record<PostgradNeed, { label: string; text: string; cls: string }> = {
+  required: {
+    label: 'Required',
+    text: 'You must complete further study or professional training after your degree to work in this career.',
+    cls: 'border-red-200 bg-red-50 text-red-800',
+  },
+  recommended: {
+    label: 'Often needed',
+    text: 'Not always essential, but most people qualify or progress via a masters, professional exams or chartership.',
+    cls: 'border-amber-200 bg-amber-50 text-amber-800',
+  },
+  optional: {
+    label: 'Optional',
+    text: 'Your degree qualifies you to start this career. Postgraduate study is mainly for specialising or moving into research.',
+    cls: 'border-emerald-200 bg-emerald-50 text-emerald-800',
+  },
+}
+
+function PostgradBanner({ need }: { need: PostgradNeed }) {
+  const c = POSTGRAD_COPY[need]
+  return (
+    <div className={`mb-3 rounded-2xl border p-3 text-sm ${c.cls}`}>
+      <span className="badge mr-2 bg-white/70 font-semibold uppercase tracking-wide">{c.label}</span>
+      {c.text}
+    </div>
+  )
 }
 
 export default function CareerPage() {
@@ -155,6 +183,7 @@ export default function CareerPage() {
       <section className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <div>
           <h2 className="mb-3 text-xl font-bold text-slate-900">Postgrad &amp; training</h2>
+          <PostgradBanner need={career.postgradNeed ?? 'optional'} />
           <ul className="space-y-3">
             {career.postgrad.map((p) => (
               <li key={p.name} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
