@@ -11,7 +11,7 @@ export default function App() {
           <Link to="/" className="flex items-center gap-2">
             <span className="text-2xl">🧭</span>
             <div className="leading-tight">
-              <div className="text-lg font-extrabold tracking-tight text-brand-700">Cúrsa</div>
+              <div className="text-lg font-extrabold tracking-tight text-brand-700">Céim</div>
               <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
                 Irish Career Pathways
               </div>

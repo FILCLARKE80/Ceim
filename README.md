@@ -1,4 +1,4 @@
-# Cúrsa — Irish Career Pathways
+# Céim — Irish Career Pathways
 
 An interactive web app that helps Irish secondary-school students explore career
 options. Pick a career and see the full journey mapped out — from **first year
