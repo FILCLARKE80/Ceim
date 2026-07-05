@@ -13,7 +13,7 @@ export default function App() {
             <div className="leading-tight">
               <div className="text-lg font-extrabold tracking-tight text-brand-700">Céim</div>
               <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
-                Irish Career Pathways
+                Your path from school to career
               </div>
             </div>
           </Link>
