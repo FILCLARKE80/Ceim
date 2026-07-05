@@ -35,7 +35,8 @@ export default function App() {
       <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-6 text-xs text-slate-500">
           <p>
-            CAO points shown are <strong>2024 Round 1 figures, indicative only</strong>. Points change
+            CAO points shown are <strong>2025 Round 1 figures</strong>, verified against the official CAO
+            tables. Points change
             every year — always confirm the latest entry requirements on{' '}
             <a className="font-semibold text-brand-700 underline" href="https://www.cao.ie" target="_blank" rel="noreferrer">
               cao.ie

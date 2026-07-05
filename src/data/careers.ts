@@ -1,7 +1,7 @@
 import type { Career } from './types'
 
-// Indicative dataset. CAO points are 2024 Round 1 figures (Level 8 unless noted)
-// and are provided as a guide only — always verify the latest on cao.ie.
+// CAO points are 2025 Round 1 figures (Level 8 unless noted), verified against
+// the official CAO points tables at cao.ie. Always confirm the latest before deciding.
 export const CAREERS: Career[] = [
   {
     id: 'doctor',
@@ -21,10 +21,10 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Minimum H5 in two subjects and O6/H7 in four others, including Maths, Irish (NUI) and a lab science. Points are combined with HPAT-Ireland; a minimum overall threshold (often ~480+ before HPAT) applies.',
     collegeCourses: [
-      { code: 'TR051', name: 'Medicine', institution: 'Trinity College Dublin', level: 8, caoPoints: 736, pointsYear: '2024', duration: '5 years', extraRequirements: 'HPAT-Ireland' },
-      { code: 'DN400', name: 'Medicine', institution: 'University College Dublin', level: 8, caoPoints: 738, pointsYear: '2024', duration: '6 years', extraRequirements: 'HPAT-Ireland' },
-      { code: 'CK701', name: 'Medicine', institution: 'University College Cork', level: 8, caoPoints: 731, pointsYear: '2024', duration: '5 years', extraRequirements: 'HPAT-Ireland' },
-      { code: 'GY501', name: 'Medicine', institution: 'University of Galway', level: 8, caoPoints: 733, pointsYear: '2024', duration: '5 years', extraRequirements: 'HPAT-Ireland' },
+      { code: 'TR051', name: 'Medicine', institution: 'Trinity College Dublin', level: 8, caoPoints: 739, pointsYear: '2025', duration: '5 years', extraRequirements: 'HPAT-Ireland' },
+      { code: 'DN400', name: 'Medicine', institution: 'University College Dublin', level: 8, caoPoints: 738, pointsYear: '2025', duration: '6 years', extraRequirements: 'HPAT-Ireland' },
+      { code: 'CK701', name: 'Medicine', institution: 'University College Cork', level: 8, caoPoints: 730, pointsYear: '2025', duration: '5 years', extraRequirements: 'HPAT-Ireland' },
+      { code: 'GY501', name: 'Medicine', institution: 'University of Galway', level: 8, caoPoints: 728, pointsYear: '2025', duration: '5 years', extraRequirements: 'HPAT-Ireland' },
     ],
     postgrad: [
       { name: 'Internship (1 year)', type: 'Professional', description: 'Paid supervised hospital year required to register fully with the Medical Council.' },
@@ -56,10 +56,10 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Most courses require a H5/O6 in Maths (Higher Level strongly preferred for software engineering). No specific subjects beyond Maths are mandatory, but logical subjects help.',
     collegeCourses: [
-      { code: 'TR033', name: 'Computer Science', institution: 'Trinity College Dublin', level: 8, caoPoints: 531, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN201', name: 'Computer Science', institution: 'University College Dublin', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
-      { code: 'LM118', name: 'Computer Science', institution: 'University of Limerick', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
-      { code: 'DC121', name: 'Computer Science', institution: 'Dublin City University', level: 8, caoPoints: 430, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR033', name: 'Computer Science', institution: 'Trinity College Dublin', level: 8, caoPoints: 543, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN201', name: 'Computer Science', institution: 'University College Dublin', level: 8, caoPoints: 542, pointsYear: '2025', duration: '4 years' },
+      { code: 'LM121', name: 'Computer Science', institution: 'University of Limerick', level: 8, caoPoints: 382, pointsYear: '2025', duration: '4 years' },
+      { code: 'DC121', name: 'Computer Science', institution: 'Dublin City University', level: 8, caoPoints: 487, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc Computer Science / AI', type: 'Masters', description: 'Specialise in AI, data science, security or distributed systems.' },
@@ -93,9 +93,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Higher Level Maths is effectively essential. A science or computer science subject strengthens the application.',
     collegeCourses: [
-      { code: 'DN201', name: 'Computer Science (Data Science stream)', institution: 'University College Dublin', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
-      { code: 'DC119', name: 'Data Science', institution: 'Dublin City University', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
-      { code: 'LM121', name: 'Mathematical Sciences', institution: 'University of Limerick', level: 8, caoPoints: 400, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN201', name: 'Computer Science (Data Science stream)', institution: 'University College Dublin', level: 8, caoPoints: 542, pointsYear: '2025', duration: '4 years' },
+      { code: 'DC123', name: 'Data Science', institution: 'Dublin City University', level: 8, caoPoints: 500, pointsYear: '2025', duration: '4 years' },
+      { code: 'LM124', name: 'Mathematics', institution: 'University of Limerick', level: 8, caoPoints: 454, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc Data Science / Analytics', type: 'Masters', description: 'Deepens machine learning, statistics and big-data engineering.' },
@@ -126,9 +126,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Requires a minimum O6/H7 in a laboratory science subject (Biology, Chemistry, Physics, Physics+Chemistry, or Agricultural Science) plus the usual English/Irish/Maths minimums.',
     collegeCourses: [
-      { code: 'DN460', name: 'General Nursing', institution: 'University College Dublin', level: 8, caoPoints: 456, pointsYear: '2024', duration: '4 years' },
-      { code: 'CK711', name: 'General Nursing', institution: 'University College Cork', level: 8, caoPoints: 451, pointsYear: '2024', duration: '4 years' },
-      { code: 'DC203', name: 'General Nursing', institution: 'Dublin City University', level: 8, caoPoints: 430, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN450', name: 'General Nursing', institution: 'University College Dublin', level: 8, caoPoints: 444, pointsYear: '2025', duration: '4 years' },
+      { code: 'CK710', name: 'General Nursing', institution: 'University College Cork', level: 8, caoPoints: 452, pointsYear: '2025', duration: '4 years' },
+      { code: 'DC215', name: 'General Nursing', institution: 'Dublin City University', level: 8, caoPoints: 424, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'Higher Diploma / MSc Nursing', type: 'Masters', description: 'Specialise in areas such as ICU, oncology or public health.' },
@@ -159,9 +159,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Typically requires H4 Higher Level Maths (or O1/H6 depending on the course). Physics and DCG are strongly advantageous.',
     collegeCourses: [
-      { code: 'DN150', name: 'Engineering (Civil)', institution: 'University College Dublin', level: 8, caoPoints: 533, pointsYear: '2024', duration: '4–5 years' },
-      { code: 'TR032', name: 'Engineering', institution: 'Trinity College Dublin', level: 8, caoPoints: 510, pointsYear: '2024', duration: '5 years' },
-      { code: 'GY401', name: 'Engineering (Undenominated)', institution: 'University of Galway', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN150', name: 'Engineering (Civil)', institution: 'University College Dublin', level: 8, caoPoints: 578, pointsYear: '2025', duration: '4–5 years' },
+      { code: 'TR032', name: 'Engineering', institution: 'Trinity College Dublin', level: 8, caoPoints: 577, pointsYear: '2025', duration: '5 years' },
+      { code: 'GY401', name: 'Engineering (Undenominated)', institution: 'University of Galway', level: 8, caoPoints: 542, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'ME Civil / Structural Engineering', type: 'Masters', description: 'Often required for Chartered Engineer status; specialise in structures, water or transport.' },
@@ -192,9 +192,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Some architecture courses require or recommend a portfolio of creative work for entry. Check each course — requirements vary between UCD, TU Dublin and others.',
     collegeCourses: [
-      { code: 'DN100', name: 'Architecture', institution: 'University College Dublin', level: 8, caoPoints: 555, pointsYear: '2024', duration: '5 years' },
-      { code: 'TU991', name: 'Architecture', institution: 'TU Dublin', level: 8, caoPoints: 500, pointsYear: '2024', duration: '5 years', extraRequirements: 'Portfolio' },
-      { code: 'CR300', name: 'Architecture', institution: 'MTU (Cork)', level: 8, caoPoints: 480, pointsYear: '2024', duration: '5 years', extraRequirements: 'Portfolio' },
+      { code: 'DN100', name: 'Architecture', institution: 'University College Dublin', level: 8, caoPoints: 556, pointsYear: '2025', duration: '5 years' },
+      { code: 'TU832', name: 'Architecture (portfolio)', institution: 'TU Dublin', level: 8, caoPoints: 632, pointsYear: '2025', duration: '5 years', extraRequirements: 'Portfolio' },
+      { code: 'CK606', name: 'Architecture (UCC & MTU)', institution: 'University College Cork', level: 8, caoPoints: 532, pointsYear: '2025', duration: '5 years', extraRequirements: 'Portfolio' },
     ],
     postgrad: [
       { name: 'Master of Architecture (MArch)', type: 'Masters', description: 'The professional qualifying degree, completing the 5-year education requirement.' },
@@ -225,9 +225,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'No specific subjects are required beyond the usual matriculation; high overall points matter most. A third language is needed for NUI law degrees.',
     collegeCourses: [
-      { code: 'TR004', name: 'Law', institution: 'Trinity College Dublin', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN600', name: 'Law', institution: 'University College Dublin', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
-      { code: 'CK301', name: 'Law', institution: 'University College Cork', level: 8, caoPoints: 477, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR004', name: 'Law', institution: 'Trinity College Dublin', level: 8, caoPoints: 578, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN600', name: 'Law', institution: 'University College Dublin', level: 8, caoPoints: 567, pointsYear: '2025', duration: '4 years' },
+      { code: 'CK301', name: 'Law', institution: 'University College Cork', level: 8, caoPoints: 532, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'PPC (Law Society)', type: 'Professional', description: 'Professional Practice Course to qualify as a solicitor, with FE-1 entrance exams.' },
@@ -261,9 +261,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'The subjects you take influence what you can teach. Concurrent teaching degrees may have specific subject requirements (e.g. Higher Level Maths for maths teaching).',
     collegeCourses: [
-      { code: 'DC026', name: 'Science Education', institution: 'Dublin City University', level: 8, caoPoints: 430, pointsYear: '2024', duration: '4 years' },
-      { code: 'MH205', name: 'Education (concurrent)', institution: 'Maynooth University', level: 8, caoPoints: 400, pointsYear: '2024', duration: '4 years' },
-      { code: 'GY119', name: 'Mathematics & Education', institution: 'University of Galway', level: 8, caoPoints: 477, pointsYear: '2024', duration: '4 years' },
+      { code: 'DC203', name: 'Science & Mathematics Education', institution: 'Dublin City University', level: 8, caoPoints: 443, pointsYear: '2025', duration: '4 years' },
+      { code: 'MH212', name: 'Science with Education', institution: 'Maynooth University', level: 8, caoPoints: 420, pointsYear: '2025', duration: '4 years' },
+      { code: 'GY109', name: 'Arts (Mathematics & Education)', institution: 'University of Galway', level: 8, caoPoints: 423, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'Professional Master of Education (PME)', type: 'Masters', description: 'Two-year qualification for graduates of a subject degree to become teachers.' },
@@ -294,9 +294,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Specific minimums apply: typically H4 in Higher Level Irish, plus O6/H7 English and Maths. These requirements are strict — check each college.',
     collegeCourses: [
-      { code: 'DC009', name: 'Bachelor of Education', institution: 'DCU Institute of Education', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
-      { code: 'MI001', name: 'Bachelor of Education', institution: 'Mary Immaculate College', level: 8, caoPoints: 451, pointsYear: '2024', duration: '4 years' },
-      { code: 'MIC', name: 'Bachelor of Education', institution: 'Marino Institute of Education', level: 8, caoPoints: 444, pointsYear: '2024', duration: '4 years' },
+      { code: 'DC002', name: 'Bachelor of Education (Primary Teaching)', institution: 'DCU Institute of Education', level: 8, caoPoints: 485, pointsYear: '2025', duration: '4 years' },
+      { code: 'MI005', name: 'Bachelor of Education (Primary Teaching)', institution: 'Mary Immaculate College', level: 8, caoPoints: 484, pointsYear: '2025', duration: '4 years' },
+      { code: 'CM001', name: 'Bachelor of Education (Primary Teaching)', institution: 'Marino Institute of Education', level: 8, caoPoints: 473, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'PME (Primary)', type: 'Masters', description: 'Two-year route into primary teaching for degree holders.' },
@@ -327,9 +327,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'No single subject is mandatory, but a science and Higher Level Maths help with the statistics-heavy degree. A third language is needed for NUI courses.',
     collegeCourses: [
-      { code: 'TR006', name: 'Psychology', institution: 'Trinity College Dublin', level: 8, caoPoints: 555, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN700', name: 'Psychology', institution: 'University College Dublin', level: 8, caoPoints: 543, pointsYear: '2024', duration: '3–4 years' },
-      { code: 'MH101', name: 'Psychology', institution: 'Maynooth University', level: 8, caoPoints: 488, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR006', name: 'Psychology', institution: 'Trinity College Dublin', level: 8, caoPoints: 578, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN720', name: 'Psychology', institution: 'University College Dublin', level: 8, caoPoints: 545, pointsYear: '2025', duration: '3–4 years' },
+      { code: 'MH106', name: 'Psychology', institution: 'Maynooth University', level: 8, caoPoints: 509, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'Doctorate in Clinical Psychology (DClinPsych)', type: 'PhD', description: 'Competitive 3-year professional doctorate to become a clinical psychologist.' },
@@ -360,9 +360,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'No mandatory subjects beyond matriculation, but Accounting, Business and Maths give a strong head start on professional exams.',
     collegeCourses: [
-      { code: 'DN650', name: 'Commerce', institution: 'University College Dublin', level: 8, caoPoints: 520, pointsYear: '2024', duration: '3 years' },
-      { code: 'TR081', name: 'Business, Economic & Social Studies (BESS)', institution: 'Trinity College Dublin', level: 8, caoPoints: 510, pointsYear: '2024', duration: '4 years' },
-      { code: 'CK201', name: 'Accounting', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN650', name: 'Commerce', institution: 'University College Dublin', level: 8, caoPoints: 555, pointsYear: '2025', duration: '3 years' },
+      { code: 'TR081', name: 'Business, Economic & Social Studies (BESS)', institution: 'Trinity College Dublin', level: 8, caoPoints: 566, pointsYear: '2025', duration: '4 years' },
+      { code: 'CK202', name: 'Accounting', institution: 'University College Cork', level: 8, caoPoints: 510, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'ACA / ACCA / CIMA', type: 'Professional', description: 'Chartered accountancy exams completed alongside a training contract.' },
@@ -394,9 +394,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'A minimum H4 in Chemistry is typically required, plus a second lab science or maths depending on the college. High points are needed.',
     collegeCourses: [
-      { code: 'TR072', name: 'Pharmacy (MPharm)', institution: 'Trinity College Dublin', level: 8, caoPoints: 601, pointsYear: '2024', duration: '5 years' },
-      { code: 'RC005', name: 'Pharmacy (MPharm)', institution: 'RCSI', level: 8, caoPoints: 590, pointsYear: '2024', duration: '5 years' },
-      { code: 'CK703', name: 'Pharmacy (MPharm)', institution: 'University College Cork', level: 8, caoPoints: 577, pointsYear: '2024', duration: '5 years' },
+      { code: 'TR072', name: 'Pharmacy (MPharm)', institution: 'Trinity College Dublin', level: 8, caoPoints: 601, pointsYear: '2025', duration: '5 years' },
+      { code: 'RC005', name: 'Pharmacy (MPharm)', institution: 'RCSI', level: 8, caoPoints: 589, pointsYear: '2025', duration: '5 years' },
+      { code: 'CK703', name: 'Pharmacy (MPharm)', institution: 'University College Cork', level: 8, caoPoints: 602, pointsYear: '2025', duration: '5 years' },
     ],
     postgrad: [
       { name: 'MPharm (integrated)', type: 'Masters', description: 'The 5-year degree already includes masters-level study and placement.' },
@@ -427,9 +427,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Most courses require at least one laboratory science subject (often Biology) plus the usual matriculation requirements.',
     collegeCourses: [
-      { code: 'TR053', name: 'Physiotherapy', institution: 'Trinity College Dublin', level: 8, caoPoints: 578, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN410', name: 'Physiotherapy', institution: 'University College Dublin', level: 8, caoPoints: 566, pointsYear: '2024', duration: '4 years' },
-      { code: 'RC003', name: 'Physiotherapy', institution: 'RCSI', level: 8, caoPoints: 555, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR053', name: 'Physiotherapy', institution: 'Trinity College Dublin', level: 8, caoPoints: 577, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN420', name: 'Physiotherapy', institution: 'University College Dublin', level: 8, caoPoints: 579, pointsYear: '2025', duration: '4 years' },
+      { code: 'RC004', name: 'Physiotherapy', institution: 'RCSI', level: 8, caoPoints: 566, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc Physiotherapy (specialist)', type: 'Masters', description: 'Specialise in sports, neurology, paediatrics or musculoskeletal care.' },
@@ -459,8 +459,8 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Requires Chemistry plus another science/maths subject and high overall points. Places are very limited, so the points are among the highest in the country.',
     collegeCourses: [
-      { code: 'DN300', name: 'Veterinary Medicine', institution: 'University College Dublin', level: 8, caoPoints: 589, pointsYear: '2024', duration: '5 years' },
-      { code: 'DN310', name: 'Veterinary Nursing', institution: 'University College Dublin', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN300', name: 'Veterinary Medicine', institution: 'University College Dublin', level: 8, caoPoints: 589, pointsYear: '2025', duration: '5 years' },
+      { code: 'DN310', name: 'Veterinary Nursing', institution: 'University College Dublin', level: 8, caoPoints: 500, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'Specialist Residency', type: 'Professional', description: 'Train towards a speciality such as surgery, equine or small-animal medicine.' },
@@ -491,9 +491,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Most courses require at least one laboratory science (Biology and/or Chemistry). Higher-points degrees often want two sciences. A third language is needed for NUI courses.',
     collegeCourses: [
-      { code: 'GY313', name: 'Marine Science', institution: 'University of Galway', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
-      { code: 'CK402', name: 'Biological, Earth & Environmental Sciences', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
-      { code: 'AU770', name: 'Freshwater & Marine Biology', institution: 'ATU Galway', level: 8, caoPoints: 328, pointsYear: '2024', duration: '4 years' },
+      { code: 'GY310', name: 'Marine Science', institution: 'University of Galway', level: 8, caoPoints: 440, pointsYear: '2025', duration: '4 years' },
+      { code: 'CK404', name: 'Biological, Environmental & Geological Sciences', institution: 'University College Cork', level: 8, caoPoints: 495, pointsYear: '2025', duration: '4 years' },
+      { code: 'AU655', name: 'Applied Freshwater & Marine Biology', institution: 'ATU Galway', level: 8, caoPoints: 400, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc Marine Biology / Marine Science', type: 'Masters', description: 'Specialise in ecology, fisheries, aquaculture or conservation.' },
@@ -524,9 +524,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Entry is accessible — often via the Leaving Cert, a PLC/further-education course, or an apprenticeship, with much lower points than a university degree. Some take it straight after sixth year as an alternative to the CAO.',
     collegeCourses: [
-      { code: 'APP', name: 'Accounting Technician Apprenticeship', institution: 'Accounting Technicians Ireland (nationwide)', level: 6, caoPoints: null, pointsYear: '2024', duration: '2 years', extraRequirements: 'Apprenticeship — earn while you learn' },
-      { code: 'PLC', name: 'Accounting Technician (Level 6)', institution: 'ETB / Further Education colleges', level: 6, caoPoints: null, pointsYear: '2024', duration: '2 years', extraRequirements: 'PLC / QQI route' },
-      { code: 'DT365', name: 'Accounting & Finance', institution: 'TU Dublin', level: 8, caoPoints: 350, pointsYear: '2024', duration: '4 years' },
+      { code: 'APP', name: 'Accounting Technician Apprenticeship', institution: 'Accounting Technicians Ireland (nationwide)', level: 6, caoPoints: null, pointsYear: '2025', duration: '2 years', extraRequirements: 'Apprenticeship — earn while you learn' },
+      { code: 'PLC', name: 'Accounting Technician (Level 6)', institution: 'ETB / Further Education colleges', level: 6, caoPoints: null, pointsYear: '2025', duration: '2 years', extraRequirements: 'PLC / QQI route' },
+      { code: 'TU910', name: 'Accounting', institution: 'TU Dublin', level: 8, caoPoints: 380, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'Progress to Chartered Accountant (ACA/ACCA)', type: 'Professional', description: 'Qualified technicians get exemptions and can train towards full accountancy.' },
@@ -557,8 +557,8 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Requires Chemistry plus another science and high overall points. Some schools may interview. Places are very limited.',
     collegeCourses: [
-      { code: 'TR072', name: 'Dental Science', institution: 'Trinity College Dublin', level: 8, caoPoints: 602, pointsYear: '2024', duration: '5 years' },
-      { code: 'CK702', name: 'Dental Science', institution: 'University College Cork', level: 8, caoPoints: 590, pointsYear: '2024', duration: '5 years' },
+      { code: 'TR052', name: 'Dental Science', institution: 'Trinity College Dublin', level: 8, caoPoints: 625, pointsYear: '2025', duration: '5 years' },
+      { code: 'CK702', name: 'Dentistry', institution: 'University College Cork', level: 8, caoPoints: 613, pointsYear: '2025', duration: '5 years' },
     ],
     postgrad: [
       { name: 'Specialist Training (Ortho, Oral Surgery…)', type: 'Professional', description: 'Further training to specialise after qualifying and gaining experience.' },
@@ -589,9 +589,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Typically requires Higher Level Maths (often H4). Physics and DCG are strongly advantageous.',
     collegeCourses: [
-      { code: 'DN150', name: 'Engineering (Mechanical)', institution: 'University College Dublin', level: 8, caoPoints: 533, pointsYear: '2024', duration: '4–5 years' },
-      { code: 'LM116', name: 'Mechanical Engineering', institution: 'University of Limerick', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
-      { code: 'CK600', name: 'Engineering', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN150', name: 'Engineering (Mechanical)', institution: 'University College Dublin', level: 8, caoPoints: 578, pointsYear: '2025', duration: '4–5 years' },
+      { code: 'LM116', name: 'Engineering (common entry)', institution: 'University of Limerick', level: 8, caoPoints: 510, pointsYear: '2025', duration: '4 years' },
+      { code: 'CK600', name: 'Engineering', institution: 'University College Cork', level: 8, caoPoints: 543, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'ME Mechanical / Biomedical Engineering', type: 'Masters', description: 'Specialise in design, energy, robotics or medical devices.' },
@@ -622,9 +622,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Higher Level Maths is normally required. Physics is highly recommended.',
     collegeCourses: [
-      { code: 'TR032', name: 'Engineering (Electronic / Electrical)', institution: 'Trinity College Dublin', level: 8, caoPoints: 510, pointsYear: '2024', duration: '5 years' },
-      { code: 'DN150', name: 'Engineering (Electrical/Electronic)', institution: 'University College Dublin', level: 8, caoPoints: 533, pointsYear: '2024', duration: '4–5 years' },
-      { code: 'LM117', name: 'Electronic & Computer Engineering', institution: 'University of Limerick', level: 8, caoPoints: 400, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR032', name: 'Engineering (Electronic / Electrical)', institution: 'Trinity College Dublin', level: 8, caoPoints: 577, pointsYear: '2025', duration: '5 years' },
+      { code: 'DN150', name: 'Engineering (Electrical/Electronic)', institution: 'University College Dublin', level: 8, caoPoints: 578, pointsYear: '2025', duration: '4–5 years' },
+      { code: 'LM118', name: 'Electronic & Computer Engineering', institution: 'University of Limerick', level: 8, caoPoints: 435, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'ME Electronic / Electrical Engineering', type: 'Masters', description: 'Specialise in chip design, power, photonics or telecoms.' },
@@ -655,8 +655,8 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'No mandatory subjects beyond matriculation, but Maths, DCG and Business are a strong foundation.',
     collegeCourses: [
-      { code: 'TU813', name: 'Quantity Surveying & Construction Economics', institution: 'TU Dublin', level: 8, caoPoints: 400, pointsYear: '2024', duration: '4 years' },
-      { code: 'GA785', name: 'Quantity Surveying', institution: 'ATU', level: 8, caoPoints: 309, pointsYear: '2024', duration: '4 years' },
+      { code: 'TU837', name: 'Quantity Surveying & Construction Economics', institution: 'TU Dublin', level: 8, caoPoints: 451, pointsYear: '2025', duration: '4 years' },
+      { code: 'AU636', name: 'Quantity Surveying & Construction Economics', institution: 'ATU Galway', level: 8, caoPoints: 350, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'Chartered Quantity Surveyor (SCSI/RICS)', type: 'Professional', description: 'Professional accreditation via the APC after experience.' },
@@ -687,9 +687,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Usually a H5/O6 in Maths is required. No other specific subjects, though computer science helps.',
     collegeCourses: [
-      { code: 'TU856', name: 'Computer Science (Cybersecurity)', institution: 'TU Dublin', level: 8, caoPoints: 430, pointsYear: '2024', duration: '4 years' },
-      { code: 'MU027', name: 'Computer Science (Cyber stream)', institution: 'Maynooth University', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
-      { code: 'GA882', name: 'Cybersecurity', institution: 'ATU', level: 8, caoPoints: 350, pointsYear: '2024', duration: '4 years' },
+      { code: 'TU856', name: 'Computer Science (Cybersecurity)', institution: 'TU Dublin', level: 8, caoPoints: 443, pointsYear: '2025', duration: '4 years' },
+      { code: 'MH602', name: 'Computer Science (Cyber stream)', institution: 'Maynooth University', level: 8, caoPoints: 352, pointsYear: '2025', duration: '4 years' },
+      { code: 'AU956', name: 'Computer Networks & Cyber Security', institution: 'ATU Sligo', level: 8, caoPoints: 300, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc Cybersecurity', type: 'Masters', description: 'Specialise in forensics, network security or governance.' },
@@ -720,9 +720,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'A H1/H2 in Higher Level Maths is typically expected. Actuarial degrees are among the highest-points courses.',
     collegeCourses: [
-      { code: 'DN230', name: 'Actuarial & Financial Studies', institution: 'University College Dublin', level: 8, caoPoints: 601, pointsYear: '2024', duration: '4 years' },
-      { code: 'DC353', name: 'Actuarial Mathematics', institution: 'Dublin City University', level: 8, caoPoints: 566, pointsYear: '2024', duration: '4 years' },
-      { code: 'CK407', name: 'Financial Mathematics & Actuarial Science', institution: 'University College Cork', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN230', name: 'Actuarial & Financial Studies', institution: 'University College Dublin', level: 8, caoPoints: 613, pointsYear: '2025', duration: '4 years' },
+      { code: 'DC126', name: 'Actuarial Mathematics', institution: 'Dublin City University', level: 8, caoPoints: 589, pointsYear: '2025', duration: '4 years' },
+      { code: 'CK407', name: 'Mathematical Sciences', institution: 'University College Cork', level: 8, caoPoints: 577, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'Professional Actuarial Exams (IFoA)', type: 'Professional', description: 'A series of exams sat while working to become a Fellow.' },
@@ -753,9 +753,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Higher Level Maths is a real advantage. A third language is required for NUI economics degrees.',
     collegeCourses: [
-      { code: 'TR081', name: 'Business, Economic & Social Studies (BESS)', institution: 'Trinity College Dublin', level: 8, caoPoints: 510, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN700', name: 'Economics', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '3 years' },
-      { code: 'CK201', name: 'Economics', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR081', name: 'Business, Economic & Social Studies (BESS)', institution: 'Trinity College Dublin', level: 8, caoPoints: 566, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN710', name: 'Economics', institution: 'University College Dublin', level: 8, caoPoints: 542, pointsYear: '2025', duration: '3 years' },
+      { code: 'CK212', name: 'Applied Economics', institution: 'University College Cork', level: 8, caoPoints: 498, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc Economics', type: 'Masters', description: 'Required for most professional economist roles.' },
@@ -786,9 +786,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'No mandatory subjects beyond matriculation. Business and a creative subject are useful.',
     collegeCourses: [
-      { code: 'DC230', name: 'Marketing, Innovation & Technology', institution: 'Dublin City University', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
-      { code: 'TU717', name: 'Marketing', institution: 'TU Dublin', level: 8, caoPoints: 380, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN650', name: 'Commerce (Marketing)', institution: 'University College Dublin', level: 8, caoPoints: 520, pointsYear: '2024', duration: '3 years' },
+      { code: 'DC240', name: 'Marketing, Innovation & Technology', institution: 'Dublin City University', level: 8, caoPoints: 487, pointsYear: '2025', duration: '4 years' },
+      { code: 'TU922', name: 'Marketing', institution: 'TU Dublin', level: 8, caoPoints: 380, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN650', name: 'Commerce (Marketing)', institution: 'University College Dublin', level: 8, caoPoints: 555, pointsYear: '2025', duration: '3 years' },
     ],
     postgrad: [
       { name: 'MSc Marketing / Digital Marketing', type: 'Masters', description: 'Specialise and accelerate into management.' },
@@ -819,9 +819,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'No mandatory subjects beyond matriculation; a strong English grade and wide reading matter most.',
     collegeCourses: [
-      { code: 'DC131', name: 'Journalism', institution: 'Dublin City University', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
-      { code: 'TU712', name: 'Journalism', institution: 'TU Dublin', level: 8, caoPoints: 408, pointsYear: '2024', duration: '4 years' },
-      { code: 'GY110', name: 'Arts (Journalism pathway)', institution: 'University of Galway', level: 8, caoPoints: 350, pointsYear: '2024', duration: '3 years' },
+      { code: 'DC132', name: 'Journalism', institution: 'Dublin City University', level: 8, caoPoints: 409, pointsYear: '2025', duration: '4 years' },
+      { code: 'TU985', name: 'Journalism', institution: 'TU Dublin', level: 8, caoPoints: 328, pointsYear: '2025', duration: '4 years' },
+      { code: 'GY119', name: 'Arts (Journalism)', institution: 'University of Galway', level: 8, caoPoints: 381, pointsYear: '2025', duration: '3 years' },
     ],
     postgrad: [
       { name: 'MA Journalism', type: 'Masters', description: 'A common entry route, including for graduates of other subjects.' },
@@ -852,9 +852,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Most design degrees require a portfolio of creative work for entry, sometimes alongside a points requirement. Start building it early.',
     collegeCourses: [
-      { code: 'AD201', name: 'Visual Communication Design', institution: 'NCAD', level: 8, caoPoints: null, pointsYear: '2024', duration: '4 years', extraRequirements: 'Portfolio-based entry' },
-      { code: 'DL836', name: 'Design for Visual Communications', institution: 'IADT', level: 8, caoPoints: null, pointsYear: '2024', duration: '4 years', extraRequirements: 'Portfolio + points' },
-      { code: 'TU975', name: 'Graphic Design', institution: 'TU Dublin', level: 8, caoPoints: null, pointsYear: '2024', duration: '4 years', extraRequirements: 'Portfolio + points' },
+      { code: 'AD102', name: 'Graphic Design & Moving Image Design (portfolio)', institution: 'NCAD', level: 8, caoPoints: 538, pointsYear: '2025', duration: '4 years', extraRequirements: 'Portfolio-based entry' },
+      { code: 'DL826', name: 'Graphic Design (portfolio)', institution: 'IADT', level: 8, caoPoints: 534, pointsYear: '2025', duration: '4 years', extraRequirements: 'Portfolio + points' },
+      { code: 'TU973', name: 'Design - Visual Communication (portfolio)', institution: 'TU Dublin', level: 8, caoPoints: 654, pointsYear: '2025', duration: '4 years', extraRequirements: 'Portfolio + points' },
     ],
     postgrad: [
       { name: 'MA Design / UX', type: 'Masters', description: 'Specialise in branding, motion or user-experience design.' },
@@ -885,9 +885,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Most courses require a laboratory science subject plus the usual matriculation requirements.',
     collegeCourses: [
-      { code: 'TR055', name: 'Occupational Therapy', institution: 'Trinity College Dublin', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
-      { code: 'CK706', name: 'Occupational Therapy', institution: 'University College Cork', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
-      { code: 'GY512', name: 'Occupational Therapy', institution: 'University of Galway', level: 8, caoPoints: 510, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR054', name: 'Occupational Therapy', institution: 'Trinity College Dublin', level: 8, caoPoints: 544, pointsYear: '2025', duration: '4 years' },
+      { code: 'CK704', name: 'Occupational Therapy', institution: 'University College Cork', level: 8, caoPoints: 566, pointsYear: '2025', duration: '4 years' },
+      { code: 'GY502', name: 'Occupational Therapy', institution: 'University of Galway', level: 8, caoPoints: 544, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc Occupational Therapy (specialist)', type: 'Masters', description: 'Specialise in areas like paediatrics, mental health or neuro-rehab.' },
@@ -917,9 +917,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Most courses require a laboratory science (often Biology). A third language is needed for NUI courses.',
     collegeCourses: [
-      { code: 'TR057', name: 'Clinical Speech & Language Studies', institution: 'Trinity College Dublin', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
-      { code: 'CK704', name: 'Speech & Language Therapy', institution: 'University College Cork', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
-      { code: 'GY513', name: 'Speech & Language Therapy', institution: 'University of Galway', level: 8, caoPoints: 488, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR007', name: 'Clinical Speech & Language Studies', institution: 'Trinity College Dublin', level: 8, caoPoints: 541, pointsYear: '2025', duration: '4 years' },
+      { code: 'CK705', name: 'Speech & Language Therapy', institution: 'University College Cork', level: 8, caoPoints: 552, pointsYear: '2025', duration: '4 years' },
+      { code: 'GY503', name: 'Speech & Language Therapy', institution: 'University of Galway', level: 8, caoPoints: 533, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc Speech & Language Therapy', type: 'Masters', description: 'Specialise or enter via a graduate-entry masters.' },
@@ -949,9 +949,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Requires a laboratory science (Physics is especially relevant) plus the usual matriculation.',
     collegeCourses: [
-      { code: 'TR058', name: 'Radiation Therapy', institution: 'Trinity College Dublin', level: 8, caoPoints: 510, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN410', name: 'Radiography', institution: 'University College Dublin', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
-      { code: 'CK705', name: 'Medical & Health Sciences (Radiography)', institution: 'University College Cork', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR055', name: 'Radiation Therapy', institution: 'Trinity College Dublin', level: 8, caoPoints: 534, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN410', name: 'Radiography', institution: 'University College Dublin', level: 8, caoPoints: 545, pointsYear: '2025', duration: '4 years' },
+      { code: 'CK707', name: 'Medical & Health Sciences (Radiography)', institution: 'University College Cork', level: 8, caoPoints: 532, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc Radiography / Imaging', type: 'Masters', description: 'Specialise in CT, MRI, ultrasound or radiation therapy.' },
@@ -981,9 +981,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Chemistry (and often Biology) is typically required for dietetics degrees. Check each course closely.',
     collegeCourses: [
-      { code: 'DC203', name: 'Human Nutrition & Dietetics', institution: 'Dublin Institutions (joint TUD/TCD/DIT)', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
-      { code: 'CK709', name: 'Nutritional Sciences', institution: 'University College Cork', level: 8, caoPoints: 510, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN261', name: 'Human Nutrition', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
+      { code: 'TU870', name: 'Human Nutrition & Dietetics', institution: 'TU Dublin', level: 8, caoPoints: 533, pointsYear: '2025', duration: '4 years' },
+      { code: 'CK504', name: 'Nutritional Sciences', institution: 'University College Cork', level: 8, caoPoints: 518, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN262', name: 'Human Nutrition', institution: 'University College Dublin', level: 8, caoPoints: 530, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc Dietetics', type: 'Masters', description: 'Graduate-entry route to registration for science graduates.' },
@@ -1014,9 +1014,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'No mandatory subjects beyond matriculation. Many qualify via a primary social-science degree then a masters in social work.',
     collegeCourses: [
-      { code: 'CK113', name: 'Social Work (BSW)', institution: 'University College Cork', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN720', name: 'Social Science', institution: 'University College Dublin', level: 8, caoPoints: 421, pointsYear: '2024', duration: '3 years' },
-      { code: 'MH103', name: 'Applied Social Studies', institution: 'Maynooth University', level: 8, caoPoints: 400, pointsYear: '2024', duration: '4 years' },
+      { code: 'CK102', name: 'Social Science', institution: 'University College Cork', level: 8, caoPoints: 400, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN700', name: 'Social Sciences', institution: 'University College Dublin', level: 8, caoPoints: 491, pointsYear: '2025', duration: '3 years' },
+      { code: 'MH107', name: 'Social Science', institution: 'Maynooth University', level: 8, caoPoints: 348, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'Master of Social Work (MSW)', type: 'Masters', description: 'The professional qualifying route for many social workers.' },
@@ -1046,9 +1046,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'A laboratory science is normally required. Two sciences and Higher Level Maths strengthen applications.',
     collegeCourses: [
-      { code: 'TR071', name: 'Science', institution: 'Trinity College Dublin', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN200', name: 'Science', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
-      { code: 'CK402', name: 'Biological, Earth & Environmental Sciences', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR060', name: 'Biological & Biomedical Sciences', institution: 'Trinity College Dublin', level: 8, caoPoints: 554, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN200', name: 'Science', institution: 'University College Dublin', level: 8, caoPoints: 544, pointsYear: '2025', duration: '4 years' },
+      { code: 'CK404', name: 'Biological, Environmental & Geological Sciences', institution: 'University College Cork', level: 8, caoPoints: 495, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'PhD (Biochemistry, Chemistry, etc.)', type: 'PhD', description: 'Essential for leading independent research.' },
@@ -1080,9 +1080,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'A laboratory science is normally required; Geography is a strong complement.',
     collegeCourses: [
-      { code: 'CK402', name: 'Biological, Earth & Environmental Sciences', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN200', name: 'Science (Environmental stream)', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
-      { code: 'GY302', name: 'Environmental Science', institution: 'University of Galway', level: 8, caoPoints: 409, pointsYear: '2024', duration: '4 years' },
+      { code: 'CK404', name: 'Biological, Environmental & Geological Sciences', institution: 'University College Cork', level: 8, caoPoints: 495, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN200', name: 'Science (Environmental stream)', institution: 'University College Dublin', level: 8, caoPoints: 544, pointsYear: '2025', duration: '4 years' },
+      { code: 'GY308', name: 'Environmental Science', institution: 'University of Galway', level: 8, caoPoints: 440, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc Environmental Science / Climate', type: 'Masters', description: 'Specialise in climate, water, or sustainability.' },
@@ -1113,9 +1113,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Higher Level Maths is strongly expected; Physics is required or strongly advised. Theoretical physics courses are very high points.',
     collegeCourses: [
-      { code: 'TR035', name: 'Physical Sciences', institution: 'Trinity College Dublin', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
-      { code: 'TR034', name: 'Theoretical Physics', institution: 'Trinity College Dublin', level: 8, caoPoints: 589, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN200', name: 'Science (Physics)', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR063', name: 'Physical Sciences', institution: 'Trinity College Dublin', level: 8, caoPoints: 538, pointsYear: '2025', duration: '4 years' },
+      { code: 'TR035', name: 'Theoretical Physics', institution: 'Trinity College Dublin', level: 8, caoPoints: 571, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN200', name: 'Science (Physics)', institution: 'University College Dublin', level: 8, caoPoints: 544, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'PhD Physics', type: 'PhD', description: 'Route into research, academia and national labs.' },
@@ -1147,9 +1147,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Your subject of interest guides your choices — aim for a strong degree in the field you want to research.',
     collegeCourses: [
-      { code: 'TR071', name: 'Science / Arts (your field)', institution: 'Trinity College Dublin', level: 8, caoPoints: 521, pointsYear: '2024', duration: '3–4 years' },
-      { code: 'DN200', name: 'Science / Arts (your field)', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '3–4 years' },
-      { code: 'GY101', name: 'Arts (your field)', institution: 'University of Galway', level: 8, caoPoints: 350, pointsYear: '2024', duration: '3 years' },
+      { code: 'TR061', name: 'Chemical Sciences (example degree)', institution: 'Trinity College Dublin', level: 8, caoPoints: 543, pointsYear: '2025', duration: '3–4 years' },
+      { code: 'DN200', name: 'Science (example degree)', institution: 'University College Dublin', level: 8, caoPoints: 544, pointsYear: '2025', duration: '3–4 years' },
+      { code: 'GY101', name: 'Arts (Joint-Honours)', institution: 'University of Galway', level: 8, caoPoints: 350, pointsYear: '2025', duration: '3 years' },
     ],
     postgrad: [
       { name: 'PhD (in your discipline)', type: 'PhD', description: 'Essential — an original research doctorate is the entry ticket.' },
@@ -1180,7 +1180,7 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Requires a laboratory science (Physics is very relevant) plus the usual matriculation. High points are typical.',
     collegeCourses: [
-      { code: 'TU994', name: 'Optometry', institution: 'TU Dublin', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
+      { code: 'TU871', name: 'Optometry', institution: 'TU Dublin', level: 8, caoPoints: 564, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc / Clinical specialisation', type: 'Masters', description: 'Specialise in areas such as paediatric or low-vision optometry.' },
@@ -1210,9 +1210,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Higher Level Maths is normally required. Physics is strongly recommended; Biology helps.',
     collegeCourses: [
-      { code: 'DN150', name: 'Biomedical Engineering', institution: 'University College Dublin', level: 8, caoPoints: 533, pointsYear: '2024', duration: '4–5 years' },
-      { code: 'GY403', name: 'Biomedical Engineering', institution: 'University of Galway', level: 8, caoPoints: 488, pointsYear: '2024', duration: '4 years' },
-      { code: 'LM238', name: 'Biomedical Engineering', institution: 'University of Limerick', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN150', name: 'Biomedical Engineering', institution: 'University College Dublin', level: 8, caoPoints: 578, pointsYear: '2025', duration: '4–5 years' },
+      { code: 'GY408', name: 'Biomedical Engineering', institution: 'University of Galway', level: 8, caoPoints: 568, pointsYear: '2025', duration: '4 years' },
+      { code: 'LM116', name: 'Engineering (common entry)', institution: 'University of Limerick', level: 8, caoPoints: 510, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'ME / MSc Biomedical Engineering', type: 'Masters', description: 'Specialise in devices, biomaterials or regulatory affairs.' },
@@ -1243,8 +1243,8 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Higher Level Maths is normally required, with Chemistry strongly recommended.',
     collegeCourses: [
-      { code: 'CK600', name: 'Process & Chemical Engineering', institution: 'University College Cork', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN150', name: 'Chemical & Bioprocess Engineering', institution: 'University College Dublin', level: 8, caoPoints: 533, pointsYear: '2024', duration: '4–5 years' },
+      { code: 'CK600', name: 'Process & Chemical Engineering', institution: 'University College Cork', level: 8, caoPoints: 543, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN150', name: 'Chemical & Bioprocess Engineering', institution: 'University College Dublin', level: 8, caoPoints: 578, pointsYear: '2025', duration: '4–5 years' },
     ],
     postgrad: [
       { name: 'ME Chemical / Process Engineering', type: 'Masters', description: 'Specialise in pharma, energy or bioprocessing.' },
@@ -1275,8 +1275,8 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Some courses value a portfolio of creative work. Check individual course requirements.',
     collegeCourses: [
-      { code: 'DL826', name: 'Landscape Architecture', institution: 'ATU / partner colleges', level: 8, caoPoints: 350, pointsYear: '2024', duration: '4 years', extraRequirements: 'Portfolio may apply' },
-      { code: 'UCD-LA', name: 'Landscape Architecture', institution: 'University College Dublin', level: 8, caoPoints: 450, pointsYear: '2024', duration: '4 years' },
+      { code: 'AU925', name: 'Architecture [Sligo] (related)', institution: 'ATU Sligo', level: 8, caoPoints: 420, pointsYear: '2025', duration: '4 years', extraRequirements: 'Portfolio may apply' },
+      { code: 'DN120', name: 'Landscape Architecture', institution: 'University College Dublin', level: 8, caoPoints: 485, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MLA Landscape Architecture', type: 'Masters', description: 'Professional qualifying masters for many entrants.' },
@@ -1307,9 +1307,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'A laboratory science (Biology and often Chemistry) is normally required.',
     collegeCourses: [
-      { code: 'CK402', name: 'Biological, Earth & Environmental Sciences', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN200', name: 'Science (Microbiology)', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
-      { code: 'GY304', name: 'Biotechnology', institution: 'University of Galway', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+      { code: 'CK404', name: 'Biological, Environmental & Geological Sciences', institution: 'University College Cork', level: 8, caoPoints: 495, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN200', name: 'Science (Microbiology)', institution: 'University College Dublin', level: 8, caoPoints: 544, pointsYear: '2025', duration: '4 years' },
+      { code: 'GY304', name: 'Biotechnology', institution: 'University of Galway', level: 8, caoPoints: 498, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc / PhD Microbiology', type: 'PhD', description: 'For research, industry and clinical microbiology roles.' },
@@ -1339,9 +1339,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'A laboratory science is usually required; Geography is a strong complement.',
     collegeCourses: [
-      { code: 'TR071', name: 'Geology (via Science)', institution: 'Trinity College Dublin', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN200', name: 'Geology (via Science)', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
-      { code: 'CK402', name: 'Biological, Earth & Environmental Sciences', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR062', name: 'Geography & Geoscience', institution: 'Trinity College Dublin', level: 8, caoPoints: 472, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN200', name: 'Science (Geology pathway)', institution: 'University College Dublin', level: 8, caoPoints: 544, pointsYear: '2025', duration: '4 years' },
+      { code: 'CK404', name: 'Biological, Environmental & Geological Sciences', institution: 'University College Cork', level: 8, caoPoints: 495, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc Geology / Applied Geoscience', type: 'Masters', description: 'Specialise in resources, hydrogeology or engineering geology.' },
@@ -1372,9 +1372,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'Higher Level Maths and Physics are the key subjects for the physics/maths degree route.',
     collegeCourses: [
-      { code: 'TR035', name: 'Physical Sciences', institution: 'Trinity College Dublin', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN200', name: 'Science (Physics / Maths)', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
-      { code: 'MU024', name: 'Theoretical Physics & Maths', institution: 'Maynooth University', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR063', name: 'Physical Sciences', institution: 'Trinity College Dublin', level: 8, caoPoints: 538, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN200', name: 'Science (Physics / Maths)', institution: 'University College Dublin', level: 8, caoPoints: 544, pointsYear: '2025', duration: '4 years' },
+      { code: 'MH206', name: 'Theoretical Physics & Mathematics', institution: 'Maynooth University', level: 8, caoPoints: 520, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc Meteorology / Atmospheric Science', type: 'Masters', description: 'The specialist route into forecasting and research.' },
@@ -1405,9 +1405,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'No mandatory subjects — a strong all-round record and a good degree (any discipline) matter most.',
     collegeCourses: [
-      { code: 'TR081', name: 'Business, Economic & Social Studies (BESS)', institution: 'Trinity College Dublin', level: 8, caoPoints: 510, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN650', name: 'Commerce', institution: 'University College Dublin', level: 8, caoPoints: 520, pointsYear: '2024', duration: '3 years' },
-      { code: 'CK201', name: 'Business Information Systems', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+      { code: 'TR081', name: 'Business, Economic & Social Studies (BESS)', institution: 'Trinity College Dublin', level: 8, caoPoints: 566, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN650', name: 'Commerce', institution: 'University College Dublin', level: 8, caoPoints: 555, pointsYear: '2025', duration: '3 years' },
+      { code: 'CK203', name: 'Business Information Systems', institution: 'University College Cork', level: 8, caoPoints: 463, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MBA / MSc Management', type: 'Masters', description: 'Accelerates progression and senior consulting roles.' },
@@ -1437,9 +1437,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'No mandatory subjects, but Maths, Economics and Accounting build a strong base. High points and a top degree matter for entry.',
     collegeCourses: [
-      { code: 'DN650', name: 'Commerce / Business & Law', institution: 'University College Dublin', level: 8, caoPoints: 520, pointsYear: '2024', duration: '3–4 years' },
-      { code: 'TR081', name: 'Business, Economic & Social Studies (BESS)', institution: 'Trinity College Dublin', level: 8, caoPoints: 510, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN230', name: 'Economics & Finance', institution: 'University College Dublin', level: 8, caoPoints: 543, pointsYear: '2024', duration: '3 years' },
+      { code: 'DN610', name: 'Business & Law', institution: 'University College Dublin', level: 8, caoPoints: 566, pointsYear: '2025', duration: '3–4 years' },
+      { code: 'TR081', name: 'Business, Economic & Social Studies (BESS)', institution: 'Trinity College Dublin', level: 8, caoPoints: 566, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN670', name: 'Economics & Finance', institution: 'University College Dublin', level: 8, caoPoints: 625, pointsYear: '2025', duration: '3 years' },
     ],
     postgrad: [
       { name: 'MSc Finance', type: 'Masters', description: 'A common route into front-office finance.' },
@@ -1470,9 +1470,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'No mandatory subjects beyond matriculation; Business is a helpful foundation.',
     collegeCourses: [
-      { code: 'DN650', name: 'Commerce (HR / Management)', institution: 'University College Dublin', level: 8, caoPoints: 520, pointsYear: '2024', duration: '3 years' },
-      { code: 'DC232', name: 'Human Resource Management', institution: 'Dublin City University', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
-      { code: 'LM102', name: 'Business Studies (HRM)', institution: 'University of Limerick', level: 8, caoPoints: 400, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN650', name: 'Commerce (HR / Management)', institution: 'University College Dublin', level: 8, caoPoints: 555, pointsYear: '2025', duration: '3 years' },
+      { code: 'DC111', name: 'Business Studies (HRM)', institution: 'Dublin City University', level: 8, caoPoints: 510, pointsYear: '2025', duration: '4 years' },
+      { code: 'LM050', name: 'Business Studies (HRM)', institution: 'University of Limerick', level: 8, caoPoints: 444, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc Human Resource Management', type: 'Masters', description: 'Deepens expertise and supports CIPD accreditation.' },
@@ -1503,8 +1503,8 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'No mandatory subjects beyond matriculation; Geography is a strong foundation.',
     collegeCourses: [
-      { code: 'DT106', name: 'Spatial Planning & Environmental Management', institution: 'TU Dublin', level: 8, caoPoints: 350, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN100', name: 'Planning (via Architecture/Geography)', institution: 'University College Dublin', level: 8, caoPoints: 450, pointsYear: '2024', duration: '4 years' },
+      { code: 'TU835', name: 'Planning & Environmental Management', institution: 'TU Dublin', level: 8, caoPoints: 360, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN130', name: 'City Planning & Environmental Policy', institution: 'University College Dublin', level: 8, caoPoints: 481, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MSc / MRUP Planning', type: 'Masters', description: 'The professional qualifying route for many planners.' },
@@ -1535,9 +1535,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'No specific subjects, but languages, history and politics are excellent preparation. A third language is required for NUI degrees.',
     collegeCourses: [
-      { code: 'DN700', name: 'Politics & International Relations', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '3 years' },
-      { code: 'TR084', name: 'Law & Political Science', institution: 'Trinity College Dublin', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
-      { code: 'DC232', name: 'International Relations', institution: 'Dublin City University', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN700', name: 'Social Sciences (Politics & IR)', institution: 'University College Dublin', level: 8, caoPoints: 491, pointsYear: '2025', duration: '3 years' },
+      { code: 'TR015', name: 'PPES (Politics, Economics, Philosophy, Sociology)', institution: 'Trinity College Dublin', level: 8, caoPoints: 588, pointsYear: '2025', duration: '4 years' },
+      { code: 'DC231', name: 'International Relations', institution: 'Dublin City University', level: 8, caoPoints: 411, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MA International Relations / Diplomacy', type: 'Masters', description: 'Strengthens the profile for competitive entry.' },
@@ -1567,9 +1567,9 @@ export const CAREERS: Career[] = [
     leavingCertNotes:
       'No mandatory subjects beyond matriculation; a social science or humanities focus helps.',
     collegeCourses: [
-      { code: 'DT544', name: 'Criminology', institution: 'TU Dublin', level: 8, caoPoints: 400, pointsYear: '2024', duration: '4 years' },
-      { code: 'DN720', name: 'Social Science (Criminology)', institution: 'University College Dublin', level: 8, caoPoints: 421, pointsYear: '2024', duration: '3 years' },
-      { code: 'MH103', name: 'Applied Social Studies (Criminology)', institution: 'Maynooth University', level: 8, caoPoints: 400, pointsYear: '2024', duration: '4 years' },
+      { code: 'CK113', name: 'Criminology', institution: 'University College Cork', level: 8, caoPoints: 419, pointsYear: '2025', duration: '4 years' },
+      { code: 'DN700', name: 'Social Sciences', institution: 'University College Dublin', level: 8, caoPoints: 491, pointsYear: '2025', duration: '3 years' },
+      { code: 'MH107', name: 'Social Science', institution: 'Maynooth University', level: 8, caoPoints: 348, pointsYear: '2025', duration: '4 years' },
     ],
     postgrad: [
       { name: 'MA Criminology', type: 'Masters', description: 'Route into research, policy and criminal-justice careers.' },

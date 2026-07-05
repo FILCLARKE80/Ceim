@@ -111,8 +111,8 @@ export default function CareerPage() {
       <section>
         <h2 className="mb-1 text-xl font-bold text-slate-900">College courses &amp; CAO points</h2>
         <p className="mb-4 text-sm text-slate-500">
-          Indicative <strong>2024 Round 1</strong> points (Level 8 honours degrees unless noted). Verify the
-          latest on{' '}
+          <strong>2025 Round 1</strong> points (Level 8 honours degrees unless noted), verified against the
+          official CAO tables. Points change yearly — confirm the latest on{' '}
           <a className="text-brand-700 underline" href="https://www.cao.ie" target="_blank" rel="noreferrer">
             cao.ie
           </a>
