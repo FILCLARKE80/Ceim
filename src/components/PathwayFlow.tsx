@@ -11,9 +11,25 @@ import {
 import type { Career } from '../data/types'
 import { getSubject } from '../data/subjects'
 
-const COL_WIDTH = 230
-const ROW_HEIGHT = 78
-const NODE_WIDTH = 190
+const COL_WIDTH = 250
+const ROW_HEIGHT = 92
+const NODE_WIDTH = 200
+
+// Short display names so college nodes stay compact when showing a course name.
+const INSTITUTION_SHORT: Record<string, string> = {
+  'Trinity College Dublin': 'TCD',
+  'University College Dublin': 'UCD',
+  'University College Cork': 'UCC',
+  'University of Galway': 'Galway',
+  'Dublin City University': 'DCU',
+  'University of Limerick': 'UL',
+  'Maynooth University': 'Maynooth',
+  'TU Dublin': 'TU Dublin',
+}
+
+function shortInstitution(name: string): string {
+  return INSTITUTION_SHORT[name] ?? name
+}
 
 const STAGE_STYLES: Record<string, { bg: string; border: string; text: string }> = {
   junior: { bg: '#eef6ff', border: '#8ebfff', text: '#1643dd' },
@@ -53,8 +69,8 @@ function buildColumns(career: Career): Column[] {
       label: 'College · CAO',
       items: career.collegeCourses.map((c) => ({
         id: `co-${c.code}`,
-        title: c.institution,
-        subtitle: c.caoPoints ? `${c.caoPoints} pts` : 'See course',
+        title: c.name,
+        subtitle: `${shortInstitution(c.institution)} · ${c.caoPoints ? `${c.caoPoints} pts` : 'portfolio'}`,
       })),
     },
     {

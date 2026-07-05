@@ -68,7 +68,10 @@ export const CAREERS: Career[] = [
     roles: [
       { title: 'Frontend / Backend Developer', description: 'Builds the user-facing or server-side parts of applications.', salaryRange: '€45k–€90k' },
       { title: 'DevOps / Cloud Engineer', description: 'Automates deployment and runs scalable infrastructure.', salaryRange: '€60k–€110k' },
-      { title: 'Machine Learning Engineer', description: 'Builds and deploys AI and data models.', salaryRange: '€65k–€130k' },
+      { title: 'Cloud Solutions Architect', description: 'Designs large-scale cloud systems (AWS/Azure/GCP).', salaryRange: '€80k–€140k' },
+      { title: 'AI / Machine Learning Engineer', description: 'Builds and deploys AI and data models.', salaryRange: '€65k–€130k' },
+      { title: 'Database Administrator', description: 'Designs, secures and tunes databases.', salaryRange: '€50k–€90k' },
+      { title: 'Network Engineer', description: 'Builds and maintains computer networks.', salaryRange: '€45k–€85k' },
     ],
     relatedCareers: ['data-scientist', 'civil-engineer'],
   },
@@ -234,7 +237,9 @@ export const CAREERS: Career[] = [
     roles: [
       { title: 'Solicitor', description: 'Advises clients and handles transactions and disputes.', salaryRange: '€50k–€120k+' },
       { title: 'Barrister', description: 'Specialist court advocate, usually self-employed.', salaryRange: 'Variable — €30k–€200k+' },
-      { title: 'In-house / Corporate Counsel', description: 'Legal advisor inside a company.', salaryRange: '€70k–€150k' },
+      { title: 'In-house / Corporate Legal Counsel', description: 'Legal advisor inside a company.', salaryRange: '€70k–€150k' },
+      { title: 'Legal Executive', description: 'Supports solicitors with legal and case work.', salaryRange: '€35k–€60k' },
+      { title: 'Judge', description: 'Appointed after years of practice to preside over courts.', salaryRange: '€150k–€260k' },
     ],
     relatedCareers: ['accountant'],
   },
@@ -265,6 +270,7 @@ export const CAREERS: Career[] = [
     ],
     roles: [
       { title: 'Subject Teacher', description: 'Teaches one or two Leaving Cert / Junior Cycle subjects.', salaryRange: '€42k–€80k' },
+      { title: 'Special Educational Needs (SEN) Coordinator', description: 'Leads support for students with additional needs.', salaryRange: '€50k–€85k' },
       { title: 'Year Head / Deputy Principal', description: 'Pastoral and management responsibility.', salaryRange: '€60k–€90k' },
       { title: 'Principal', description: 'Leads the whole school.', salaryRange: '€90k–€120k' },
     ],
@@ -365,6 +371,7 @@ export const CAREERS: Career[] = [
     roles: [
       { title: 'Auditor', description: 'Checks that financial statements are accurate.', salaryRange: '€40k–€70k' },
       { title: 'Tax Consultant', description: 'Advises on tax planning and compliance.', salaryRange: '€45k–€90k' },
+      { title: 'Financial Analyst', description: 'Analyses performance and guides investment decisions.', salaryRange: '€45k–€85k' },
       { title: 'Financial Controller / CFO', description: 'Leads an organisation’s finances.', salaryRange: '€80k–€180k+' },
     ],
     relatedCareers: ['accounting-technician', 'lawyer', 'data-scientist'],
@@ -756,7 +763,7 @@ export const CAREERS: Career[] = [
     ],
     roles: [
       { title: 'Economic Analyst', description: 'Models and forecasts economic trends.', salaryRange: '€45k–€80k' },
-      { title: 'Policy Economist', description: 'Advises government and bodies on policy.', salaryRange: '€55k–€95k' },
+      { title: 'Policy Analyst', description: 'Advises government and bodies on policy.', salaryRange: '€55k–€95k' },
       { title: 'Financial / Markets Economist', description: 'Advises banks and investors.', salaryRange: '€70k–€140k' },
     ],
     relatedCareers: ['accountant', 'actuary', 'data-scientist'],
@@ -1048,7 +1055,8 @@ export const CAREERS: Career[] = [
       { name: 'MSc Research / Industry specialism', type: 'Masters', description: 'Specialise for industry R&D roles.' },
     ],
     roles: [
-      { title: 'Laboratory Scientist', description: 'Runs experiments and analysis.', salaryRange: '€35k–€55k' },
+      { title: 'Biochemist', description: 'Studies the chemistry of living things.', salaryRange: '€35k–€60k' },
+      { title: 'Pharmacologist', description: 'Researches how drugs act on the body.', salaryRange: '€40k–€75k' },
       { title: 'R&D Scientist (Pharma/Biotech)', description: 'Develops new drugs and products.', salaryRange: '€45k–€85k' },
       { title: 'Principal Investigator', description: 'Leads a research group or lab.', salaryRange: '€70k–€120k' },
     ],
@@ -1115,6 +1123,7 @@ export const CAREERS: Career[] = [
     ],
     roles: [
       { title: 'Research Physicist', description: 'Investigates physical phenomena.', salaryRange: '€40k–€75k' },
+      { title: 'Astrophysicist', description: 'Studies stars, galaxies and the universe.', salaryRange: '€40k–€80k' },
       { title: 'Medical Physicist', description: 'Applies physics in hospitals (imaging, radiotherapy).', salaryRange: '€55k–€95k' },
       { title: 'Quantitative Analyst', description: 'Applies physics-style maths in finance/tech.', salaryRange: '€70k–€140k' },
     ],
@@ -1152,6 +1161,425 @@ export const CAREERS: Career[] = [
       { title: 'Professor', description: 'Senior academic leading a field and department.', salaryRange: '€100k–€150k' },
     ],
     relatedCareers: ['research-scientist', 'teacher-secondary', 'psychologist'],
+  },
+  {
+    id: 'optometrist',
+    title: 'Optometrist',
+    category: 'Health & Medicine',
+    icon: '👓',
+    shortDescription: 'Test eyes and prescribe glasses and contact lenses.',
+    description:
+      'Optometrists examine eyes, detect vision problems and eye disease, and prescribe glasses and contact lenses. The route is a 4-year degree registered with CORU. Physics and biology are especially relevant.',
+    juniorCycle: ['Science', 'Maths', 'Attention to detail'],
+    seniorCycleSubjects: [
+      { subjectId: 'physics', importance: 'recommended', reason: 'Optics is built on physics.' },
+      { subjectId: 'biology', importance: 'recommended' },
+      { subjectId: 'chemistry', importance: 'helpful' },
+      { subjectId: 'maths', importance: 'recommended' },
+    ],
+    leavingCertNotes:
+      'Requires a laboratory science (Physics is very relevant) plus the usual matriculation. High points are typical.',
+    collegeCourses: [
+      { code: 'TU994', name: 'Optometry', institution: 'TU Dublin', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MSc / Clinical specialisation', type: 'Masters', description: 'Specialise in areas such as paediatric or low-vision optometry.' },
+    ],
+    roles: [
+      { title: 'Optometrist', description: 'Tests eyes and prescribes in practice.', salaryRange: '€45k–€75k' },
+      { title: 'Clinical Optometrist', description: 'Works in hospital eye services.', salaryRange: '€50k–€80k' },
+      { title: 'Practice Owner', description: 'Runs an optical practice.', salaryRange: '€70k–€120k' },
+    ],
+    relatedCareers: ['doctor', 'radiographer'],
+  },
+  {
+    id: 'biomedical-engineer',
+    title: 'Biomedical Engineer',
+    category: 'Engineering',
+    icon: '🦿',
+    shortDescription: 'Design medical devices and technology.',
+    description:
+      'Biomedical engineers apply engineering to healthcare — designing implants, prosthetics, medical devices and diagnostic equipment. Ireland is a global medtech hub, so demand is strong. The route is a Level 8 engineering or biomedical engineering degree.',
+    juniorCycle: ['Maths', 'Science', 'Making and designing things'],
+    seniorCycleSubjects: [
+      { subjectId: 'maths', importance: 'essential', reason: 'Higher Level usually required; 25 bonus points.' },
+      { subjectId: 'physics', importance: 'recommended' },
+      { subjectId: 'biology', importance: 'helpful', reason: 'Useful for the human-body side.' },
+      { subjectId: 'chemistry', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'Higher Level Maths is normally required. Physics is strongly recommended; Biology helps.',
+    collegeCourses: [
+      { code: 'DN150', name: 'Biomedical Engineering', institution: 'University College Dublin', level: 8, caoPoints: 533, pointsYear: '2024', duration: '4–5 years' },
+      { code: 'GY403', name: 'Biomedical Engineering', institution: 'University of Galway', level: 8, caoPoints: 488, pointsYear: '2024', duration: '4 years' },
+      { code: 'LM238', name: 'Biomedical Engineering', institution: 'University of Limerick', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'ME / MSc Biomedical Engineering', type: 'Masters', description: 'Specialise in devices, biomaterials or regulatory affairs.' },
+      { name: 'Chartered Engineer (CEng)', type: 'Professional', description: 'Accreditation from Engineers Ireland after experience.' },
+    ],
+    roles: [
+      { title: 'Medical Device Engineer', description: 'Designs and tests medical devices.', salaryRange: '€45k–€85k' },
+      { title: 'Regulatory Affairs Engineer', description: 'Ensures devices meet health regulations.', salaryRange: '€50k–€90k' },
+      { title: 'R&D Engineer', description: 'Develops new healthcare technology.', salaryRange: '€48k–€95k' },
+    ],
+    relatedCareers: ['mechanical-engineer', 'doctor'],
+  },
+  {
+    id: 'chemical-engineer',
+    title: 'Chemical Engineer',
+    category: 'Engineering',
+    icon: '🧪',
+    shortDescription: 'Design processes that turn raw materials into products.',
+    description:
+      'Chemical (and process) engineers design the large-scale processes that make fuels, medicines, food and materials. Ireland’s pharma and food sectors employ many. The route is a Level 8 chemical/process engineering degree.',
+    juniorCycle: ['Maths', 'Science', 'Chemistry'],
+    seniorCycleSubjects: [
+      { subjectId: 'maths', importance: 'essential', reason: 'Higher Level usually required; 25 bonus points.' },
+      { subjectId: 'chemistry', importance: 'recommended', reason: 'Central to the discipline.' },
+      { subjectId: 'physics', importance: 'recommended' },
+      { subjectId: 'biology', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'Higher Level Maths is normally required, with Chemistry strongly recommended.',
+    collegeCourses: [
+      { code: 'CK600', name: 'Process & Chemical Engineering', institution: 'University College Cork', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN150', name: 'Chemical & Bioprocess Engineering', institution: 'University College Dublin', level: 8, caoPoints: 533, pointsYear: '2024', duration: '4–5 years' },
+    ],
+    postgrad: [
+      { name: 'ME Chemical / Process Engineering', type: 'Masters', description: 'Specialise in pharma, energy or bioprocessing.' },
+      { name: 'Chartered Engineer (CEng)', type: 'Professional', description: 'Accreditation from Engineers Ireland after experience.' },
+    ],
+    roles: [
+      { title: 'Process Engineer', description: 'Designs and optimises production processes.', salaryRange: '€45k–€85k' },
+      { title: 'Validation Engineer', description: 'Ensures pharma processes meet strict standards.', salaryRange: '€48k–€90k' },
+      { title: 'Plant / Production Manager', description: 'Runs a manufacturing facility.', salaryRange: '€70k–€120k' },
+    ],
+    relatedCareers: ['mechanical-engineer', 'pharmacist', 'research-scientist'],
+  },
+  {
+    id: 'landscape-architect',
+    title: 'Landscape Architect',
+    category: 'Engineering',
+    icon: '🌳',
+    shortDescription: 'Design parks, streets and outdoor spaces.',
+    description:
+      'Landscape architects design outdoor spaces — parks, campuses, streets and public realm — balancing ecology, people and beauty. The route is a Level 8 landscape architecture degree, leading to registration with the ILI.',
+    juniorCycle: ['Art', 'Geography', 'Interest in nature and design'],
+    seniorCycleSubjects: [
+      { subjectId: 'art', importance: 'recommended', reason: 'Helps with drawing and the portfolio.' },
+      { subjectId: 'geography', importance: 'recommended' },
+      { subjectId: 'designGraphics', importance: 'helpful' },
+      { subjectId: 'biology', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'Some courses value a portfolio of creative work. Check individual course requirements.',
+    collegeCourses: [
+      { code: 'DL826', name: 'Landscape Architecture', institution: 'ATU / partner colleges', level: 8, caoPoints: 350, pointsYear: '2024', duration: '4 years', extraRequirements: 'Portfolio may apply' },
+      { code: 'UCD-LA', name: 'Landscape Architecture', institution: 'University College Dublin', level: 8, caoPoints: 450, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MLA Landscape Architecture', type: 'Masters', description: 'Professional qualifying masters for many entrants.' },
+      { name: 'ILI Registration', type: 'Professional', description: 'Professional accreditation with the Irish Landscape Institute.' },
+    ],
+    roles: [
+      { title: 'Landscape Architect', description: 'Designs public and private outdoor spaces.', salaryRange: '€38k–€70k' },
+      { title: 'Urban Designer', description: 'Shapes streets and public realm.', salaryRange: '€45k–€80k' },
+      { title: 'Environmental Planner', description: 'Balances development with ecology.', salaryRange: '€45k–€80k' },
+    ],
+    relatedCareers: ['architect', 'urban-planner', 'environmental-scientist'],
+  },
+  {
+    id: 'microbiologist',
+    title: 'Microbiologist',
+    category: 'Science & Environment',
+    icon: '🦠',
+    shortDescription: 'Study bacteria, viruses and other microbes.',
+    description:
+      'Microbiologists study microscopic life — bacteria, viruses and fungi — in health, food, industry and the environment. The route is a microbiology or biological science degree, often followed by a masters or PhD. Big employers include pharma and food companies.',
+    juniorCycle: ['Science', 'Maths', 'Lab curiosity'],
+    seniorCycleSubjects: [
+      { subjectId: 'biology', importance: 'essential', reason: 'The core of microbiology.' },
+      { subjectId: 'chemistry', importance: 'recommended' },
+      { subjectId: 'maths', importance: 'helpful' },
+      { subjectId: 'physics', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'A laboratory science (Biology and often Chemistry) is normally required.',
+    collegeCourses: [
+      { code: 'CK402', name: 'Biological, Earth & Environmental Sciences', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN200', name: 'Science (Microbiology)', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
+      { code: 'GY304', name: 'Biotechnology', institution: 'University of Galway', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MSc / PhD Microbiology', type: 'PhD', description: 'For research, industry and clinical microbiology roles.' },
+    ],
+    roles: [
+      { title: 'Microbiologist', description: 'Studies and tests microbes in the lab.', salaryRange: '€35k–€60k' },
+      { title: 'Quality / QC Microbiologist', description: 'Ensures products are safe in pharma/food.', salaryRange: '€38k–€65k' },
+      { title: 'Clinical Microbiologist', description: 'Identifies infections in healthcare.', salaryRange: '€45k–€85k' },
+    ],
+    relatedCareers: ['research-scientist', 'pharmacist', 'marine-biologist'],
+  },
+  {
+    id: 'geologist',
+    title: 'Geologist',
+    category: 'Science & Environment',
+    icon: '🪨',
+    shortDescription: 'Study the Earth, rocks and natural resources.',
+    description:
+      'Geologists study the Earth — its rocks, minerals, water and hazards — working in resources, construction, water and climate. The route is a geology or earth science degree, often with fieldwork and a masters.',
+    juniorCycle: ['Geography', 'Science', 'The outdoors'],
+    seniorCycleSubjects: [
+      { subjectId: 'geography', importance: 'recommended', reason: 'Introduces physical earth processes.' },
+      { subjectId: 'chemistry', importance: 'recommended' },
+      { subjectId: 'physics', importance: 'helpful' },
+      { subjectId: 'maths', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'A laboratory science is usually required; Geography is a strong complement.',
+    collegeCourses: [
+      { code: 'TR071', name: 'Geology (via Science)', institution: 'Trinity College Dublin', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN200', name: 'Geology (via Science)', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
+      { code: 'CK402', name: 'Biological, Earth & Environmental Sciences', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MSc Geology / Applied Geoscience', type: 'Masters', description: 'Specialise in resources, hydrogeology or engineering geology.' },
+      { name: 'PhD Earth Science', type: 'PhD', description: 'Research route into academia and industry.' },
+    ],
+    roles: [
+      { title: 'Geologist', description: 'Surveys and analyses the ground and resources.', salaryRange: '€38k–€70k' },
+      { title: 'Hydrogeologist', description: 'Specialist in groundwater.', salaryRange: '€42k–€75k' },
+      { title: 'Engineering / Mining Geologist', description: 'Advises on ground for projects and resources.', salaryRange: '€45k–€90k' },
+    ],
+    relatedCareers: ['environmental-scientist', 'civil-engineer', 'research-scientist'],
+  },
+  {
+    id: 'meteorologist',
+    title: 'Meteorologist',
+    category: 'Science & Environment',
+    icon: '🌦️',
+    shortDescription: 'Forecast weather and study the climate.',
+    description:
+      'Meteorologists forecast the weather and study the atmosphere and climate, working with bodies like Met Éireann, aviation and research. The route is a physics or maths degree, then a specialist masters in meteorology or atmospheric science.',
+    juniorCycle: ['Maths', 'Science', 'Curiosity about weather and climate'],
+    seniorCycleSubjects: [
+      { subjectId: 'physics', importance: 'essential', reason: 'The atmosphere obeys physics.' },
+      { subjectId: 'maths', importance: 'essential', reason: 'Forecasting is highly mathematical.' },
+      { subjectId: 'geography', importance: 'helpful' },
+      { subjectId: 'appliedMaths', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'Higher Level Maths and Physics are the key subjects for the physics/maths degree route.',
+    collegeCourses: [
+      { code: 'TR035', name: 'Physical Sciences', institution: 'Trinity College Dublin', level: 8, caoPoints: 543, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN200', name: 'Science (Physics / Maths)', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '4 years' },
+      { code: 'MU024', name: 'Theoretical Physics & Maths', institution: 'Maynooth University', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MSc Meteorology / Atmospheric Science', type: 'Masters', description: 'The specialist route into forecasting and research.' },
+      { name: 'PhD Climate Science', type: 'PhD', description: 'Research into weather and climate.' },
+    ],
+    roles: [
+      { title: 'Weather Forecaster', description: 'Produces forecasts for the public and industry.', salaryRange: '€45k–€80k' },
+      { title: 'Climate Scientist', description: 'Studies long-term climate change.', salaryRange: '€45k–€85k' },
+      { title: 'Aviation Meteorologist', description: 'Provides weather services for flight.', salaryRange: '€50k–€90k' },
+    ],
+    relatedCareers: ['physicist', 'environmental-scientist', 'geologist'],
+  },
+  {
+    id: 'management-consultant',
+    title: 'Management Consultant',
+    category: 'Business & Finance',
+    icon: '💼',
+    shortDescription: 'Advise organisations on strategy and change.',
+    description:
+      'Management consultants help organisations solve problems, improve performance and manage change. They come from many degrees — business, economics, engineering or science — and are valued for analysis and communication. Entry is competitive.',
+    juniorCycle: ['Business Studies', 'Maths', 'Debating / teamwork'],
+    seniorCycleSubjects: [
+      { subjectId: 'business', importance: 'recommended' },
+      { subjectId: 'maths', importance: 'recommended', reason: 'Analysis and modelling are central.' },
+      { subjectId: 'economics', importance: 'helpful' },
+      { subjectId: 'english', importance: 'helpful', reason: 'Communication and reports matter.' },
+    ],
+    leavingCertNotes:
+      'No mandatory subjects — a strong all-round record and a good degree (any discipline) matter most.',
+    collegeCourses: [
+      { code: 'TR081', name: 'Business, Economic & Social Studies (BESS)', institution: 'Trinity College Dublin', level: 8, caoPoints: 510, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN650', name: 'Commerce', institution: 'University College Dublin', level: 8, caoPoints: 520, pointsYear: '2024', duration: '3 years' },
+      { code: 'CK201', name: 'Business Information Systems', institution: 'University College Cork', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MBA / MSc Management', type: 'Masters', description: 'Accelerates progression and senior consulting roles.' },
+    ],
+    roles: [
+      { title: 'Business Analyst', description: 'Analyses problems and recommends solutions.', salaryRange: '€40k–€70k' },
+      { title: 'Management Consultant', description: 'Advises clients on strategy and change.', salaryRange: '€55k–€110k' },
+      { title: 'Partner / Director', description: 'Leads client relationships and the firm.', salaryRange: '€150k–€400k+' },
+    ],
+    relatedCareers: ['accountant', 'economist', 'investment-banker'],
+  },
+  {
+    id: 'investment-banker',
+    title: 'Investment Banker',
+    category: 'Business & Finance',
+    icon: '🏦',
+    shortDescription: 'Raise capital and advise on major deals.',
+    description:
+      'Investment bankers help companies raise money and advise on mergers, acquisitions and investments. It is high-pressure and high-paid, entered via a strong finance, business, economics or maths degree and a competitive graduate programme.',
+    juniorCycle: ['Business Studies', 'Maths', 'Current affairs'],
+    seniorCycleSubjects: [
+      { subjectId: 'maths', importance: 'recommended', reason: 'Finance is quantitative.' },
+      { subjectId: 'economics', importance: 'recommended' },
+      { subjectId: 'business', importance: 'helpful' },
+      { subjectId: 'accounting', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'No mandatory subjects, but Maths, Economics and Accounting build a strong base. High points and a top degree matter for entry.',
+    collegeCourses: [
+      { code: 'DN650', name: 'Commerce / Business & Law', institution: 'University College Dublin', level: 8, caoPoints: 520, pointsYear: '2024', duration: '3–4 years' },
+      { code: 'TR081', name: 'Business, Economic & Social Studies (BESS)', institution: 'Trinity College Dublin', level: 8, caoPoints: 510, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN230', name: 'Economics & Finance', institution: 'University College Dublin', level: 8, caoPoints: 543, pointsYear: '2024', duration: '3 years' },
+    ],
+    postgrad: [
+      { name: 'MSc Finance', type: 'Masters', description: 'A common route into front-office finance.' },
+      { name: 'CFA Charter', type: 'Professional', description: 'Prestigious investment qualification taken while working.' },
+    ],
+    roles: [
+      { title: 'Analyst', description: 'Builds financial models and pitch materials.', salaryRange: '€50k–€90k' },
+      { title: 'Associate / VP', description: 'Runs deals and manages clients.', salaryRange: '€90k–€200k' },
+      { title: 'Managing Director', description: 'Leads major transactions and relationships.', salaryRange: '€250k–€1m+' },
+    ],
+    relatedCareers: ['accountant', 'actuary', 'management-consultant'],
+  },
+  {
+    id: 'hr-manager',
+    title: 'Human Resources Manager',
+    category: 'Business & Finance',
+    icon: '🧑‍💼',
+    shortDescription: 'Lead recruitment, people and workplace culture.',
+    description:
+      'HR managers look after an organisation’s people — recruitment, training, pay, wellbeing and employment law. The route is a business or HR degree, often with CIPD accreditation. It suits people who combine business sense with strong interpersonal skills.',
+    juniorCycle: ['Business Studies', 'Communication', 'Teamwork'],
+    seniorCycleSubjects: [
+      { subjectId: 'business', importance: 'recommended' },
+      { subjectId: 'english', importance: 'helpful', reason: 'Communication is central to HR.' },
+      { subjectId: 'politics', importance: 'helpful' },
+      { subjectId: 'economics', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'No mandatory subjects beyond matriculation; Business is a helpful foundation.',
+    collegeCourses: [
+      { code: 'DN650', name: 'Commerce (HR / Management)', institution: 'University College Dublin', level: 8, caoPoints: 520, pointsYear: '2024', duration: '3 years' },
+      { code: 'DC232', name: 'Human Resource Management', institution: 'Dublin City University', level: 8, caoPoints: 419, pointsYear: '2024', duration: '4 years' },
+      { code: 'LM102', name: 'Business Studies (HRM)', institution: 'University of Limerick', level: 8, caoPoints: 400, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MSc Human Resource Management', type: 'Masters', description: 'Deepens expertise and supports CIPD accreditation.' },
+      { name: 'CIPD Qualification', type: 'Professional', description: 'The recognised professional HR credential.' },
+    ],
+    roles: [
+      { title: 'HR Officer / Generalist', description: 'Handles day-to-day people matters.', salaryRange: '€35k–€55k' },
+      { title: 'HR Manager', description: 'Leads HR for a business or site.', salaryRange: '€55k–€90k' },
+      { title: 'HR Director', description: 'Sets people strategy for the organisation.', salaryRange: '€90k–€160k' },
+    ],
+    relatedCareers: ['accountant', 'management-consultant', 'psychologist'],
+  },
+  {
+    id: 'urban-planner',
+    title: 'Urban / Town Planner',
+    category: 'Law & Society',
+    icon: '🏙️',
+    shortDescription: 'Shape how towns and cities grow and develop.',
+    description:
+      'Town planners decide how land is used — balancing housing, transport, environment and community to shape sustainable places. The route is a planning degree (or a related degree plus a planning masters), leading to membership of the IPI.',
+    juniorCycle: ['Geography', 'CSPE / community', 'Technical Graphics'],
+    seniorCycleSubjects: [
+      { subjectId: 'geography', importance: 'recommended', reason: 'Central to planning.' },
+      { subjectId: 'designGraphics', importance: 'helpful' },
+      { subjectId: 'politics', importance: 'helpful' },
+      { subjectId: 'art', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'No mandatory subjects beyond matriculation; Geography is a strong foundation.',
+    collegeCourses: [
+      { code: 'DT106', name: 'Spatial Planning & Environmental Management', institution: 'TU Dublin', level: 8, caoPoints: 350, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN100', name: 'Planning (via Architecture/Geography)', institution: 'University College Dublin', level: 8, caoPoints: 450, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MSc / MRUP Planning', type: 'Masters', description: 'The professional qualifying route for many planners.' },
+      { name: 'IPI Membership', type: 'Professional', description: 'Chartered membership of the Irish Planning Institute.' },
+    ],
+    roles: [
+      { title: 'Planning Officer', description: 'Assesses planning applications for a council.', salaryRange: '€42k–€70k' },
+      { title: 'Urban Planner / Consultant', description: 'Advises on development and master plans.', salaryRange: '€45k–€85k' },
+      { title: 'Senior / Chief Planner', description: 'Leads planning policy for a region.', salaryRange: '€70k–€110k' },
+    ],
+    relatedCareers: ['architect', 'landscape-architect', 'environmental-scientist'],
+  },
+  {
+    id: 'diplomat',
+    title: 'Diplomat / Foreign Policy Officer',
+    category: 'Law & Society',
+    icon: '🕊️',
+    shortDescription: 'Represent Ireland and shape foreign policy.',
+    description:
+      'Diplomats represent Ireland abroad, build international relationships and shape foreign policy, usually through the Department of Foreign Affairs. There is no single degree — law, politics, languages, history or economics all fit — but entry is highly competitive via the civil service.',
+    juniorCycle: ['History / CSPE', 'Languages', 'Debating'],
+    seniorCycleSubjects: [
+      { subjectId: 'history', importance: 'recommended', reason: 'Context for international affairs.' },
+      { subjectId: 'french', importance: 'recommended', reason: 'Languages are prized in diplomacy.' },
+      { subjectId: 'politics', importance: 'helpful' },
+      { subjectId: 'english', importance: 'helpful' },
+    ],
+    leavingCertNotes:
+      'No specific subjects, but languages, history and politics are excellent preparation. A third language is required for NUI degrees.',
+    collegeCourses: [
+      { code: 'DN700', name: 'Politics & International Relations', institution: 'University College Dublin', level: 8, caoPoints: 498, pointsYear: '2024', duration: '3 years' },
+      { code: 'TR084', name: 'Law & Political Science', institution: 'Trinity College Dublin', level: 8, caoPoints: 521, pointsYear: '2024', duration: '4 years' },
+      { code: 'DC232', name: 'International Relations', institution: 'Dublin City University', level: 8, caoPoints: 466, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MA International Relations / Diplomacy', type: 'Masters', description: 'Strengthens the profile for competitive entry.' },
+    ],
+    roles: [
+      { title: 'Third Secretary (entry diplomat)', description: 'Graduate entry to the diplomatic service.', salaryRange: '€40k–€55k' },
+      { title: 'Foreign Policy Officer', description: 'Works on policy at home and in embassies.', salaryRange: '€55k–€90k' },
+      { title: 'Ambassador', description: 'Leads an embassy and represents Ireland.', salaryRange: '€100k–€160k' },
+    ],
+    relatedCareers: ['lawyer', 'economist', 'journalist'],
+  },
+  {
+    id: 'criminologist',
+    title: 'Criminologist',
+    category: 'Law & Society',
+    icon: '🕵️',
+    shortDescription: 'Study crime, justice and how to prevent it.',
+    description:
+      'Criminologists study why crime happens and how society responds — informing policing, prisons, policy and research. The route is a criminology or social-science degree, often with a masters for research and policy roles.',
+    juniorCycle: ['CSPE / social awareness', 'Strong English', 'Interest in justice'],
+    seniorCycleSubjects: [
+      { subjectId: 'politics', importance: 'recommended', reason: 'Covers justice, rights and society.' },
+      { subjectId: 'history', importance: 'helpful' },
+      { subjectId: 'english', importance: 'helpful' },
+      { subjectId: 'biology', importance: 'helpful', reason: 'Useful for forensic aspects.' },
+    ],
+    leavingCertNotes:
+      'No mandatory subjects beyond matriculation; a social science or humanities focus helps.',
+    collegeCourses: [
+      { code: 'DT544', name: 'Criminology', institution: 'TU Dublin', level: 8, caoPoints: 400, pointsYear: '2024', duration: '4 years' },
+      { code: 'DN720', name: 'Social Science (Criminology)', institution: 'University College Dublin', level: 8, caoPoints: 421, pointsYear: '2024', duration: '3 years' },
+      { code: 'MH103', name: 'Applied Social Studies (Criminology)', institution: 'Maynooth University', level: 8, caoPoints: 400, pointsYear: '2024', duration: '4 years' },
+    ],
+    postgrad: [
+      { name: 'MA Criminology', type: 'Masters', description: 'Route into research, policy and criminal-justice careers.' },
+    ],
+    roles: [
+      { title: 'Criminologist / Researcher', description: 'Researches crime and justice.', salaryRange: '€38k–€65k' },
+      { title: 'Policy / Justice Analyst', description: 'Advises on criminal-justice policy.', salaryRange: '€45k–€80k' },
+      { title: 'Probation / Prison Officer (grad)', description: 'Works in offender management.', salaryRange: '€38k–€65k' },
+    ],
+    relatedCareers: ['social-worker', 'lawyer', 'psychologist'],
   },
 ]
 
