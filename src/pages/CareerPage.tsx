@@ -1,10 +1,8 @@
-import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getCareer } from '../data/careers'
 import { getSubject } from '../data/subjects'
 import type { Importance, PostgradNeed } from '../data/types'
 import PathwayFlow from '../components/PathwayFlow'
-import NetworkGraph from '../components/NetworkGraph'
 import SalaryBar from '../components/SalaryBar'
 
 const IMPORTANCE_BADGE: Record<Importance, string> = {
@@ -44,7 +42,6 @@ function PostgradBanner({ need }: { need: PostgradNeed }) {
 export default function CareerPage() {
   const { careerId } = useParams()
   const career = careerId ? getCareer(careerId) : undefined
-  const [view, setView] = useState<'flow' | 'network'>('flow')
 
   if (!career) {
     return (
@@ -75,35 +72,14 @@ export default function CareerPage() {
         </div>
       </header>
 
-      {/* Visualisations */}
+      {/* Pathway flow chart */}
       <section>
-        <div className="mb-3 flex items-center justify-between">
-          <h2 className="text-xl font-bold text-slate-900">The pathway, visualised</h2>
-          <div className="inline-flex rounded-xl border border-slate-200 bg-white p-1 text-sm font-semibold">
-            <button
-              onClick={() => setView('flow')}
-              className={`rounded-lg px-3 py-1.5 ${
-                view === 'flow' ? 'bg-brand-600 text-white' : 'text-slate-600 hover:bg-slate-50'
-              }`}
-            >
-              Flow chart
-            </button>
-            <button
-              onClick={() => setView('network')}
-              className={`rounded-lg px-3 py-1.5 ${
-                view === 'network' ? 'bg-brand-600 text-white' : 'text-slate-600 hover:bg-slate-50'
-              }`}
-            >
-              Network graph
-            </button>
-          </div>
-        </div>
+        <h2 className="mb-1 text-xl font-bold text-slate-900">The pathway, visualised</h2>
         <p className="mb-3 text-sm text-slate-500">
-          {view === 'flow'
-            ? 'Left to right: the stages from Junior Cycle through to the jobs at the end. Drag to pan, scroll to zoom.'
-            : 'How the subjects, courses and roles connect around this career. Click a blue “related career” node to jump across.'}
+          Left to right: the stages from Junior Cycle through to the jobs at the end. Drag to pan,
+          scroll to zoom.
         </p>
-        {view === 'flow' ? <PathwayFlow career={career} /> : <NetworkGraph career={career} />}
+        <PathwayFlow career={career} />
       </section>
 
       {/* Subjects */}

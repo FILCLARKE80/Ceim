@@ -35,18 +35,9 @@ export default function App() {
       <footer className="mt-8 border-t border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-8">
           <nav className="mb-4 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-ink">
-            <Link to="/" className="hover:text-brand-600">Careers</Link>
             <Link to="/about" className="hover:text-brand-600">About</Link>
             <Link to="/data" className="hover:text-brand-600">Data &amp; Sources</Link>
             <Link to="/legal" className="hover:text-brand-600">Terms, Licensing &amp; Privacy</Link>
-            <a
-              href="https://github.com/FILCLARKE80/Dataapp"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-brand-600"
-            >
-              GitHub
-            </a>
           </nav>
           <div className="space-y-2 text-xs text-graphite">
             <p>

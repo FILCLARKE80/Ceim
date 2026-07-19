@@ -23,8 +23,8 @@ export default function HomePage() {
   return (
     <div>
       <section className="mb-10 rounded-3xl bg-ink px-6 py-14 text-center text-white sm:py-20">
-        <h1 className="mx-auto max-w-3xl text-4xl font-semibold leading-[1.07] tracking-tight sm:text-6xl">
-          From first year to your career.
+        <h1 className="mx-auto max-w-4xl text-3xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
+          <span className="sm:whitespace-nowrap">From first year to your career.</span>
           <br />
           <span className="text-brand-400">Mapped out.</span>
         </h1>

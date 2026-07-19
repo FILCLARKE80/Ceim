@@ -29,16 +29,7 @@ export default function LegalPage() {
       <H2>Licensing</H2>
       <p>
         <strong>Source code:</strong> released under the MIT Licence — you’re free to use, modify and
-        share it with attribution. See the{' '}
-        <a
-          className="font-semibold text-brand-600 hover:underline"
-          href="https://github.com/FILCLARKE80/Dataapp/blob/main/LICENSE"
-          target="_blank"
-          rel="noreferrer"
-        >
-          LICENSE
-        </a>{' '}
-        file in the repository.
+        share it with attribution. See the <code>LICENSE</code> file included with the source.
       </p>
       <p>
         <strong>Content &amp; data:</strong> the written descriptions and the compiled dataset are made
@@ -55,18 +46,6 @@ export default function LegalPage() {
         and is not used by us to identify you.
       </p>
 
-      <p className="text-sm text-graphite">
-        Questions? Reach us via the{' '}
-        <a
-          className="font-semibold text-brand-600 hover:underline"
-          href="https://github.com/FILCLARKE80/Dataapp"
-          target="_blank"
-          rel="noreferrer"
-        >
-          project’s GitHub repository
-        </a>
-        .
-      </p>
     </ContentPage>
   )
 }

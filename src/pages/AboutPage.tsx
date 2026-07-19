@@ -18,8 +18,8 @@ export default function AboutPage() {
       <p>
         Pathfinder is built for <strong>students</strong> exploring their options, and it’s just as
         useful for <strong>parents</strong> and <strong>guidance counsellors</strong> having those
-        conversations. Everything is presented visually — interactive flow charts and network graphs —
-        so the connections between subjects, courses and careers are easy to follow.
+        conversations. Everything is presented visually — an interactive flow chart for each career —
+        so the connections between subjects, courses and roles are easy to follow.
       </p>
 
       <H2>What you’ll find for each career</H2>
@@ -46,16 +46,7 @@ export default function AboutPage() {
         <Link className="font-semibold text-brand-600 hover:underline" to="/data">
           Data &amp; Sources
         </Link>{' '}
-        page. Spotted something that looks wrong? We’d love to hear about it via the project’s{' '}
-        <a
-          className="font-semibold text-brand-600 hover:underline"
-          href="https://github.com/FILCLARKE80/Dataapp"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub repository
-        </a>
-        .
+        page. Spotted something that looks wrong? We’d love to hear about it.
       </p>
 
       <p className="text-sm text-graphite">

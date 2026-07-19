@@ -3,16 +3,14 @@
 An interactive web app that helps Irish secondary-school students explore career
 options. Pick a career and see the full journey mapped out — from **first year
 (Junior Cycle)** through the **Leaving Certificate**, into **college (with CAO
-points)**, **postgraduate study**, and the **jobs at the end** — as both an
-interactive **flow chart** and a **network graph**.
+points)**, **postgraduate study**, and the **jobs at the end** — as an
+interactive **flow chart**.
 
 ## Features
 
 - **Career picker** — searchable, category-filtered grid of 48 careers.
 - **Pathway flow chart** — left-to-right stages: Junior Cycle → Leaving Cert
   subjects → College/CAO (with course names) → Postgrad → Roles.
-- **Network graph** — radial web linking each career to its subjects, courses,
-  roles and related careers.
 - **Leaving Cert subject guide** — student-friendly descriptions and how
   essential each subject is.
 - **CAO points table** — course points, codes, duration and extra requirements,
