@@ -10,17 +10,17 @@ function Source({
   children: React.ReactNode
 }) {
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-4">
-      <h3 className="font-semibold text-ink">
+    <div className="rounded-2xl border border-slate-200 bg-white p-4 dark:border-white/10 dark:bg-[#1c1c1e]">
+      <h3 className="font-semibold text-ink dark:text-mist">
         {href ? (
-          <a className="text-brand-600 hover:underline" href={href} target="_blank" rel="noreferrer">
+          <a className="text-brand-600 hover:underline dark:text-brand-300" href={href} target="_blank" rel="noreferrer">
             {name}
           </a>
         ) : (
           name
         )}
       </h3>
-      <p className="mt-1 text-sm text-slate-600">{children}</p>
+      <p className="mt-1 text-sm text-slate-600 dark:text-graphite">{children}</p>
     </div>
   )
 }

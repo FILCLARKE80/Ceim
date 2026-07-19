@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -21,6 +22,8 @@ export default {
           '-apple-system', 'BlinkMacSystemFont', '"SF Pro Text"', '"SF Pro Display"',
           '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif',
         ],
+        // Bundled display font for headings
+        display: ['"Sora Variable"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
     },
   },

@@ -10,6 +10,7 @@ import {
 } from '@xyflow/react'
 import type { Career } from '../data/types'
 import { getSubject } from '../data/subjects'
+import { useTheme } from '../theme'
 
 const COL_WIDTH = 250
 const ROW_HEIGHT = 92
@@ -31,12 +32,20 @@ function shortInstitution(name: string): string {
   return INSTITUTION_SHORT[name] ?? name
 }
 
-const STAGE_STYLES: Record<string, { bg: string; border: string; text: string }> = {
+type Stage = { bg: string; border: string; text: string }
+const STAGE_STYLES_LIGHT: Record<string, Stage> = {
   junior: { bg: '#eef6ff', border: '#8ebfff', text: '#1643dd' },
   senior: { bg: '#ecfdf5', border: '#6ee7b7', text: '#047857' },
   college: { bg: '#fff7ed', border: '#fdba74', text: '#c2410c' },
   postgrad: { bg: '#faf5ff', border: '#d8b4fe', text: '#7e22ce' },
   role: { bg: '#fef2f2', border: '#fca5a5', text: '#b91c1c' },
+}
+const STAGE_STYLES_DARK: Record<string, Stage> = {
+  junior: { bg: '#12233f', border: '#3563b0', text: '#a6ccff' },
+  senior: { bg: '#0f2a20', border: '#2f7d5b', text: '#6ee7b7' },
+  college: { bg: '#2b1a0e', border: '#a86b34', text: '#fdba74' },
+  postgrad: { bg: '#241436', border: '#7e57b0', text: '#d8b4fe' },
+  role: { bg: '#2b1414', border: '#a85454', text: '#fca5a5' },
 }
 
 interface Column {
@@ -87,6 +96,11 @@ function buildColumns(career: Career): Column[] {
 }
 
 export default function PathwayFlow({ career }: { career: Career }) {
+  const { theme } = useTheme()
+  const dark = theme === 'dark'
+  const STAGE_STYLES = dark ? STAGE_STYLES_DARK : STAGE_STYLES_LIGHT
+  const edgeColor = dark ? '#3a3a3d' : '#cbd5e1'
+
   const { nodes, edges } = useMemo(() => {
     const columns = buildColumns(career)
     const maxRows = Math.max(...columns.map((c) => c.items.length))
@@ -153,8 +167,8 @@ export default function PathwayFlow({ career }: { career: Career }) {
               id: `${from.id}->${to.id}`,
               source: from.id,
               target: to.id,
-              style: { stroke: '#cbd5e1', strokeWidth: 1 },
-              markerEnd: { type: MarkerType.ArrowClosed, color: '#cbd5e1', width: 14, height: 14 },
+              style: { stroke: edgeColor, strokeWidth: 1 },
+              markerEnd: { type: MarkerType.ArrowClosed, color: edgeColor, width: 14, height: 14 },
             })
           })
         })
@@ -162,10 +176,10 @@ export default function PathwayFlow({ career }: { career: Career }) {
     })
 
     return { nodes, edges }
-  }, [career])
+  }, [career, dark, STAGE_STYLES, edgeColor])
 
   return (
-    <div className="h-[460px] w-full overflow-hidden rounded-2xl border border-slate-200 bg-white">
+    <div className="h-[460px] w-full overflow-hidden rounded-2xl border border-slate-200 bg-white dark:border-white/10 dark:bg-[#161617]">
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -175,8 +189,9 @@ export default function PathwayFlow({ career }: { career: Career }) {
         nodesDraggable={false}
         nodesConnectable={false}
         minZoom={0.3}
+        colorMode={dark ? 'dark' : 'light'}
       >
-        <Background color="#e2e8f0" gap={20} />
+        <Background color={dark ? '#2a2a2c' : '#e2e8f0'} gap={20} />
         <Controls showInteractive={false} />
       </ReactFlow>
     </div>

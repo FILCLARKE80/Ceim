@@ -14,9 +14,19 @@ body,
 }
 
 body {
-  @apply bg-mist text-ink antialiased;
+  @apply bg-mist text-ink antialiased transition-colors;
   -webkit-font-smoothing: antialiased;
   letter-spacing: -0.01em;
+}
+
+.dark body {
+  @apply bg-black text-mist;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Sora Variable', ui-sans-serif, system-ui, sans-serif;
 }
 
 /* React Flow tweaks */
