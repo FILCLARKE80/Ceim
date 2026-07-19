@@ -57,6 +57,7 @@ export default function App() {
             <Link to="/about" className="hover:text-brand-600 dark:hover:text-brand-300">About</Link>
             <Link to="/data" className="hover:text-brand-600 dark:hover:text-brand-300">Data &amp; Sources</Link>
             <Link to="/legal" className="hover:text-brand-600 dark:hover:text-brand-300">Terms, Licensing &amp; Privacy</Link>
+            <Link to="/prospectus" className="text-graphite hover:text-brand-600 dark:hover:text-brand-300">Editorial preview</Link>
           </nav>
           <div className="space-y-2 text-xs text-graphite">
             <p>
