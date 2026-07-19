@@ -5,6 +5,7 @@ import { categoryStyle } from '../data/categories'
 import type { Importance, PostgradNeed } from '../data/types'
 import PathwayFlow from '../components/PathwayFlow'
 import SalaryBar from '../components/SalaryBar'
+import { useDocumentTitle } from '../useDocumentTitle'
 
 const IMPORTANCE_BADGE: Record<Importance, string> = {
   essential: 'bg-red-100 text-red-700 dark:bg-red-500/15 dark:text-red-300',
@@ -47,6 +48,7 @@ function PostgradBanner({ need }: { need: PostgradNeed }) {
 export default function CareerPage() {
   const { careerId } = useParams()
   const career = careerId ? getCareer(careerId) : undefined
+  useDocumentTitle(career ? `${career.title} — career path, subjects & CAO points` : undefined)
 
   if (!career) {
     return (

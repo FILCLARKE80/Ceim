@@ -1,7 +1,9 @@
 import ContentPage, { H2 } from '../components/ContentPage'
 import { Link } from 'react-router-dom'
+import { useDocumentTitle } from '../useDocumentTitle'
 
 export default function LegalPage() {
+  useDocumentTitle('Terms, Licensing & Privacy')
   return (
     <ContentPage title="Terms, Licensing &amp; Privacy" subtitle="The important small print — kept short.">
       <H2>Disclaimer</H2>

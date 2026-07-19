@@ -1,4 +1,5 @@
 import ContentPage, { H2 } from '../components/ContentPage'
+import { useDocumentTitle } from '../useDocumentTitle'
 
 function Source({
   name,
@@ -26,6 +27,7 @@ function Source({
 }
 
 export default function DataPage() {
+  useDocumentTitle('Data & Sources')
   return (
     <ContentPage
       title="Data &amp; Sources"

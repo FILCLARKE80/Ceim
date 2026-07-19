@@ -1,7 +1,9 @@
 import ContentPage, { H2 } from '../components/ContentPage'
 import { Link } from 'react-router-dom'
+import { useDocumentTitle } from '../useDocumentTitle'
 
 export default function AboutPage() {
+  useDocumentTitle('About')
   return (
     <ContentPage
       title="About Pathfinder"
