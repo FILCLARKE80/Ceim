@@ -11,7 +11,7 @@ export default function App() {
           <Link to="/" className="flex items-center gap-2">
             <span className="text-2xl">🧭</span>
             <div className="leading-tight">
-              <div className="text-lg font-extrabold tracking-tight text-brand-700">Céim</div>
+              <div className="text-lg font-extrabold tracking-tight text-brand-700">Pathfinder</div>
               <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
                 Your path from school to career
               </div>
@@ -32,22 +32,40 @@ export default function App() {
         <Outlet />
       </main>
 
-      <footer className="border-t border-slate-200 bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-6 text-xs text-slate-500">
-          <p>
-            CAO points shown are <strong>2025 Round 1 figures</strong>, verified against the official CAO
-            tables. Points change
-            every year — always confirm the latest entry requirements on{' '}
-            <a className="font-semibold text-brand-700 underline" href="https://www.cao.ie" target="_blank" rel="noreferrer">
-              cao.ie
-            </a>{' '}
-            and each college’s website before making decisions.
-          </p>
-          <p className="mt-2">
-            Salaries are indicative and shown as a percentage of the Irish average wage (≈ €50,000/yr,
-            based on CSO average annual earnings). Figures are a rough guide, not a guarantee.
-          </p>
-          <p className="mt-2">Built to help Irish secondary-school students explore their options.</p>
+      <footer className="mt-8 border-t border-slate-200 bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-8">
+          <nav className="mb-4 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-ink">
+            <Link to="/" className="hover:text-brand-600">Careers</Link>
+            <Link to="/about" className="hover:text-brand-600">About</Link>
+            <Link to="/data" className="hover:text-brand-600">Data &amp; Sources</Link>
+            <Link to="/legal" className="hover:text-brand-600">Terms, Licensing &amp; Privacy</Link>
+            <a
+              href="https://github.com/FILCLARKE80/Dataapp"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-brand-600"
+            >
+              GitHub
+            </a>
+          </nav>
+          <div className="space-y-2 text-xs text-graphite">
+            <p>
+              CAO points are <strong>2025 Round 1 figures</strong>, checked against the official CAO
+              tables. Points change yearly — confirm the latest on{' '}
+              <a className="font-semibold text-brand-600 hover:underline" href="https://www.cao.ie" target="_blank" rel="noreferrer">
+                cao.ie
+              </a>
+              . Salaries are indicative (shown vs the ≈ €50k CSO average wage). See{' '}
+              <Link className="font-semibold text-brand-600 hover:underline" to="/data">
+                Data &amp; Sources
+              </Link>{' '}
+              for full attributions.
+            </p>
+            <p>
+              Pathfinder is an independent educational project — not affiliated with the CAO, CSO or any
+              college. © {new Date().getFullYear()} Pathfinder · MIT-licensed code.
+            </p>
+          </div>
         </div>
       </footer>
     </div>

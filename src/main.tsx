@@ -5,6 +5,9 @@ import './index.css'
 import App from './App'
 import HomePage from './pages/HomePage'
 import CareerPage from './pages/CareerPage'
+import AboutPage from './pages/AboutPage'
+import DataPage from './pages/DataPage'
+import LegalPage from './pages/LegalPage'
 
 const router = createHashRouter([
   {
@@ -13,6 +16,9 @@ const router = createHashRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: 'career/:careerId', element: <CareerPage /> },
+      { path: 'about', element: <AboutPage /> },
+      { path: 'data', element: <DataPage /> },
+      { path: 'legal', element: <LegalPage /> },
     ],
   },
 ])
