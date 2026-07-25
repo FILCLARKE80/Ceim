@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { RouterProvider, createHashRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import '@fontsource-variable/sora'
 import './index.css'
 import { ThemeProvider } from './theme'
@@ -11,7 +11,7 @@ import AboutPage from './pages/AboutPage'
 import DataPage from './pages/DataPage'
 import LegalPage from './pages/LegalPage'
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,

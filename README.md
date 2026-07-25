@@ -52,10 +52,10 @@ Supporting files:
 - `public/_redirects` — SPA fallback (`/* /index.html 200`).
 - `public/_headers` — basic security headers.
 
-To deploy: connect the repository in the Cloudflare Pages dashboard (or run
-`npx wrangler pages deploy dist`). The app uses relative asset paths and hash
-routing, so it works at any domain or sub-path — no config changes needed. It is
-also deployable to GitHub Pages via `.github/workflows/deploy.yml`.
+To deploy: connect the repository in the Cloudflare Pages dashboard (production
+branch `main`) or run `npx wrangler pages deploy dist`. The app serves at the
+domain root with clean URLs (`/career/<id>`); `public/_redirects` provides the
+SPA fallback so deep links resolve.
 
 ## Data, attributions & licence
 

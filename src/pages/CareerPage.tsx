@@ -48,7 +48,12 @@ function PostgradBanner({ need }: { need: PostgradNeed }) {
 export default function CareerPage() {
   const { careerId } = useParams()
   const career = careerId ? getCareer(careerId) : undefined
-  useDocumentTitle(career ? `${career.title} — career path, subjects & CAO points` : undefined)
+  useDocumentTitle(
+    career ? `${career.title} — career path, subjects & CAO points` : undefined,
+    career
+      ? `How to become a ${career.title} in Ireland: Leaving Cert subjects, CAO courses and 2025 points, postgrad options and roles. ${career.shortDescription}`
+      : undefined,
+  )
 
   if (!career) {
     return (
